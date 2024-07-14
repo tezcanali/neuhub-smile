@@ -100,7 +100,7 @@ class ThreeIcons extends PageBlock
                         'xl' => 6,
                         '2xl' => 6
                     ])
-            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label("3'lü Icon");
+            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label("15 3'lü Icon");
     }
 
     public static function mutateData(array $data): array

@@ -42,7 +42,7 @@ class TextImageLeft extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Sol Metin & Sağ Görsel');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('2 / 7 Sol Metin & Sağ Görsel');
     }
 
     public static function mutateData(array $data): array

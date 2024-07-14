@@ -68,7 +68,7 @@ class OurDoctors extends PageBlock
                         'xl' => 6,
                         '2xl' => 6,
                     ]),
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Our Doctors');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('11 Our Doctors');
     }
 
     public static function mutateData(array $data): array

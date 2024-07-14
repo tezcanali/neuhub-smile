@@ -48,7 +48,7 @@ class BlueTextImage extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Blue Text Section');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('13 Blue Text Section');
     }
 
     public static function mutateData(array $data): array

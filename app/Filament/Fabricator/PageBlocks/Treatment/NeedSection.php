@@ -42,7 +42,7 @@ class NeedSection extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Need Section');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('17 Need Section');
     }
 
     public static function mutateData(array $data): array

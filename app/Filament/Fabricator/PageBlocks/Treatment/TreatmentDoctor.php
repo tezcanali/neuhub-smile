@@ -12,7 +12,7 @@ class TreatmentDoctor extends PageBlock
         return Block::make('treatment.treatment-doctor')
             ->schema([
                 //
-            ]);
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('19 Doctor');
     }
 
     public static function mutateData(array $data): array

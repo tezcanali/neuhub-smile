@@ -127,7 +127,7 @@ class Video extends PageBlock
                         'xl' => 6,
                         '2xl' => 6
                     ])
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Video');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('12 Video');
     }
 
     public static function mutateData(array $data): array

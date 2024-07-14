@@ -27,7 +27,7 @@ class Text extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('Metin');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('4 Metin');
     }
 
     public static function mutateData(array $data): array

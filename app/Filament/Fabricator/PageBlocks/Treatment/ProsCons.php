@@ -89,7 +89,7 @@ class ProsCons extends PageBlock
                         'xl' => 6,
                         '2xl' => 6
                     ])
-            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label('Pros & Cons');
+            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label('14 Pros & Cons');
     }
 
     public static function mutateData(array $data): array

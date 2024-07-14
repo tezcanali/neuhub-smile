@@ -53,7 +53,7 @@ class Overview extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label('Overview');
+            ])->visible(fn($get) => $get('../layout') == 'treatment-detail')->label('10 Overview');
     }
 
     public static function mutateData(array $data): array

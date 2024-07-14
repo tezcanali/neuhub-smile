@@ -31,7 +31,7 @@ class Hero extends PageBlock
                 'sm' => 2,
                 'xl' => 6,
                 '2xl' => 6,
-            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail');
+            ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('1 Hero');
     }
 
     public static function mutateData(array $data): array
