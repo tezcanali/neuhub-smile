@@ -1,0 +1,33 @@
+@use "../custom" as *;
+
+// container-fluid mixin
+@mixin make-container($padding-x: $container-padding-x) {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    @include media-breakpoint-down(xl) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+// container-fluid
+.container-fluid {
+    @include make-container();
+}
+
+@media (min-width: 992px) {
+    .container-custom {
+        margin-right: 0;
+        margin-left: calc(50vw - 484px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-custom {
+        margin-right: 0;
+        margin-left: calc(50vw - 648px);
+    }
+}
