@@ -49,7 +49,7 @@
                                         </div>
                                     </div>
                                     <div class="menu-box-item-content pt-4 text-white">
-                                        <p>{{ $faq['$description'] }}</p>
+                                        <p>{{ $faq['description'] }}</p>
                                     </div>
                                 </div>
                             </div>
