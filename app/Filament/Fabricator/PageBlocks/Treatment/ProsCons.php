@@ -29,6 +29,11 @@ class ProsCons extends PageBlock
                     ->tabs([
                         Tabs\Tab::make('Pros')
                             ->schema([
+                                TextInput::make('prosTitle')->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 6,
+                                    '2xl' => 6,
+                                ])->label('Başlık')->required(),
                                 Repeater::make('pros')
                                     ->schema([
                                         TextInput::make('title')->columnSpan([
@@ -57,6 +62,11 @@ class ProsCons extends PageBlock
                             ]),
                         Tabs\Tab::make('Cons')
                             ->schema([
+                                TextInput::make('consTitle')->columnSpan([
+                                    'sm' => 2,
+                                    'xl' => 6,
+                                    '2xl' => 6,
+                                ])->label('Başlık')->required(),
                                 Repeater::make('cons')
                                     ->schema([
                                         TextInput::make('title')->columnSpan([
