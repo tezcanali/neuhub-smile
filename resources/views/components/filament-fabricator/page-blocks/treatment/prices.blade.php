@@ -80,9 +80,9 @@
                 @foreach($tables as $item)
                     <tr>
                         <td class="p-4 bg-white text-primary fs-5 fw-normal text-center">{!! $item['title'] !!}</td>
-                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['trPrices'] !!}</td>
-                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['usPrices'] !!}</td>
-                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['ukPrices'] !!}</td>
+                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['trPrice'] !!}</td>
+                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['usPrice'] !!}</td>
+                        <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['ukPrice'] !!}</td>
                         <td class="p-4 bg-white text-primary fs-5 fw-semibold text-center">{!! $item['saving'] !!}</td>
                     </tr>
                 @endforeach
