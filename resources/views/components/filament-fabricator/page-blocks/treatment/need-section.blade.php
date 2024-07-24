@@ -25,7 +25,7 @@
                     <div class="position-absolute start-0 bottom-0 z-2 ms-n5 mb-n3 d-md-block d-none">
                         <img src="{{ asset('front/img/king.png')}}" class="h-300px" />
                     </div>
-                    <img src="{{asset('front/img/as.jpg')}}" class="img-fluid rounded-1" />
+                    <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="img-fluid rounded-1" />
                 </div>
             </div>
         </div>
