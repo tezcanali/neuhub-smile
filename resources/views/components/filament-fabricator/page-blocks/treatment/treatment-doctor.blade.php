@@ -13,12 +13,10 @@ $doctorId = \App\Models\Doctor::find($doctor)->first();
                 <div class="fs-18 text-black-50">{{ $doctorId->job_title }}</div>
                 <hr class="my-4" />
                 <ul class="list-unstyled m-0 fs-18 text-black-50 d-flex flex-column gap-2 pt-lg-2">
-                    <li>D. Yeri / Tarihi : Amasya / 1975</li>
-                    <li>Eğitimi:Selçuk Üniversitesi Tıp Fakültesi</li>
-                    <li>E-mail:zaltuntas@smileturkey.com.tr</li>
+                    <li>{!! $doctorId->content !!}</li>
                 </ul>
                 <div class="d-flex align-items-center justify-content-md-start justify-content-center gap-md-3 gap-2 flex-wrap mt-4 pt-lg-2">
-                    <a href="#" class="btn btn-primary rounded-pill px-4 fs-18 fw-normal">Eğitim ve Deneyim Bilgileri</a>
+                    <a href="/doctors/{{ $doctor->slug }}" class="btn btn-primary rounded-pill px-4 fs-18 fw-normal">Eğitim ve Deneyim Bilgileri</a>
                 </div>
             </div>
         </div>
