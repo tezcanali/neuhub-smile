@@ -5,7 +5,7 @@ $doctorId = \App\Models\Doctor::find($doctor)->first();
 <div class="bg-white rounded-3 p-md-4 p-3">
     <div class="row g-4">
         <div class="col-lg-5">
-            <img src="{{asset('front/img/d.png')}}" class="w-100 h-400px object-fit-cover rounded-1" />
+            <img src="{{ \Illuminate\Support\Facades\Storage::url($doctorId->image) }}" class="w-100 h-400px object-fit-cover rounded-1" />
         </div>
         <div class="col-lg-7">
             <div class="p-md-4 p-2">
