@@ -13,7 +13,7 @@ class TreatmentDoctor extends PageBlock
     {
         return Block::make('treatment.treatment-doctor')
             ->schema([
-                Select::make('doctor_id')
+                Select::make('doctor')
                     ->label('Doctor')
                     ->options(function () {
                         return Doctor::all()->pluck('name', 'id')->toArray();
