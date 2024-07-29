@@ -1,4 +1,7 @@
 @aware(['page'])
+@php
+$doctor = \App\Models\Doctor::findBySlug($doctorId);
+@endphp
 <div class="bg-white rounded-3 p-md-4 p-3">
     <div class="row g-4">
         <div class="col-lg-5">
@@ -6,7 +9,7 @@
         </div>
         <div class="col-lg-7">
             <div class="p-md-4 p-2">
-                <div class="fs-5 pb-2 fw-normal">Prof. Dr. Zeynep ALTUNTAŞ</div>
+                <div class="fs-5 pb-2 fw-normal">{{ $doctor->name }}</div>
                 <div class="fs-18 text-black-50">Plastik, Rekonstrüktif ve Estetik Cerrahi Uzmanı</div>
                 <hr class="my-4" />
                 <ul class="list-unstyled m-0 fs-18 text-black-50 d-flex flex-column gap-2 pt-lg-2">
