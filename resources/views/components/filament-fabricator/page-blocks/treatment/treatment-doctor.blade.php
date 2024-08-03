@@ -1,10 +1,10 @@
 @aware(['page'])
 @php
-if ($doctor) {
-    $doctorId = \App\Models\Doctor::find($doctor)->first();
-} else {
     $doctorId = null;
-}
+
+    if ($doctor) {
+        $doctorId = \App\Models\Doctor::find($doctor);
+    }
 @endphp
 @if($doctorId)
     <div class="bg-white rounded-3 p-md-4 p-3">
