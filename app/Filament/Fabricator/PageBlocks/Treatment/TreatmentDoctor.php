@@ -18,6 +18,7 @@ class TreatmentDoctor extends PageBlock
                     ->options(function () {
                         return Doctor::all()->pluck('name', 'id')->toArray();
                     })
+                    ->required()
             ])->visible(fn ($get) => $get('../layout') == 'treatment-detail')->label('19 Doctor');
     }
 
