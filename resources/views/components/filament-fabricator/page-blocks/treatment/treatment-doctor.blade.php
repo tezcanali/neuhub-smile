@@ -2,6 +2,8 @@
 @php
 if ($doctor) {
     $doctorId = \App\Models\Doctor::find($doctor)->first();
+} else {
+    $doctorId = null;
 }
 @endphp
 @if($doctorId)
