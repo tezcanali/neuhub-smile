@@ -1,6 +1,8 @@
 @aware(['page'])
 @php
-$doctorId = \App\Models\Doctor::find($doctor)->first();
+if ($doctor) {
+    $doctorId = \App\Models\Doctor::find($doctor)->first();
+}
 @endphp
 <div class="bg-white rounded-3 p-md-4 p-3">
     <div class="row g-4">
