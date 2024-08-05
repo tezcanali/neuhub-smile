@@ -22,6 +22,7 @@
         </div>
         <div class="who-list ">
             <div class="row">
+                @if($subtitle1)
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
@@ -34,6 +35,8 @@
                         @endif
                     </div>
                 </div>
+                @endif
+                @if($subtitle2)
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
@@ -46,6 +49,8 @@
                         @endif
                     </div>
                 </div>
+                @endif
+                @if($subtitle3)
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
@@ -58,6 +63,8 @@
                         @endif
                     </div>
                 </div>
+                @endif
+                @if($subtitle4)
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
@@ -70,6 +77,8 @@
                         @endif
                     </div>
                 </div>
+                @endif
+                @if($subtitle5)
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
@@ -82,6 +91,7 @@
                         @endif
                     </div>
                 </div>
+                @endif
             </div>
         </div>
     </div>
