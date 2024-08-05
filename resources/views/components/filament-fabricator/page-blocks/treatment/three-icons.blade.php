@@ -24,7 +24,7 @@
         </div>
         <div class="who-list">
             <div class="row">
-                @if($title1)
+                @if(isset($title1))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                 @endif
-                @if($title2)
+                @if(isset($title2))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 @endif
-                @if($title3)
+                @if(isset($title3))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 @endif
-                @if($title4)
+                @if(isset($title4))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 @endif
-                @if($title5)
+                @if(isset($title5))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 @endif
-                @if($title6)
+                @if(isset($title6))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                             <div
