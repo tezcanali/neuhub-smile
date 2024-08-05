@@ -145,6 +145,29 @@ class Prices extends PageBlock
                                                 'xl' => 6,
                                                 '2xl' => 6,
                                             ]),
+                                        Tabs\Tab::make('İkon 6')
+                                            ->schema([
+                                                TextInput::make('subtitle6')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg6')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columnSpan([
+                                                'sm' => 2,
+                                                'xl' => 6,
+                                                '2xl' => 6,
+                                            ]),
                                     ])->columnSpan([
                                         'sm' => 2,
                                         'xl' => 6,
