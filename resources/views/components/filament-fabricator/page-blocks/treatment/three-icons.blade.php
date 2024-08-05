@@ -5,7 +5,9 @@
             @if($title)
                 <div class="icon">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                              fill="#192D74"></path>
                     </svg>
                 </div>
                 <span class="fs-48 fw-lighter">{{ $title }}</span>
@@ -20,32 +22,76 @@
                 ></path>
             </svg>
         </div>
-        <div class="who-list swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                        <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                            {!! $svg1 !!}
+        <div class="who-list">
+            <div class="row">
+                @if($title1)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg1 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title1 }}</div>
                         </div>
-                        <div class="fs-3 fw-normal">{{ $title1 }}</div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                        <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                            {!! $svg2 !!}
+                @endif
+                @if($title2)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg2 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title2 }}</div>
                         </div>
-                        <div class="fs-3 fw-normal">{{ $title2 }}</div>
                     </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                        <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                            {!! $svg3 !!}
+                @endif
+                @if($title3)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg3 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title3 }}</div>
                         </div>
-                        <div class="fs-3 fw-normal">{{ $title3 }}</div>
                     </div>
-                </div>
+                @endif
+                @if($title4)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg4 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title4 }}</div>
+                        </div>
+                    </div>
+                @endif
+                @if($title5)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg5 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title5 }}</div>
+                        </div>
+                    </div>
+                @endif
+                @if($title6)
+                    <div class="col">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                            <div
+                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                {!! $svg6 !!}
+                            </div>
+                            <div class="fs-3 fw-normal">{{ $title6 }}</div>
+                        </div>
+                    </div>
+                @endif
+
+
             </div>
         </div>
     </div>

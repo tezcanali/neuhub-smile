@@ -94,6 +94,75 @@ class ThreeIcons extends PageBlock
                                 'xl' => 6,
                                 '2xl' => 6
                             ]),
+                        Tabs\Tab::make('Icon 4')
+                            ->schema([
+                                TextInput::make('title4')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('Başlık'),
+                                Textarea::make('svg4')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('SVG Kod')
+                            ])->columns([
+                                'sm' => 2,
+                                'xl' => 6,
+                                '2xl' => 6
+                            ]),
+                        Tabs\Tab::make('Icon 5')
+                            ->schema([
+                                TextInput::make('title5')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('Başlık'),
+                                Textarea::make('svg5')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('SVG Kod')
+                            ])->columns([
+                                'sm' => 2,
+                                'xl' => 6,
+                                '2xl' => 6
+                            ]),
+                        Tabs\Tab::make('Icon 6')
+                            ->schema([
+                                TextInput::make('title6')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('Başlık'),
+                                Textarea::make('svg6')
+                                    ->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
+                                    ])
+                                    ->required()
+                                    ->label('SVG Kod')
+                            ])->columns([
+                                'sm' => 2,
+                                'xl' => 6,
+                                '2xl' => 6
+                            ]),
                     ])
                     ->columnSpan([
                         'sm' => 2,
