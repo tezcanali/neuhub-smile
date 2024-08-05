@@ -20,9 +20,9 @@
                 />
             </svg>
         </div>
-        <div class="who-list swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
+        <div class="who-list ">
+            <div class="row">
+                <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
                             @if($svg1)
@@ -34,7 +34,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
                             @if($svg2)
@@ -46,7 +46,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
                         <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
                             @if($svg3)
@@ -55,6 +55,30 @@
                         </div>
                         @if($subtitle3)
                             <div class="fs-3 fw-normal">{!! $subtitle3 !!}</div>
+                        @endif
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                        <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                            @if($svg4)
+                                {!! $svg4 !!}
+                            @endif
+                        </div>
+                        @if($subtitle4)
+                            <div class="fs-3 fw-normal">{!! $subtitle4 !!}</div>
+                        @endif
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                        <div class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                            @if($svg5)
+                                {!! $svg5 !!}
+                            @endif
+                        </div>
+                        @if($subtitle5)
+                            <div class="fs-3 fw-normal">{!! $subtitle5 !!}</div>
                         @endif
                     </div>
                 </div>

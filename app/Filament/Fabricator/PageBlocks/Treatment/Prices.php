@@ -28,68 +28,132 @@ class Prices extends PageBlock
                                     ])
                                     ->required()
                                     ->label('Başlık'),
-                                Fieldset::make('İkon 1')
-                                    ->schema([
-                                        TextInput::make('subtitle1')
-                                            ->columnSpan([
+                                Tabs::make('Tabs')
+                                    ->tabs([
+                                        Tabs\Tab::make('İkon 1')
+                                            ->schema([
+                                                TextInput::make('subtitle1')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg1')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columns([
+                                                'sm' => 2,
+                                                'xl' => 6,
+                                                '2xl' => 6
+                                            ]),
+                                        Tabs\Tab::make('İkon 2')
+                                            ->schema([
+                                                TextInput::make('subtitle2')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg2')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columns([
+                                                'sm' => 2,
+                                                'xl' => 6,
+                                                '2xl' => 6
+                                            ]),
+                                        Tabs\Tab::make('İkon 3')
+                                            ->schema([
+                                                TextInput::make('subtitle3')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg3')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columns([
+                                                'sm' => 2,
+                                                'xl' => 6,
+                                                '2xl' => 6
+                                            ]),
+                                        Tabs\Tab::make('İkon 4')
+                                            ->schema([
+                                                TextInput::make('subtitle4')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg4')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columns([
+                                                'sm' => 2,
+                                                'xl' => 6,
+                                                '2xl' => 6
+                                            ]),
+                                        Tabs\Tab::make('İkon 5')
+                                            ->schema([
+                                                TextInput::make('subtitle5')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('Başlık'),
+                                                Textarea::make('svg5')
+                                                    ->columnSpan([
+                                                        'sm' => 2,
+                                                        'xl' => 6,
+                                                        '2xl' => 6,
+                                                    ])
+                                                    ->required()
+                                                    ->label('SVG')
+                                            ])->columnSpan([
                                                 'sm' => 2,
                                                 'xl' => 6,
                                                 '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('Başlık'),
-                                        Textarea::make('svg1')
-                                            ->columnSpan([
-                                                'sm' => 2,
-                                                'xl' => 6,
-                                                '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('SVG')
+                                            ]),
+                                    ])->columnSpan([
+                                        'sm' => 2,
+                                        'xl' => 6,
+                                        '2xl' => 6,
                                     ]),
-                                Fieldset::make('İkon 2')
-                                    ->schema([
-                                        TextInput::make('subtitle2')
-                                            ->columnSpan([
-                                                'sm' => 2,
-                                                'xl' => 6,
-                                                '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('Başlık'),
-                                        Textarea::make('svg2')
-                                            ->columnSpan([
-                                                'sm' => 2,
-                                                'xl' => 6,
-                                                '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('SVG')
-                                    ]),
-                                Fieldset::make('İkon 3')
-                                    ->schema([
-                                        TextInput::make('subtitle3')
-                                            ->columnSpan([
-                                                'sm' => 2,
-                                                'xl' => 6,
-                                                '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('Başlık'),
-                                        Textarea::make('svg3')
-                                            ->columnSpan([
-                                                'sm' => 2,
-                                                'xl' => 6,
-                                                '2xl' => 6,
-                                            ])
-                                            ->required()
-                                            ->label('SVG')
-                                    ]),
-
-                            ])->columns([
+                            ])->columnSpan([
                                 'sm' => 2,
                                 'xl' => 6,
-                                '2xl' => 6
+                                '2xl' => 6,
                             ]),
                         Tabs\Tab::make('Tablo')
                             ->schema([
