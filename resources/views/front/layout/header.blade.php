@@ -1,7 +1,7 @@
 <!-- mobile-menu -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-label">
     <div class="offcanvas-header px-4 pt-4 d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-block">
+        <a href="/" class="logo d-block">
             <img src="{{asset('front/img/logo-2.png')}}" class="h-65px" />
         </a>
         <button type="button" class="shadow-none px-0" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -76,86 +76,100 @@
 
 <!-- header -->
 <header class="header bg-primary position-sticky start-0 top-0 end-0">
-    <div class="container-xxl d-flex align-items-center justify-content-between h-100">
-        <!-- logo -->
-        <div class="logo flex-1">
-            <a href="#">
-                <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
+    <div class="header-top h-50px bg-black bg-opacity-5 d-xl-block d-none">
+        <div class="container-xxl d-flex align-items-center justify-content-between h-100">
+            <a href="#" class="d-flex align-items-center gap-2 text-white fs-12">
+                <i class="fa fa-map-marker-alt text-gray-600"></i>
+                Fıskiye Cd, Çiçek Sk 12, Etiler
+            </a>
+            <a href="#" class="d-flex align-items-center gap-2 text-white fs-12">
+                <i class="fa fa-phone text-gray-600"></i>
+                +90 212 456 78 90
             </a>
         </div>
-        <!-- end #logo -->
-        <div class="header-right d-flex align-items-center gap-5 position-relative">
-            <!-- webmenu -->
-            <ul class="webmenu d-xxl-flex d-none align-items-center gap-3 list-unstyled mb-0">
-                <li>
-                    <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Dental Treatment Turkey</a>
-                    <div class="submenu">
-                        <div class="submenu-content bg-white p-xl-5 p-4">
-                            <div class="row">
-                                <div class="col-4">
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">All On 4 Dental Implants Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">All On 6 Dental Implants Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Hollywood Smile Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Dental Implants Turkey</a>
-                                    <a href="#" class="d-block fs-18 hover-text-secondary">Implant Top Prothesis Turkey</a>
-                                </div>
-                                <div class="col-4">
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Robotic Implant Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Single Tooth Implant Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Dental Aesthetic Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Metal Porcelain Crowns</a>
-                                    <a href="#" class="d-block fs-18 hover-text-secondary">Laminate Veneers</a>
-                                </div>
-                                <div class="col-4">
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Zirconia Crowns Turkey</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Teeth Whitening</a>
-                                    <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">E Max Veeners</a>
+    </div>
+    <div class="header-content py-3">
+        <div class="container-xxl d-flex align-items-center justify-content-between h-100">
+            <!-- logo -->
+            <div class="logo flex-1">
+                <a href="#">
+                    <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
+                </a>
+            </div>
+            <!-- end #logo -->
+            <div class="header-right d-flex align-items-center gap-5 position-relative">
+                <!-- webmenu -->
+                <ul class="webmenu d-xxl-flex d-none align-items-center gap-3 list-unstyled mb-0">
+                    <li>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Dental Treatment Turkey</a>
+                        <div class="submenu">
+                            <div class="submenu-content bg-white p-xl-5 p-4">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">All On 4 Dental Implants Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">All On 6 Dental Implants Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Hollywood Smile Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Dental Implants Turkey</a>
+                                        <a href="#" class="d-block fs-18 hover-text-secondary">Implant Top Prothesis Turkey</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Robotic Implant Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Single Tooth Implant Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Dental Aesthetic Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Metal Porcelain Crowns</a>
+                                        <a href="#" class="d-block fs-18 hover-text-secondary">Laminate Veneers</a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Zirconia Crowns Turkey</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">Teeth Whitening</a>
+                                        <a href="#" class="d-block mb-3 fs-18 hover-text-secondary">E Max Veeners</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <div class="icon">
-                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
-                    </svg>
-                </div>
-                <li>
-                    <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Plastic Surgery Turkey</a>
-                </li>
-                <div class="icon">
-                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
-                    </svg>
-                </div>
-                <li>
-                    <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Hair Transplant Turkey</a>
-                </li>
-                <div class="icon">
-                    <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
-                    </svg>
-                </div>
-                <li>
-                    <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Before & After</a>
-                </li>
-            </ul>
-            <!-- end #webmenu -->
-            <!-- button -->
-            <div class="button d-flex align-items-center gap-md-3 gap-2">
-                <a href="#" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
-                <a href="#" class="d-xxl-block d-none text-white hover-text-secondary bg-black bg-opacity-25 rounded-pill py-2 px-4">Contact</a>
-                <div class="mobile-menu-button d-xxl-none block">
-                    <button id="showMenu" class="menu-button px-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="mobile-menu">
-                        <svg width="48" height="48" viewBox="0 0 103 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="21.3628" width="81.637" height="9.91852" rx="4.95926" fill="#D9D9D9" />
-                            <rect x="38.9111" y="53.4072" width="64.0889" height="9.91852" rx="4.95926" fill="#70D5F7" />
-                            <rect y="26.7041" width="103" height="9.91852" rx="4.95926" fill="#D9D9D9" />
+                    </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
                         </svg>
-                    </button>
+                    </div>
+                    <li>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Plastic Surgery Turkey</a>
+                    </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
+                        </svg>
+                    </div>
+                    <li>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Hair Transplant Turkey</a>
+                    </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z" fill="#7996FF" />
+                        </svg>
+                    </div>
+                    <li>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Before & After</a>
+                    </li>
+                </ul>
+                <!-- end #webmenu -->
+                <!-- button -->
+                <div class="button d-flex align-items-center gap-md-3 gap-2">
+                    <a href="#" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
+                    <a href="#" class="d-xxl-block d-none text-white hover-text-secondary bg-black bg-opacity-25 rounded-pill py-2 px-4">Contact</a>
+                    <div class="mobile-menu-button d-xxl-none block">
+                        <button id="showMenu" class="menu-button px-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu" aria-controls="mobile-menu">
+                            <svg width="48" height="48" viewBox="0 0 103 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="21.3628" width="81.637" height="9.91852" rx="4.95926" fill="#D9D9D9" />
+                                <rect x="38.9111" y="53.4072" width="64.0889" height="9.91852" rx="4.95926" fill="#70D5F7" />
+                                <rect y="26.7041" width="103" height="9.91852" rx="4.95926" fill="#D9D9D9" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+                <!-- end #button -->
             </div>
-            <!-- end #button -->
         </div>
     </div>
 </header>

@@ -38,6 +38,7 @@
 <body>
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.start') }}
 
+<!-- mobile-nav -->
 <div class="mobile-nav d-md-none d-flex align-items-center gap-2 position-fixed start-0 end-0 bottom-0 p-3">
     <a href="#" class="btn btn-blue h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill">
         <i class="fa fa-phone"></i>
@@ -47,6 +48,7 @@
         <i class="fab fa-whatsapp fs-3 text-white"></i>
     </a>
 </div>
+<!-- end #mobile-nav -->
 @include('front.layout.header')
 
 <!-- hero -->
@@ -155,7 +157,7 @@
                     </div>
                     <div class="image position-relative">
                         <img src="{{asset('front/img/girl.png')}}" class="img-fluid" />
-                        <a href="#" class="d-flex align-items-center gap-2 fs-13 mt-n5">
+                        <a href="/dental-treatment-turkey.html" class="d-flex align-items-center gap-2 fs-13 mt-n5">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
                         </a>
@@ -170,12 +172,12 @@
                         </div>
                         <div class="swiper-wrapper">
                             <div class="swiper-slide w-auto">
-                                <a href="#" class="d-block w-400px bg-white rounded-3 p-3">
+                                <a href="/zirconia-crown-turkey" class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
-                                        <img src="{{asset('front/img/p1.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                                        <img src="{{asset('front/img/popular-zirconia.webp')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                                     </div>
-                                    <div class="fs-5 fw-normal pb-2">Veneers Turkey</div>
-                                    <p class="fs-12">Dental veneers are one of the most popular dental treatments in Turkey. Veneers in Turkey are preferred due to the cheaper bills and veneers Turkey packages.</p>
+                                    <div class="fs-5 fw-normal pb-2">Zirconia Crown Turkey</div>
+                                    <p class="fs-12">Zirconia dental crowns are frequently preferred in Turkey due to affordable prices and attractive package options.</p>
                                     <span class="d-flex align-items-center fs-13 gap-2 pb-2">
                                                 <i class="fa fa-arrow-right"></i>
                                                 View More *
@@ -183,12 +185,13 @@
                                 </a>
                             </div>
                             <div class="swiper-slide w-auto">
-                                <a href="#" class="d-block w-400px bg-white rounded-3 p-3">
+                                <a href="/all-on-4-dental-implants-turkey" class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
-                                        <img src="{{asset('front/img/p2.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                                        <img src="{{asset('front/img/popular-all.webp')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                                     </div>
-                                    <div class="fs-5 fw-normal pb-2">Veneers Turkey</div>
-                                    <p class="fs-12">Dental veneers are one of the most popular dental treatments in Turkey. Veneers in Turkey are preferred due to the cheaper bills and veneers Turkey packages.</p>
+                                    <div class="fs-5 fw-normal pb-2">All On 4 Dental Implants</div>
+                                    <p class="fs-12">
+                                        All on 4 dental implants are frequently preferred in Turkey due to affordable prices and comprehensive package solutions.</p>
                                     <span class="d-flex align-items-center fs-13 gap-2 pb-2">
                                                 <i class="fa fa-arrow-right"></i>
                                                 View More *
@@ -197,7 +200,7 @@
                             </div>
                         </div>
 
-                        <a href="#" class="d-lg-none d-flex align-items-center gap-2 fs-14 mt-4">
+                        <a href="/all-on-4-dental-implants-turkey" class="d-lg-none d-flex align-items-center gap-2 fs-14 mt-4">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
                         </a>
@@ -411,10 +414,10 @@
                 <div class="our-doctor-list our-doctor-list-home swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/aydin-egem-y" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/ourdoctors.png')}}" class="h-300px" />
+                                    <img src="/assets/img/doctors/aydın-yuva.png" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -429,18 +432,18 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dt. Aslıhan Aksungur Erkul</div>
-                                            <span class="text-gray-700">Diş Hekimi</span>
+                                            <div class="fs-18 fw-normal">Aydın Egem Y.</div>
+                                            <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/berkin-o" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/ourdoctors.png')}}" class="h-300px" />
+                                    <img src="/assets/img/doctors/berkin-ozturk.png" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -455,18 +458,18 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dt. Aslıhan Aksungur Erkul</div>
-                                            <span class="text-gray-700">Diş Hekimi</span>
+                                            <div class="fs-18 fw-normal">Berkin Ö.</div>
+                                            <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/emre-s" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/ourdoctors.png')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -481,8 +484,8 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dt. Aslıhan Aksungur Erkul</div>
-                                            <span class="text-gray-700">Diş Hekimi</span>
+                                            <div class="fs-18 fw-normal">Emre S.</div>
+                                            <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>
                                 </div>
@@ -702,33 +705,38 @@
         <div class="clinic-list swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/1.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/1.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/2.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/2.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/3.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/3.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/4.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/4.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/5.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/5.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('front/img/clinic/1.png')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('front/img/clinic/1.png')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('front/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="{{asset('front/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{asset('front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
             </div>
@@ -908,14 +916,14 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('front/img/news.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('front/img/blog/01J3JEGMJFG5V1ZKYKV5ENN22X.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
-                                <div class="fs-3 fw-normal pb-3">Diş minesi aşınmaları ve güçlendirme</div>
-                                <p class="fs-13">Probiyotikler ağız için yararlı olan bakterilerdir. Oral probiyotikler ağızda yerleşir ve antimikrobiyal maddeler salgılayarak plak oluşumuna sebep olan maddelerle savaşır, PH düzenleyerek çürük oluşumuna engel olur.</p>
-                                <a href="#" class="d-flex align-items-center gap-2 fs-13">
+                                <div class="fs-3 fw-normal pb-3">12 Things You Should Know About Dentures</div>
+                                <p class="fs-13">A Denture is a exact solution for people who have lost substantial pieces of their teeth. Denture, which we know as a solution for oral health, are preferred by people very often. It has a feature that will not disrupt and protect people's smiles and oral aesthetics. </p>
+                                <a href="/blog/12-things-you-should-know-about-dentures" class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -926,14 +934,14 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('front/img/news.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('front/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
-                                <div class="fs-3 fw-normal pb-3">Diş minesi aşınmaları ve güçlendirme</div>
-                                <p class="fs-13">Probiyotikler ağız için yararlı olan bakterilerdir. Oral probiyotikler ağızda yerleşir ve antimikrobiyal maddeler salgılayarak plak oluşumuna sebep olan maddelerle savaşır, PH düzenleyerek çürük oluşumuna engel olur.</p>
-                                <a href="#" class="d-flex align-items-center gap-2 fs-13">
+                                <div class="fs-3 fw-normal pb-3">How To Do Facial Care?</div>
+                                <p class="fs-13">The way to create a positive effect in our relationships and to contribute to ourselves with a healthy appearance depends on both the hygienic care of our face and a healthy lifestyle.</p>
+                                <a href="/blog/how-to-do-facial-care" class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -944,14 +952,14 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('front/img/news.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('front/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
-                                <div class="fs-3 fw-normal pb-3">Diş minesi aşınmaları ve güçlendirme</div>
-                                <p class="fs-13">Probiyotikler ağız için yararlı olan bakterilerdir. Oral probiyotikler ağızda yerleşir ve antimikrobiyal maddeler salgılayarak plak oluşumuna sebep olan maddelerle savaşır, PH düzenleyerek çürük oluşumuna engel olur.</p>
-                                <a href="#" class="d-flex align-items-center gap-2 fs-13">
+                                <div class="fs-3 fw-normal pb-3">Hair Care Recommendations For Men</div>
+                                <p class="fs-13">Different hairstyles, which are becoming more and more common among men, actually require more healthy and regular care than aesthetics. Because applying the model that best reflects you is possible with healthy hair strands.</p>
+                                <a href="/blog/hair-care-recommendations-for-men" class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -962,14 +970,14 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('front/img/news.png')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('front/img/blog/01J3JES39AKG9DB55NYVY11BH2.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
-                                <div class="fs-3 fw-normal pb-3">Diş minesi aşınmaları ve güçlendirme</div>
-                                <p class="fs-13">Probiyotikler ağız için yararlı olan bakterilerdir. Oral probiyotikler ağızda yerleşir ve antimikrobiyal maddeler salgılayarak plak oluşumuna sebep olan maddelerle savaşır, PH düzenleyerek çürük oluşumuna engel olur.</p>
-                                <a href="#" class="d-flex align-items-center gap-2 fs-13">
+                                <div class="fs-3 fw-normal pb-3">Significant Considerations In Cosmetic</div>
+                                <p class="fs-13">Accordingly, we not only follow the developments in the sector day by day, but also try to provide better service by researching the possibilities of all our aesthetic/cosmetic surgery operations so that there is no question mark in our patients' minds.</p>
+                                <a href="blog/significant-considerations-in-cosmetic-plastic-surgery" class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
