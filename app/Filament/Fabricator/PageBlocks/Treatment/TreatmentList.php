@@ -40,7 +40,9 @@ class TreatmentList extends PageBlock
                                 'xl' => 6,
                                 '2xl' => 6,
                             ]),
-                    ])->columns([
+                    ])
+                    ->cloneable()
+                    ->columns([
                         'sm' => 2,
                         'xl' => 6,
                         '2xl' => 6,
