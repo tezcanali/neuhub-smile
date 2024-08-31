@@ -177,6 +177,7 @@
                         </a>
                     </div>
                 </div>
+                <!--
                 <div class="mt-md-5 mt-4 pt-md-5 pt-4 mb-md-0 mb-3 border-top border-primary border-opacity-10 d-flex align-items-center justify-content-md-between justify-content-center">
                     <a href="#" class="d-md-flex d-none align-items-center gap-3 flex-1 text-primary">
                         <i class="fa fa-arrow-left"></i>
@@ -199,35 +200,22 @@
                         <span class="fw-normal">İleri</span>
                         <i class="fa fa-arrow-right"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-4">
                 <div class="sidemenu mt-lg-0 mt-3">
                     <div class="title h-70px bg-primary px-4 d-flex align-items-center text-white fs-5 fw-semibold">
                         <div class="px-2">Categories</div>
                     </div>
+                    @php
+                        $blogCategories = \App\Models\BlogCategory::all();
+                    @endphp
                     <div class="bg-white p-4">
                         <div class="d-flex flex-column gap-3 p-2">
-                            <a href="#" class="d-block">Clinical Devices (73)</a>
-                            <a href="#" class="d-block">Views (42)</a>
-                            <a href="#" class="d-block">General (17)</a>
-                            <a href="#" class="d-block">Oral and Dental Health (166)</a>
-                            <a href="#" class="d-block">Patient Physician Communication (34)</a>
-                            <a href="#" class="d-block">One Device One Feature (1)</a>
-                            <a href="#" class="d-block">Blog (5)</a>
-                            <a href="#" class="d-block">Prostodontics (1)</a>
-                            <a href="#" class="d-block">Endodontics (30)</a>
-                            <a href="#" class="d-block">Implant (10)</a>
-                            <a href="#" class="d-block">Sterilization (27)</a>
+                            @foreach($blogCategories as $category)
+                                <a href="/{{ $category->slug }}" class="d-block">{{ $category->title }}</a>
+                            @endforeach
                         </div>
-                    </div>
-                </div>
-                <div class="mt-3">
-                    <div class="fs-18 fw-bold pb-3">Tags</div>
-                    <div class="tags d-flex flex-wrap gap-2">
-                        <a href="#" class="btn bg-white fs-14 rounded-pill">Dental Botoks</a>
-                        <a href="#" class="btn bg-white fs-14 rounded-pill">Dental Botoks</a>
-                        <a href="#" class="btn bg-white fs-14 rounded-pill">Dental Botoks Kalıcı Mı</a>
                     </div>
                 </div>
             </div>
