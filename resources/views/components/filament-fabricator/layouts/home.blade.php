@@ -38,17 +38,6 @@
 <body>
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.start') }}
 
-<!-- mobile-nav -->
-<div class="mobile-nav d-md-none d-flex align-items-center gap-2 position-fixed start-0 end-0 bottom-0 p-3">
-    <a href="#" class="btn btn-blue h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill">
-        <i class="fa fa-phone"></i>
-        <span>İletişim</span>
-    </a>
-    <a href="#" class="btn btn-success h-50px d-flex align-items-center justify-content-center gap-2 flex-shrink-0">
-        <i class="fab fa-whatsapp fs-3 text-white"></i>
-    </a>
-</div>
-<!-- end #mobile-nav -->
 @include('front.layout.header')
 
 <!-- hero -->

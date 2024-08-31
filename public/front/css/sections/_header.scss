@@ -13,7 +13,6 @@
     }
     &.active {
         background-color: rgba($primary, 0.85) !important;
-        position: fixed !important;
         backdrop-filter: blur(10px);
         @include media-breakpoint-down(xl) {
             height: 100px;
