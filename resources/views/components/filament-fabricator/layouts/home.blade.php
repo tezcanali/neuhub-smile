@@ -480,32 +480,6 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="d-block w-100 rounded-1 overflow-hidden p-4">
-                                <div class="image position-relative text-center">
-                                    <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/ourdoctors.png')}}" class="h-300px" />
-                                </div>
-                                <div class="pt-4">
-                                    <div class="d-flex gap-3">
-                                        <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M10.4718 0.388485C9.03295 9.47786 0 12.046 0 12.046C3.30795 12.046 9.80129 15.3435 10.4718 21.4342V22.4687C10.4718 22.2199 10.4814 21.9753 10.5 21.7348C10.5186 21.9753 10.5282 22.2199 10.5282 22.4687V21.4342C11.1987 15.3435 17.6921 12.046 21 12.046C21 12.046 11.967 9.47786 10.5282 0.388485V0C10.5192 0.0680662 10.5098 0.135778 10.5 0.203137C10.4902 0.135778 10.4808 0.0680662 10.4718 0V0.388485Z"
-                                                    fill="#192D74"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dt. Aslıhan Aksungur Erkul</div>
-                                            <span class="text-gray-700">Diş Hekimi</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <button type="button" class="our-doctor-button-prev w-60px h-60px rounded-1 d-flex align-items-center justify-content-center bg-white position-absolute start-0 top-50 translate-middle-y z-3">
@@ -523,8 +497,8 @@
     </section>
     <!-- end #section -->
 
-    <!-- section -->
-    <section class="pb-lg-5 pb-4 position-relative overflow-hidden">
+    <!--
+        <section class="pb-lg-5 pb-4 position-relative overflow-hidden">
         <div class="shape position-absolute start-0 end-0 top-0">
             <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -617,67 +591,7 @@
             </div>
         </div>
     </section>
-    <!-- end #section -->
-
-    <!-- section -->
-    <section class="py-lg-5 py-4 position-relative overflow-hidden">
-        <div class="teeth position-absolute end-0 top-0 d-md-block d-none z-2">
-            <img src="{{asset('front/img/teeth.png')}}" class="h-300px" />
-        </div>
-        <div class="container-xxl">
-            <div class="d-flex align-items-center gap-3 pb-lg-5 pb-4">
-                <div class="icon">
-                    <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
-                    </svg>
-                </div>
-                <span class="fs-48">Your Smile Is Your Choice.</span>
-            </div>
-        </div>
-        <div class="position-relative">
-            <div class="shape position-absolute start-0 top-0 w-100 mt-n4">
-                <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M1914.4 0C1913.36 1.39378 1912.26 2.82739 1911.22 4.22117C1901.2 17.6413 1891.66 30.3048 1877.3 41.8135C1864.28 52.2071 1844.91 59.2158 1826.09 66.0255C1810.26 71.7599 1795.28 77.1757 1783.61 84.4632C1771.45 92.0693 1765.28 101.467 1759.23 110.547C1747.98 127.511 1738.2 142.126 1692.36 140.015C1617.07 136.471 1553.75 135.794 1481.57 161.599C1467.15 166.736 1452.3 172.311 1437.88 177.687C1406.16 189.554 1373.4 201.82 1340.15 211.775C1300.24 223.722 1266.81 229.616 1234.91 230.452C1198.73 231.368 1164.32 225.633 1130.95 220.058C1085.54 212.452 1038.6 204.607 988.306 214.284C976.511 216.554 964.349 219.859 949.925 224.638C938.13 228.54 926.395 232.961 915.028 237.262C874.936 252.354 837.044 266.611 794.934 261.991C749.036 256.934 722.023 232.324 695.865 208.55C690.854 204.01 685.903 199.47 680.831 195.13C666.957 183.183 647.033 171.674 626.132 163.55C591.784 150.21 559.454 148.139 535.008 157.736C505.183 169.444 503.166 188.24 501.271 206.439C500.171 217.111 499.01 228.142 492.226 237.779C477.925 258.407 434.105 272.823 380.689 274.575C368.894 274.934 356.976 274.655 345.364 273.739C309.855 270.951 274.408 263.863 240.122 256.974C215.37 251.996 189.701 246.859 164.032 243.315C128.279 238.377 92.2208 236.425 56.6512 236.425C29.0267 236.425 1.64665 237.62 -25 239.492V243.474C35.7495 239.253 99.7992 238.496 162.81 247.217C188.234 250.722 213.72 255.859 238.411 260.797C272.941 267.726 308.694 274.894 344.753 277.721C353.309 278.398 361.988 278.756 370.666 278.756C374.15 278.756 377.633 278.717 381.056 278.597C437.649 276.765 482.386 261.752 497.849 239.492C505.061 229.178 506.283 217.788 507.444 206.758C509.339 188.798 511.111 171.833 538.247 161.201C568.438 149.334 604.374 159.767 623.076 167.055C643.305 174.94 662.618 186.05 676.003 197.599C681.014 201.939 685.964 206.439 690.915 210.939C717.745 235.39 745.492 260.637 793.896 265.973C838.144 270.832 878.786 255.54 918.022 240.766C929.329 236.505 941.063 232.124 952.675 228.222C966.732 223.563 978.589 220.337 990.017 218.147C1038.67 208.828 1082.73 216.196 1129.42 223.961C1163.16 229.616 1198 235.43 1235.09 234.474C1267.79 233.638 1301.95 227.585 1342.6 215.439C1376.09 205.404 1409.03 193.099 1440.81 181.192C1455.17 175.816 1470.02 170.241 1484.39 165.103C1555.1 139.816 1617.56 140.493 1691.81 143.998C1742.05 146.387 1753.05 129.741 1764.73 112.14C1770.53 103.419 1776.46 94.4188 1787.71 87.3702C1798.83 80.4013 1813.44 75.1448 1828.9 69.5298C1848.21 62.5609 1868.13 55.3132 1881.89 44.3621C1896.74 32.495 1906.33 19.6324 1916.54 6.01318C1918.01 4.02206 1919.53 2.03094 1921 0.0398224H1914.4V0Z"
-                        fill="white"
-                        fill-opacity="0.4"
-                    ></path>
-                </svg>
-            </div>
-            <div class="container-xxl position-relative z-2">
-                <form action="" class="row g-3">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control h-65px" id="floatingInput" value="Abdullah Okutan" />
-                            <label for="floatingInput" class="fs-13">Your Name and Surname*</label>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="form-floating">
-                            <input type="text" class="form-control h-65px" id="floatingInput" />
-                            <label for="floatingInput" class="fs-13">Phone ( Required )*</label>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="form-floating">
-                            <input type="email" class="form-control h-65px" id="floatingInput" />
-                            <label for="floatingInput" class="fs-13">E-Mail Address*</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <textarea class="form-control h-200px" id="floatingTextarea"></textarea>
-                            <label for="floatingTextarea">Your Message</label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary px-5 fw-bold py-3">SEND</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- end #section -->
+    -->
 
     <!-- section -->
     <section class="pb-lg-5 pb-4">
