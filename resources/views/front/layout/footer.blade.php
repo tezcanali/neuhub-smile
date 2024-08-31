@@ -1,4 +1,3 @@
-<!-- footer -->
 <footer class="position-relative overflow-hidden">
     <div class="shape-1 position-absolute start-0 bottom-100 mb-n5 ms-lg-5">
         <svg width="98" height="106" viewBox="0 0 98 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +13,7 @@
                     </svg>
                 </div>
                 <div class="teeth-1 position-absolute end-0 bottom-0 mb-lg-n5 mb-n3">
-                    <img src="{{asset('front//img/teeth.png')}}" class="h-100px" style="transform: rotate(-10deg)" />
+                    <img src="{{asset('front/img/teeth.png')}}" class="h-100px" style="transform: rotate(-10deg)" />
                 </div>
                 <div class="pt-lg-5 pt-4 pb-lg-5 pb-1">
                     <div class="top-title fs-1 text-white fw-lighter lh-sm py-4 text-lg-start text-center">
@@ -64,21 +63,21 @@
                     />
                 </svg>
             </div>
-            <div class="container-xxl position-relative pb-lg-5 pb-4">
+            <div class="container-xxl position-relative pb-lg-5 pb-4 footer-container">
                 <div class="teeth-body position-absolute start-0 bottom-0 d-lg-block d-none">
-                    <img src="{{asset('front//img/teeth-2.png')}}" class="h-150px" />
+                    <img src="{{asset('front/img/teeth-2.png')}}" class="h-150px" />
                 </div>
                 <div class="teeth-2 position-absolute end-0 bottom-0 mb-4 d-lg-block d-none">
-                    <img src="{{asset('front//img/teeth-3.png')}}" class="h-90px" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-90px" />
                 </div>
                 <div class="teeth-3 position-absolute end-0 bottom-0 me-n3 opacity-50 d-lg-block d-none">
-                    <img src="{{asset('front//img/teeth-3.png')}}" class="h-50px" style="transform: rotate(30deg)" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-50px" style="transform: rotate(30deg)" />
                 </div>
-                <img src="{{asset('front//img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" />
+                <img src="{{asset('front/img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" />
                 <div class="row">
                     <div class="col-lg-3">
                         <a href="index.html" class="d-block text-lg-start text-center">
-                            <img src="{{asset('front//img/logo.png')}}" class="h-75px" />
+                            <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
                         </a>
                         <div class="pt-5 d-flex flex-column gap-lg-2 gap-1 text-lg-start text-center">
                             <a href="#" class="text-white d-block fs-18">smile@smilecenterturkey.co</a>
@@ -101,16 +100,12 @@
                             <span>Dental Treatment Turkey</span>
                         </div>
                         <div class="d-flex flex-column gap-3 text-white fs-15">
-                            <a href="#" class="d-block">Implant Treatment</a>
-                            <a href="#" class="d-block">All on 4 Dental Implants Turkey</a>
-                            <a href="#" class="d-block">All on 6 Dental Implants Turkey</a>
-                            <a href="#" class="d-block">Hollywood Smile Turkey</a>
-                            <a href="#" class="d-block">Dental Veneer</a>
-                            <a href="#" class="d-block">Dental Implants Turkey</a>
-                            <a href="#" class="d-block">Dental Aesthetic</a>
-                            <a href="#" class="d-block">Braces Treatment</a>
-                            <a href="#" class="d-block">Implant Top Prothesis Turkey</a>
-                            <a href="#" class="d-block">Tooth Extraction</a>
+                            <a href="dental-implants-turkey" class="d-block">Dental Implant Turkey</a>
+                            <a href="/all-on-4-dental-implants-turkey" class="d-block">All on 4 Dental Implants Turkey</a>
+                            <a href="/all-on-6-dental-implants-turkey" class="d-block">All on 6 Dental Implants Turkey</a>
+                            <a href="/hollywood-smile-design-turkey" class="d-block">Hollywood Smile Turkey</a>
+                            <a href="/laminate-veneers-turkey" class="d-block">Laminate Veneers Turkey</a>
+                            <a href="/zirconia-crowns-turkey" class="d-block">Zirconia Crowns Turkey</a>
                         </div>
                     </div>
                     <div class="col-lg-3 d-lg-block d-none">
@@ -128,13 +123,10 @@
                             <span>Hair Transplant Turkey</span>
                         </div>
                         <div class="d-flex flex-column gap-3 text-white fs-15">
-                            <a href="#" class="d-block">FUE Hair Transplant</a>
-                            <a href="#" class="d-block">DHI Hair Transplant</a>
-                            <a href="#" class="d-block">Percutaneous Hair Transplant</a>
-                            <a href="#" class="d-block">Body Hair To Head Transplant</a>
-                            <a href="#" class="d-block">Hair Transplant For Women</a>
-                            <a href="#" class="d-block">Beard And Mustache Transplant</a>
-                            <a href="#" class="d-block">Eyebrow Transplant</a>
+                            <a href="/fue-hair-transplant-turkey" class="d-block">FUE Hair Transplant</a>
+                            <a href="/dhi-hair-transplant-turkey" class="d-block">DHI Hair Transplant</a>
+                            <a href="/hair-transplant-for-women-turkey" class="d-block">Female Hair Transplant</a>
+                            <a href="/eyebrow-transplant-turkey" class="d-block">Eyebrow Transplant</a>
                         </div>
                     </div>
                     <div class="col-lg-3 d-lg-block d-none">
@@ -152,10 +144,13 @@
                             <span>Plastic Surgery Turkey</span>
                         </div>
                         <div class="d-flex flex-column gap-3 text-white fs-15">
-                            <a href="#" class="d-block">Nose Aesthetics</a>
-                            <a href="#" class="d-block">Breast Aesthetics</a>
-                            <a href="#" class="d-block">Face Aesthetics</a>
-                            <a href="#" class="d-block">Body Aesthetics</a>
+                            <a href="/breast-augmentation-turkey" class="d-block">Breast Augmentation Turkey</a>
+                            <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turke2y</a>
+                            <a href="/breast-lift-turkey" class="d-block">Breast Lift Turkey</a>
+                            <a href="/liposuction-fat-removal-turkey" class="d-block">Liposuction Turkey</a>
+                            <a href="/tummy-tuck-surgery-abdominoplasty-turkey" class="d-block">Tummy Tuck Turkey</a>
+                            <a href="/mommy-makeover-turkey" class="d-block">Mommy Makeover Turkey</a>
+                            <a href="/eyelid-surgery-turkey" class="d-block">Eyelid Surgery Turkey</a>
                         </div>
                     </div>
                 </div>
@@ -185,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="menu-box-item-content px-3" style="display: none">
-                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4">
+                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
                                     <a href="#" class="d-block">Implant Treatment</a>
                                     <a href="#" class="d-block">All on 4 Dental Implants Turkey</a>
                                     <a href="#" class="d-block">All on 6 Dental Implants Turkey</a>
@@ -223,7 +218,7 @@
                                 </div>
                             </div>
                             <div class="menu-box-item-content px-3" style="display: none">
-                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4">
+                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
                                     <a href="#" class="d-block">FUE Hair Transplant</a>
                                     <a href="#" class="d-block">DHI Hair Transplant</a>
                                     <a href="#" class="d-block">Percutaneous Hair Transplant</a>
@@ -258,11 +253,14 @@
                                 </div>
                             </div>
                             <div class="menu-box-item-content px-3" style="display: none">
-                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4">
-                                    <a href="#" class="d-block">Nose Aesthetics</a>
-                                    <a href="#" class="d-block">Breast Aesthetics</a>
-                                    <a href="#" class="d-block">Face Aesthetics</a>
-                                    <a href="#" class="d-block">Body Aesthetics</a>
+                                <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
+                                    <a href="/breast-augmentation-turkey" class="d-block">Breast Augmentation Turkey</a>
+                                    <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turke2y</a>
+                                    <a href="/breast-lift-turkey" class="d-block">Breast Lift Turkey</a>
+                                    <a href="/liposuction-fat-removal-turkey" class="d-block">Liposuction Turkey</a>
+                                    <a href="/tummy-tuck-surgery-abdominoplasty-turkey" class="d-block">Tummy Tuck Turkey</a>
+                                    <a href="/mommy-makeover-turkey" class="d-block">Mommy Makeover Turkey</a>
+                                    <a href="/eyelid-surgery-turkey" class="d-block">Eyelid Surgery Turkey</a>
                                 </div>
                             </div>
                         </div>
@@ -271,13 +269,13 @@
             </div>
             <div class="pt-5 position-relative text-center d-lg-none d-block">
                 <div class="teeth-body position-absolute start-0 bottom-0 z-3 ms-lg-5 ms-3">
-                    <img src="{{asset('front//img/teeth-2.png')}}" class="h-100px" />
+                    <img src="{{asset('front/img/teeth-2.png')}}" class="h-100px" />
                 </div>
                 <div class="teeth-1 position-absolute end-0 top-0 mt-5 me-lg-4 z-1">
-                    <img src="{{asset('front//img/teeth.png')}}" class="h-90px" style="transform: rotate(30deg)" />
+                    <img src="{{asset('front/img/teeth.png')}}" class="h-90px" style="transform: rotate(30deg)" />
                 </div>
                 <div class="position-absolute start-0 top-50 translate-middle-y z-1 ms-lg-5 ms-2">
-                    <img src="{{asset('front//img/teeth-3.png')}}" class="h-90px" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-90px" />
                 </div>
                 <div class="position-absolute start-0 top-0 end-0">
                     <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -287,25 +285,24 @@
                         ></path>
                     </svg>
                 </div>
-                <img src="{{asset('front//img/nurse.png')}}" class="h-275px position-relative z-2" />
+                <img src="{{asset('front/img/nurse.png')}}" class="h-275px position-relative z-2" />
             </div>
         </div>
     </div>
     <div class="footer-bottom bg-white py-4">
         <div class="container-xxl d-flex flex-lg-row flex-column gap-4 align-items-center justify-content-between py-lg-3">
-            <span>© 2022 Smile Center Turkey. All Right Reserved.</span>
+            <span>© 2024 Smile Center Turkey. All Right Reserved.</span>
             <div class="social d-flex gap-3">
-                <a href="#" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
+                <a href="https://www.facebook.com/smilecenterturkey/" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="#" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
+                <a href="https://www.instagram.com/smile_centre_turkey/" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-x-twitter"></i>
                 </a>
-                <a href="#" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
+                <a href="https://www.youtube.com/@smilecenterturkey" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-youtube"></i>
                 </a>
             </div>
         </div>
     </div>
 </footer>
-<!-- end #footer -->
