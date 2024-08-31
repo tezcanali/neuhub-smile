@@ -5,7 +5,7 @@
             @if($item->url)
                 <a href="{{ $item->url }}" class="d-block w-100 bg-white rounded-3 p-3">
                     <div class="image mb-3">
-                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item->image }}"
+                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item->image) }}"
                              class="w-100 h-300px object-fit-cover rounded-1"/>
                     </div>
                     <div class="fs-5 fw-normal pb-2">{{ $item->title }}</div>
