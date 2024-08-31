@@ -12,8 +12,7 @@
 <!-- end #mobile-nav -->
 
 <!-- mobile-menu -->
-<div class="offcanvas offcanvas-start show" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-label"
-     aria-modal="true" role="dialog">
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-label">
     <div class="offcanvas-header px-4 pt-4 d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-block">
             <img src="{{asset('front/img/logo-2.png')}}" class="h-65px">
