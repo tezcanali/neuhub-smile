@@ -406,7 +406,7 @@
                             <a href="/doctors/aydin-egem-y" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="/assets/img/doctors/aydın-yuva.png')}}" class="h-300px" />
+                                    <img src="/front/img/doctors/aydın-yuva.png')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -432,7 +432,7 @@
                             <a href="/doctors/berkin-o" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="/assets/img/doctors/berkin-ozturk.png')}}" class="h-300px" />
+                                    <img src="/front/img/doctors/berkin-ozturk.png')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -458,7 +458,7 @@
                             <a href="/doctors/emre-s" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -694,38 +694,38 @@
         <div class="clinic-list swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{('/assets/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{('/assets/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{('/front/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
+                        <img src="{{('/front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover" />
                     </a>
                 </div>
             </div>
@@ -905,7 +905,7 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{('/assets/img/blog/01J3JEGMJFG5V1ZKYKV5ENN22X.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{('/front/img/blog/01J3JEGMJFG5V1ZKYKV5ENN22X.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
@@ -923,7 +923,7 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{('/assets/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{('/front/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
@@ -941,7 +941,7 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{('/assets/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{('/front/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
@@ -959,7 +959,7 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{('/assets/img/blog/01J3JES39AKG9DB55NYVY11BH2.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{('/front/img/blog/01J3JES39AKG9DB55NYVY11BH2.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
