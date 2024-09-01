@@ -698,20 +698,16 @@
                     <div class="d-flex align-items-center gap-4 flex-wrap">
                         <div class="d-flex flex-column">
                             <div class="fs-5 fw-semibold text-black">1.1K</div>
-                            <span class="fs-13 text-black-50">gönderi</span>
+                            <span class="fs-13 text-black-50">post</span>
                         </div>
                         <div class="d-flex flex-column">
-                            <div class="fs-5 fw-semibold text-black">33.1K</div>
-                            <span class="fs-13 text-black-50">takipçi</span>
-                        </div>
-                        <div class="d-flex flex-column">
-                            <div class="fs-5 fw-semibold text-black">412</div>
-                            <span class="fs-13 text-black-50">takip</span>
+                            <div class="fs-5 fw-semibold text-black">10K</div>
+                            <span class="fs-13 text-black-50">follower</span>
                         </div>
                     </div>
-                    <a href="#" class="btn d-flex align-items-center gap-3 px-4 fw-normal text-white" style="background: #0095f6">
+                    <a href="https://www.instagram.com/smile_centre_turkey/" class="btn d-flex align-items-center gap-3 px-4 fw-normal text-white" style="background: #0095f6">
                         <i class="fab fa-instagram"></i>
-                        Takip Et
+                        Follow Us
                     </a>
                 </div>
             </div>

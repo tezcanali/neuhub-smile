@@ -325,10 +325,17 @@
                                   fill="#7996FF"/>
                         </svg>
                     </div>
+                    <li class="position-relative">
+                        <a href="/before-after" class="d-block text-white fw-normal hover-text-secondary py-4">Before & After</a>
+                    </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z"
+                                  fill="#7996FF"/>
+                        </svg>
+                    </div>
                 </ul>
-                <!-- end #webmenu -->
-                <!-- end #webmenu -->
-                <!-- button -->
                 <div class="button d-flex align-items-center gap-md-3 gap-2">
                     <a href="#" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
                     <a href="#"
