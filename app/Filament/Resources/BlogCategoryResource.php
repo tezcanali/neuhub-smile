@@ -25,6 +25,8 @@ class BlogCategoryResource extends Resource
 
     protected static ?string $navigationLabel = 'Blog Kategori';
 
+    protected static ?string $navigationParentItem = 'Blog';
+
     protected static ?string $navigationGroup = 'İçerik';
 
     protected static ?int $navigationSort = 3;

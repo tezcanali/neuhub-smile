@@ -26,6 +26,9 @@ class GalleryCategoryResource extends Resource
 
     protected static ?string $navigationLabel = 'Galeri Kategori';
 
+    protected static ?string $navigationParentItem = 'Galeri';
+
+
     protected static ?string $label = 'Galeri Kategori';
 
     public static function form(Form $form): Form
