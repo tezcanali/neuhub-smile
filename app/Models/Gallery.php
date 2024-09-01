@@ -18,6 +18,7 @@ class Gallery extends Model
         'category_id',
         'status',
         'images',
+        'featured_image',
     ];
 
     protected $casts = [

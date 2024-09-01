@@ -18,6 +18,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\Action;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -42,6 +43,20 @@ class GalleryResource extends Resource
                     ->tabs([
                         Tabs\Tab::make('Body')
                             ->schema([
+                                FileUpload::make('featured_image')
+                                    ->label('Öne Çıkan Görsel')
+                                    ->image()
+                                    ->maxSize(150000)
+                                    ->disk('public')
+                                    ->directory('galleries')
+                                    ->acceptedFileTypes([
+                                        'image/*'
+                                    ])
+                                    ->columnSpan([
+                                        'sm' => 3,
+                                        'xl' => 6,
+                                        '2xl' => 12,
+                                    ]),
                                 Select::make('category_id')
                                     ->relationship('category', 'title')
                                     ->options(GalleryCategory::all()->pluck('title', 'id'))
@@ -133,6 +148,19 @@ class GalleryResource extends Resource
                 //
             ])
             ->actions([
+                Action::make('visit')
+                    ->label(__('filament-fabricator::page-resource.actions.visit'))
+                    ->url(fn ($record) =>
+                    $record->category->type === 'BeforeAfter'
+                        ? url('/before-after/' . $record->slug)
+                        : ($record->category->type === 'Gallery'
+                        ? url('/gallery/' . $record->slug)
+                        : null
+                    )
+                    )
+                    ->icon('heroicon-o-arrow-top-right-on-square')
+                    ->openUrlInNewTab()
+                    ->color('success'),
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
             ])
