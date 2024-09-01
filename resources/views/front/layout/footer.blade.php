@@ -1,3 +1,16 @@
+<div class="modal fade" id="quateModal" tabindex="-1" role="dialog" aria-labelledby="quateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body pt-3">
+                <p class="h2 text-center">Contact Us</p>
+                <iframe frameborder="0" allow="camera;"
+                        style="height:700px; width:100%;border:none;"
+                        src='https://forms.smilecenterturkey.co/smilecenterturkey/form/WebsiteContactForm/formperma/0Am-d1LwjZn32n9L0bdgykDPomn62j-n5WrO0Vj_LUM?zf_enablecamera=true'></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="position-relative overflow-hidden">
     <div class="shape-1 position-absolute start-0 bottom-100 mb-n5 ms-lg-5">
         <svg width="98" height="106" viewBox="0 0 98 106" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -6,7 +19,7 @@
     </div>
     <div class="footer-content bg-primary">
         <div class="footer-top border-bottom border-white border-opacity-10">
-            <div class="container-xxl position-relative pb-lg-0 pb-5">
+            <div class="container-xxl position-relative pb-lg-5 pb-5">
                 <div class="shape-2 position-absolute start-0 top-100 ms-5 opacity-25" style="margin-top: -2px">
                     <svg width="47" height="22" viewBox="0 0 47 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.7794 22C21.7794 22 27.2983 2.58823 46.9512 1.90735e-06L-0.000250808 -1.44963e-07C14.1067 4.71672e-07 21.7794 14.7059 21.7794 22Z" fill="#D9D9D9" />
@@ -21,7 +34,7 @@
                         <span class="fw-normal">Live life more freely with your smile.</span>
                     </div>
                 </div>
-                <a href="#" class="position-absolute get end-0 top-0 p-lg-4 p-3 rounded text-white d-flex flex-lg-column justify-content-center gap-2 mt-lg-5 me-xxl-0 me-lg-2" style="background: #1b3284">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#quateModal" class="position-absolute get end-0 top-0 p-lg-4 p-3 rounded text-white d-flex flex-lg-column justify-content-center gap-2 mt-lg-5 me-xxl-0 me-lg-2" style="background: #1b3284">
                     <svg width="24" height="24" viewBox="0 0 26 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             fill-rule="evenodd"
@@ -63,7 +76,7 @@
                     />
                 </svg>
             </div>
-            <div class="container-xxl position-relative pb-lg-5 pb-4 footer-container">
+            <div class="container-xxl position-relative footer-container">
                 <div class="teeth-body position-absolute start-0 bottom-0 d-lg-block d-none">
                     <img src="{{asset('front/img/teeth-2.png')}}" class="h-150px" />
                 </div>

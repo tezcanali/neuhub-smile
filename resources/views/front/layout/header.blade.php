@@ -1,6 +1,7 @@
 <!-- mobile-nav -->
 <div class="mobile-nav d-md-none d-flex align-items-center gap-2 position-fixed start-0 end-0 bottom-0 p-3">
     <a href="#"
+       data-bs-toggle="modal" data-bs-target="#quateModal"
        class="btn btn-blue h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill">
         <i class="fa fa-phone"></i>
         <span>İletişim</span>

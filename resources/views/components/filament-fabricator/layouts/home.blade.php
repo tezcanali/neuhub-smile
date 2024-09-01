@@ -80,7 +80,7 @@
                         <div class="col-lg-4">
                             <div class="row g-3">
                                 <div class="col-6 position-relative z-2">
-                                    <a href="#" class="hero-box rounded-1 p-xl-4 p-3 d-flex flex-column gap-xl-3 gap-lg-1 gap-2">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quateModal" class="hero-box rounded-1 p-xl-4 p-3 d-flex flex-column gap-xl-3 gap-lg-1 gap-2">
                                         <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 fill-rule="evenodd"
@@ -406,7 +406,7 @@
                             <a href="/doctors/aydin-egem-y" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="/front/img/doctors/aydın-yuva.png')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/aydın-yuva.png')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -432,7 +432,7 @@
                             <a href="/doctors/berkin-o" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="/front/img/doctors/berkin-ozturk.png')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/berkin-ozturk.png')}}" class="h-300px" />
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
@@ -518,76 +518,9 @@
                 <span class="fs-48">Review / Trustpilot / Winner</span>
             </div>
         </div>
-        <div class="review-list swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden">
-                        <div class="col-lg-4">
-                            <img src="{{asset('front/img/r1.png')}}" class="w-100 h-300px object-fit-cover" />
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="p-4">
-                                <div class="fs-5 fw-normal">
-                                    “ <br />
-                                    Thanks so much Maurice for my fabulous new veneers. I couldn't be happier! Thanks to Kat too for making me feel so comfortable. Lots of love. <br />
-                                    ”
-                                </div>
-                                <span class="fs-12 text-black-50">Danielle Lloyd - Television Personality</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden">
-                        <div class="col-lg-4">
-                            <img src="{{asset('front/img/r2.png')}}" class="w-100 h-300px object-fit-cover" />
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="p-4">
-                                <div class="fs-5 fw-normal">
-                                    “ <br />
-                                    Thanks so much Maurice for my fabulous new veneers. I couldn't be happier! Thanks to Kat too for making me feel so comfortable. Lots of love. <br />
-                                    ”
-                                </div>
-                                <span class="fs-12 text-black-50">Danielle Lloyd - Television Personality</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden">
-                        <div class="col-lg-4">
-                            <img src="{{asset('front/img/r1.png')}}" class="w-100 h-300px object-fit-cover" />
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="p-4">
-                                <div class="fs-5 fw-normal">
-                                    “ <br />
-                                    Thanks so much Maurice for my fabulous new veneers. I couldn't be happier! Thanks to Kat too for making me feel so comfortable. Lots of love. <br />
-                                    ”
-                                </div>
-                                <span class="fs-12 text-black-50">Danielle Lloyd - Television Personality</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden">
-                        <div class="col-lg-4">
-                            <img src="{{asset('front/img/r2.png')}}" class="w-100 h-300px object-fit-cover" />
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="p-4">
-                                <div class="fs-5 fw-normal">
-                                    “ <br />
-                                    Thanks so much Maurice for my fabulous new veneers. I couldn't be happier! Thanks to Kat too for making me feel so comfortable. Lots of love. <br />
-                                    ”
-                                </div>
-                                <span class="fs-12 text-black-50">Danielle Lloyd - Television Personality</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div>
+            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="62f21650759a69faaab38715" data-style-height="240px" data-style-width="100%" data-theme="light" data-stars="5" data-review-languages="en" data-font-family="Oxygen">
+                <a href="https://uk.trustpilot.com/review/smilecenterturkey.co" target="_blank" rel="noopener">Trustpilot</a>
             </div>
         </div>
     </section>
@@ -817,6 +750,7 @@
 <script src="{{asset('front/js/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('front/js/main.js')}}"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <script>
     mapboxgl.accessToken = "pk.eyJ1Ijoidm9sa2Fua2FyYXRhcyIsImEiOiJjaWtza3BmNWwwMDAyd3NrcnUyZGptNHJ6In0._zEoaXwKsNTzu3zv8Q-FGA";
     var map = new mapboxgl.Map({
