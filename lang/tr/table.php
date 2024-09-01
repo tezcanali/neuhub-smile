@@ -7,6 +7,5 @@ return [
         'name' => 'İsim',
         'status' => 'Durum',
         'jobTitle' => 'Ünvan',
-        'type' => 'Tür',
     ],
 ];
