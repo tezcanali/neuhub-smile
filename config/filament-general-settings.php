@@ -23,6 +23,13 @@ return [
                     'rows' => '3',
                     'required' => false,
                 ],
+                'body' => [
+                    'type' => TypeFieldEnum::Textarea->value,
+                    'label' => 'Body Script',
+                    'placeholder' => "<script src='https://google.com/app.js'></script>",
+                    'rows' => '3',
+                    'required' => false,
+                ],
                 'footer' => [
                     'type' => TypeFieldEnum::Textarea->value,
                     'label' => 'Footer Script',

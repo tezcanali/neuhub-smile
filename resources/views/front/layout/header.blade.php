@@ -4,7 +4,7 @@
        data-bs-toggle="modal" data-bs-target="#quateModal"
        class="btn btn-blue h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill">
         <i class="fa fa-phone"></i>
-        <span>İletişim</span>
+        <span>Get a Free Quote</span>
     </a>
     <a href="#" class="btn btn-success h-50px d-flex align-items-center justify-content-center gap-2 flex-shrink-0">
         <i class="fab fa-whatsapp fs-3 text-white"></i>
