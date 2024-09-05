@@ -79,159 +79,39 @@
     </div>
     <div class="container-xxl position-relative z-2">
         <div class="doctor-list row g-3">
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="position-absolute start-0 top-50 translate-middle-y ms-n5">
-                            <img src="{{('front/img/teeth-3.png')}}" class="h-150px" />
+            @php
+                $doctors = \App\Models\Doctor::all();
+            @endphp
+            @foreach($doctors as $doctor)
+                <div class="col-xl-4 col-lg-6">
+                    <a href="/doctors/{{ $doctor->slug }}" class="doctor-item">
+                        <div class="image position-relative">
+                            <div class="position-absolute start-0 top-50 translate-middle-y ms-n5">
+                                <img src="{{asset('front/img/teeth-3.png')}}" class="h-150px" />
+                            </div>
+                            <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
+                                <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
+                                        fill="white"
+                                    />
+                                </svg>
+                            </div>
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($doctor->image) }}" class="w-100 h-400px mobile-img object-fit-cover" />
                         </div>
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/1.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
+                        <div class="bg-primary p-4">
+                            <div class="p-lg-2">
+                                <div class="d-flex flex-column">
+                                    <div class="fs-5 fw-semibold text-white">{{ $doctor->title }}</div>
+                                    <span class="text-gray-600">{{ $doctor->job_title }}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/2.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/3.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/1.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/2.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-xl-4 col-lg-6">
-                <a href="#" class="doctor-item">
-                    <div class="image position-relative">
-                        <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
-                            <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M24.7014 0.916366C21.3073 22.3567 0 28.4146 0 28.4146C7.8029 28.4146 23.1196 36.1929 24.7014 50.5598V53C24.7014 52.4131 24.7239 51.836 24.7678 51.2689C24.8116 51.836 24.8342 52.4131 24.8342 53V50.5598C26.4159 36.1929 41.7326 28.4146 49.5355 28.4146C49.5355 28.4146 28.2283 22.3567 24.8342 0.916366V0C24.813 0.160558 24.7909 0.32028 24.7678 0.479169C24.7447 0.32028 24.7225 0.160558 24.7014 0V0.916366Z"
-                                    fill="white"
-                                />
-                            </svg>
-                        </div>
-                        <img src="{{('front/img/doctors/3.png')}}" class="w-100 h-400px mobile-img object-fit-cover" />
-                    </div>
-                    <div class="bg-primary p-4">
-                        <div class="p-lg-2">
-                            <div class="d-flex flex-column">
-                                <div class="fs-5 fw-semibold text-white">Ali Direnç Ulaşan</div>
-                                <span class="text-gray-600">Oral and Maxillofacial Surgery</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            @endforeach
         </div>
     </div>
 </div>
