@@ -16,7 +16,6 @@
     <link rel="mask-icon" href="{{asset('front/safari-pinned-tab.svg')}}" color="#FFF"/>
     <meta name="msapplication-TileColor" content="#FFF"/>
     <meta name="theme-color" content="#FFF"/>
-    <title>Smile Center</title>
 
     @foreach (FilamentFabricator::getMeta() as $tag)
         {{ $tag }}
