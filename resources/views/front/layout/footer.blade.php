@@ -87,7 +87,7 @@
                 <div class="teeth-3 position-absolute end-0 bottom-0 me-n3 opacity-50 d-lg-block d-none">
                     <img src="{{asset('front/img/teeth-3.png')}}" class="h-50px" style="transform: rotate(30deg)" />
                 </div>
-                <img src="{{asset('front/img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" />
+                <!-- <img src="{{asset('front/img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" /> -->
                 <div class="row">
                     <div class="col-lg-3">
                         <a href="index.html" class="d-block text-lg-start text-center">
