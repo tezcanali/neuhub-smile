@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="{{asset('front/apple-touch-icon.png')}}"/>
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('front/favicon-32x32.png')}}"/>
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('front/favicon-16x16.png')}}"/>
-    <link rel="shortcut icon" href="{{asset('front/favicon.ico')}}"/>
+    <link rel="shortcut icon" href="{{asset('front/favicon.png')}}"/>
     <link rel="mask-icon" href="{{asset('front/safari-pinned-tab.svg')}}" color="#FFF"/>
     <meta name="msapplication-TileColor" content="#FFF"/>
     <meta name="theme-color" content="#FFF"/>

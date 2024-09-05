@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="https://neuhub.codeven.co/front/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://neuhub.codeven.co/front/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://neuhub.codeven.co/front/favicon-16x16.png" />
-    <link rel="shortcut icon" href="https://neuhub.codeven.co/front/favicon.ico" />
+    <link rel="shortcut icon" href="https://neuhub.codeven.co/front/favicon.png" />
     <link rel="mask-icon" href="https://neuhub.codeven.co/front/safari-pinned-tab.svg" color="#000" />
     <meta name="msapplication-TileColor" content="#000" />
     <meta name="theme-color" content="#000" />
