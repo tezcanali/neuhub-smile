@@ -65,7 +65,7 @@
                                     smile matters!
                                 </div>
                                 <p class="text-white-50 fs-15 text-balance mb-0">Smile Center is one of the leading dental clinics in Turkey. Housing some of Europe’s finest dentists, it is considered a safe haven for patients seeking experienced hands and guaranteed results.</p>
-                                <a href="#" class="d-flex align-items-center gap-2 mt-lg-5 mt-3 text-white">
+                                <a href="/before-after" class="d-flex align-items-center gap-2 mt-lg-5 mt-3 text-white">
                                     <i class="fa fa-arrow-right"></i>
                                     Our Gallery *
                                 </a>
@@ -89,7 +89,7 @@
                                                 fill="white"
                                             />
                                         </svg>
-                                        <div class="fs-5 fw-normal text-white">Get a Free Quate</div>
+                                        <div class="fs-5 fw-normal text-white">Get a Free Quote</div>
                                         <div class="fs-12 text-white">Contact us to make an appointment, ask questions.</div>
                                         <i class="fa fa-arrow-right fs-14 text-white"></i>
                                     </a>

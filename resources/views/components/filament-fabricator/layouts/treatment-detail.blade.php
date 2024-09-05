@@ -65,6 +65,7 @@
 <script src="{{asset('front/js/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('front/js/main.js')}}"></script>
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 <script>
     mapboxgl.accessToken = "pk.eyJ1Ijoidm9sa2Fua2FyYXRhcyIsImEiOiJjaWtza3BmNWwwMDAyd3NrcnUyZGptNHJ6In0._zEoaXwKsNTzu3zv8Q-FGA";
     var map = new mapboxgl.Map({

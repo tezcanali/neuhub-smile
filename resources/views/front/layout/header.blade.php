@@ -185,7 +185,7 @@
 <header class="header bg-primary position-sticky start-0 top-0 end-0">
     <div class="header-top h-50px bg-black bg-opacity-5 d-xl-block d-none">
         <div class="container-xxl d-flex align-items-center justify-content-between h-100">
-            <a href="#" class="d-flex align-items-center gap-2 text-white fs-12">
+            <a href="https://maps.app.goo.gl/X4nNykCwAYTvNkHAA" class="d-flex align-items-center gap-2 text-white fs-12">
                 <i class="fa fa-map-marker-alt text-gray-600"></i>
                 Barbaros, Mescit Sk. No:19, 07100 Muratpaşa/Antalya
             </a>

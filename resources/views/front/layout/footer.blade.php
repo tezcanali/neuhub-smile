@@ -310,7 +310,7 @@
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="https://www.instagram.com/smile_centre_turkey/" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
-                    <i class="fab fa-x-twitter"></i>
+                    <i class="fab fa-instagram"></i>
                 </a>
                 <a href="https://www.youtube.com/@smilecenterturkey" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-youtube"></i>
