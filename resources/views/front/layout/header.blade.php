@@ -337,8 +337,8 @@
                     </div>
                 </ul>
                 <div class="button d-flex align-items-center gap-md-3 gap-2">
-                    <a href="#" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
-                    <a href="#"
+                    <a href="/about-us" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
+                    <a href="/about-us"
                        class="d-xxl-block d-none text-white hover-text-secondary bg-black bg-opacity-25 rounded-pill py-2 px-4">Contact</a>
                     <div class="mobile-menu-button d-xxl-none block">
                         <button id="showMenu" class="menu-button px-0 shadow-none" type="button"
