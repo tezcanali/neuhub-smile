@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Disallow: /cgi-bin/
+Disallow: /before-after/
+Disallow: /?MA
+Disallow: /?SA
+Disallow: /?MD
+Disallow: /?Btn=3
+Disallow: /Page/
+Disallow: /Gallery/
+
+Sitemap: https://www.smilecenterturkey.co/sitemap.xml
