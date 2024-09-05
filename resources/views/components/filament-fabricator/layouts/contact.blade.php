@@ -139,7 +139,7 @@
                         </g>
                     </svg>
                 </div>
-                <div><a href="tel:+448081754746"><span class="fw-normal">+44 (808) 175 47 46</span> - TOLL FREE LINE</a></div>
+                <div><a href="tel:+448081754746" class="text-white"><span class="fw-normal">+44 (808) 175 47 46</span> - TOLL FREE LINE</a></div>
             </a>
             <a href="#" class="d-flex align-items-center gap-3 text-white">
                 <div class="icon text-gray-600">
@@ -150,7 +150,7 @@
                         />
                     </svg>
                 </div>
-                <div><a href="https://wa.me/+905451294746"><span class="fw-normal">+90 (545) 129 47 46</span> - <span style="color: #70ff59">WHATSAPP LINE</span></a></div>
+                <div><a href="https://wa.me/+905451294746" class="text-white"><span class="fw-normal">+90 (545) 129 47 46</span> - <span style="color: #70ff59">WHATSAPP LINE</span></a></div>
             </a>
             <a href="#" class="d-flex align-items-center gap-3 text-white">
                 <div class="icon text-gray-600">
