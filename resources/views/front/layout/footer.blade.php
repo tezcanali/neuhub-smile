@@ -1,3 +1,4 @@
+@php use Joaopaulolndev\FilamentGeneralSettings\Models\GeneralSetting; @endphp
 <div class="modal fade" id="quateModal" tabindex="-1" role="dialog" aria-labelledby="quateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -319,3 +320,14 @@
         </div>
     </div>
 </footer>
+
+@php
+    $setting = GeneralSetting::find(1);
+
+    if ($setting && !empty($setting->more_configs)) {
+                    $configs = is_array($setting->more_configs) ? $setting->more_configs : json_decode($setting->more_configs, true);
+
+                    return isset($configs['footer']) ? $configs['footer'] : '';
+                }
+                return '';
+@endphp
