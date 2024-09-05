@@ -94,8 +94,8 @@
                             <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
                         </a>
                         <div class="pt-5 d-flex flex-column gap-lg-2 gap-1 text-lg-start text-center">
-                            <a href="#" class="text-white d-block fs-18">smile@smilecenterturkey.co</a>
-                            <a href="#" class="text-white d-block fs-5 fw-semibold">+44 (808) 175 47 46</a>
+                            <a href="mailto:smile@smilecenterturkey.co" class="text-white d-block fs-18">smile@smilecenterturkey.co</a>
+                            <a href="tel:+448081754746" class="text-white d-block fs-5 fw-semibold">+44 (808) 175 47 46</a>
                             <div class="fs-18 text-white fw-lighter">TOLL FREE LINE</div>
                         </div>
                     </div>
@@ -237,13 +237,10 @@
                             </div>
                             <div class="menu-box-item-content px-3" style="display: none">
                                 <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
-                                    <a href="#" class="d-block">FUE Hair Transplant</a>
-                                    <a href="#" class="d-block">DHI Hair Transplant</a>
-                                    <a href="#" class="d-block">Percutaneous Hair Transplant</a>
-                                    <a href="#" class="d-block">Body Hair To Head Transplant</a>
-                                    <a href="#" class="d-block">Hair Transplant For Women</a>
-                                    <a href="#" class="d-block">Beard And Mustache Transplant</a>
-                                    <a href="#" class="d-block">Eyebrow Transplant</a>
+                                    <a href="/fue-hair-transplant-turkey" class="d-block">FUE Hair Transplant</a>
+                                    <a href="/dhi-hair-transplant-turkey" class="d-block">DHI Hair Transplant</a>
+                                    <a href="/hair-transplant-for-women-turkey" class="d-block">Female Hair Transplant</a>
+                                    <a href="/eyebrow-transplant-turkey" class="d-block">Eyebrow Transplant</a>
                                 </div>
                             </div>
                         </div>

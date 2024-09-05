@@ -153,16 +153,16 @@
                 </div>
             </div>
             <div class="menu-box pb-3">
-                <a href="#" class="d-block fs-4 fw-normal">Before&amp;After</a>
+                <a href="/before-after" class="d-block fs-4 fw-normal">Before&amp;After</a>
             </div>
             <div class="menu-box pb-3">
-                <a href="#" class="d-block fs-4 fw-normal">Doctors</a>
+                <a href="/doctors" class="d-block fs-4 fw-normal">Doctors</a>
             </div>
             <div class="menu-box pb-3">
-                <a href="#" class="d-block fs-4 fw-normal">About</a>
+                <a href="/about-us" class="d-block fs-4 fw-normal">About</a>
             </div>
             <div class="menu-box pb-3">
-                <a href="#" class="d-block fs-4 fw-normal">Contact</a>
+                <a href="/contact" class="d-block fs-4 fw-normal">Contact</a>
             </div>
             <hr class="border-gray-500 border-opacity-10 opacity-50 my-4">
             <div class="pb-4">
