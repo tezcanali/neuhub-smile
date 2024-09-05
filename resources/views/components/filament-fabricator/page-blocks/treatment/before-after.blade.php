@@ -37,7 +37,7 @@
                     <div class="swiper-wrapper">
                         @foreach($galleries as $item)
                             <div class="swiper-slide w-auto">
-                                <a href="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
+                                <a href="https://cms.smilecenterturkey.co{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
                                    class="d-block w-400px h-425px rounded-3 overflow-hidden position-relative" data-fancybox="gallery">
                                     <div
                                         class="position-absolute start-0 top-0 m-3 bg-white text-primary fs-14 rounded-1 py-2 px-3 fw-semibold z-1">
@@ -47,7 +47,7 @@
                                         class="position-absolute start-0 bottom-0 m-3 bg-white text-primary fs-14 rounded-1 py-2 px-3 fw-semibold z-1">
                                         After
                                     </div>
-                                    <img src="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
+                                    <img src="https://cms.smilecenterturkey.co{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
                                          class="w-100 h-100 object-fit-cover"/>
                                 </a>
                             </div>
