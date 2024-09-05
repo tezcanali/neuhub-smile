@@ -8,8 +8,6 @@
                 <div class="pt-lg-5 pt-md-4 pt-3">Based on <a href="#" class="fw-normal text-decoration-underline">8,560 reviews</a></div>
             </div>
             <div class="col-lg-9">
-                <div class="d-flex flex-column gap-5 pt-lg-0 pt-4">
-                    <div class="d-flex align-items-center gap-md-4 gap-3">
                         <div class="trustpilot-widget" data-locale="en-GB" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="62f21650759a69faaab38715" data-style-height="240px" data-style-width="100%" data-theme="light" data-stars="5" data-review-languages="en" data-font-family="Oxygen">
                             <a href="https://uk.trustpilot.com/review/smilecenterturkey.co" target="_blank" rel="noopener">Trustpilot</a>
                         </div>
@@ -20,6 +18,4 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
 </section>
