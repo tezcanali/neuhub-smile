@@ -1,6 +1,6 @@
 @aware(['page'])
 <section>
-    <div class="container-xxl mt-2">
+    <div class="container-xxl mt-4">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb text-primary mt-2">
                 <li class="breadcrumb-item text-primary"><a href="/">Home</a></li>

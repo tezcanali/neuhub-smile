@@ -83,7 +83,7 @@
                         </div>
                         <div class="menu-box-item-content p-3" style="display: none;">
                             <div class="d-flex flex-column fs-15 ps-3 pb-3">
-                                <div class="fs-18 fw-semibold pb-4 text-secondary">Breast Aesthetics</div>
+                                <div class="fs-18 fw-semibold pb-4 text-secondary"><a href="/breast-aesthetics">Breast Aesthetics</a></div>
                                 <a href="/breast-augmentation-turkey" class="d-block mb-3 hover-text-secondary">Breast
                                     Augmentation Turkey</a>
                                 <a href="/breast-reduction-turkey" class="d-block mb-3 hover-text-secondary">Breast
@@ -94,7 +94,7 @@
                                     Turkey</a>
                             </div>
                             <div class="d-flex flex-column fs-15 ps-3 pb-3">
-                                <div class="fs-18 fw-semibold pb-4 text-secondary">Face Aesthetics</div>
+                                <div class="fs-18 fw-semibold pb-4 text-secondary"><a href="/face-aesthetics">Face Aesthetics</a></div>
                                 <a href="/eyelid-surgery-turkey" class="d-block mb-3 hover-text-secondary">Eyelid
                                     Surgery Turkey</a>
                                 <a href="/rhinoplasty-turkey" class="d-block mb-3 hover-text-secondary">Rhinoplasty
@@ -105,7 +105,7 @@
                                     Turkey</a>
                             </div>
                             <div class="d-flex flex-column fs-15 ps-3 pb-3">
-                                <div class="fs-18 fw-semibold pb-4 text-secondary">Body Aesthetics</div>
+                                <div class="fs-18 fw-semibold pb-4 text-secondary"><a href="/body-aesthetics">Body Aesthetics</a></div>
                                 <a href="/brazilian-butt-lift-turkey" class="d-block mb-3 hover-text-secondary">Brazilian
                                     Butt Lift Turkey</a>
                                 <a href="/liposuction-fat-removal-turkey" class="d-block mb-3 hover-text-secondary">Liposuction
