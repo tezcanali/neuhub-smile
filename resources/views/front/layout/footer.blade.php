@@ -303,7 +303,7 @@
                         ></path>
                     </svg>
                 </div>
-                <img src="{{asset('front/img/nurse.png')}}" class="h-275px position-relative z-2" />
+                <!-- <img src="{{asset('front/img/nurse.png')}}" class="h-275px position-relative z-2" /> -->
             </div>
         </div>
     </div>
