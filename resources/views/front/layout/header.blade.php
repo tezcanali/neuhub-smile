@@ -335,6 +335,9 @@
                                   fill="#7996FF"/>
                         </svg>
                     </div>
+                    <li class="position-relative">
+                        <a href="/doctors" class="d-block text-white fw-normal hover-text-secondary py-4">Doctors</a>
+                    </li>
                 </ul>
                 <div class="button d-flex align-items-center gap-md-3 gap-2">
                     <a href="/about-us" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
