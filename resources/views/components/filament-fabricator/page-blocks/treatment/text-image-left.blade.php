@@ -3,7 +3,7 @@
     <div class="container-xxl">
         <div class="row g-xl-5 g-3">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb text-primary mt-4">
+                <ol class="breadcrumb text-primary mt-2">
                     <li class="breadcrumb-item text-primary"><a href="#">Smile Center Turkey</a></li>
                     @if($page->title)
                         <li class="breadcrumb-item active" aria-current="page" style="color:#475174 !important;">{{ $page->title }}</li>

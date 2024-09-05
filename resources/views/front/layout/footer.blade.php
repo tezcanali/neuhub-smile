@@ -114,12 +114,16 @@
                             <span>Dental Treatment Turkey</span>
                         </div>
                         <div class="d-flex flex-column gap-3 text-white fs-15">
-                            <a href="dental-implants-turkey" class="d-block">Dental Implant Turkey</a>
                             <a href="/all-on-4-dental-implants-turkey" class="d-block">All on 4 Dental Implants Turkey</a>
                             <a href="/all-on-6-dental-implants-turkey" class="d-block">All on 6 Dental Implants Turkey</a>
+                            <a href="/dental-implants-turkey" class="d-block">Dental Implants Turkey</a>
                             <a href="/hollywood-smile-design-turkey" class="d-block">Hollywood Smile Turkey</a>
                             <a href="/laminate-veneers-turkey" class="d-block">Laminate Veneers Turkey</a>
                             <a href="/zirconia-crowns-turkey" class="d-block">Zirconia Crowns Turkey</a>
+                            <a href="/robotic-implant-turkey" class="d-block">Robotic Implant Turkey</a>
+                            <a href="/metal-porcelain-crowns-turkey" class="d-block">Metal Porcelain Crowns Turkey</a>
+                            <a href="/single-tooth-implant-turkey" class="d-block">Single Tooth Implant Turkey</a>
+                            <a href="/emax-veneers-turkey" class="d-block">Emax Veneers Turkey</a>
                         </div>
                     </div>
                     <div class="col-lg-3 d-lg-block d-none">
@@ -195,16 +199,16 @@
                             </div>
                             <div class="menu-box-item-content px-3" style="display: none">
                                 <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
-                                    <a href="#" class="d-block">Implant Treatment</a>
-                                    <a href="#" class="d-block">All on 4 Dental Implants Turkey</a>
-                                    <a href="#" class="d-block">All on 6 Dental Implants Turkey</a>
-                                    <a href="#" class="d-block">Hollywood Smile Turkey</a>
-                                    <a href="#" class="d-block">Dental Veneer</a>
-                                    <a href="#" class="d-block">Dental Implants Turkey</a>
-                                    <a href="#" class="d-block">Dental Aesthetic</a>
-                                    <a href="#" class="d-block">Braces Treatment</a>
-                                    <a href="#" class="d-block">Implant Top Prothesis Turkey</a>
-                                    <a href="#" class="d-block">Tooth Extraction</a>
+                                    <a href="/all-on-4-dental-implants-turkey" class="d-block">All on 4 Dental Implants Turkey</a>
+                                    <a href="/all-on-6-dental-implants-turkey" class="d-block">All on 6 Dental Implants Turkey</a>
+                                    <a href="/dental-implants-turkey" class="d-block">Dental Implants Turkey</a>
+                                    <a href="/hollywood-smile-design-turkey" class="d-block">Hollywood Smile Turkey</a>
+                                    <a href="/laminate-veneers-turkey" class="d-block">Laminate Veneers Turkey</a>
+                                    <a href="/zirconia-crowns-turkey" class="d-block">Zirconia Crowns Turkey</a>
+                                    <a href="/robotic-implant-turkey" class="d-block">Robotic Implant Turkey</a>
+                                    <a href="/metal-porcelain-crowns-turkey" class="d-block">Metal Porcelain Crowns Turkey</a>
+                                    <a href="/single-tooth-implant-turkey" class="d-block">Single Tooth Implant Turkey</a>
+                                    <a href="/emax-veneers-turkey" class="d-block">Emax Veneers Turkey</a>
                                 </div>
                             </div>
                         </div>
