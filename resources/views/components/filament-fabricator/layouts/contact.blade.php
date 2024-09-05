@@ -192,7 +192,7 @@
                 </div>
                 <span>You can fill out the form for any questions and requests about our services.</span>
             </div>
-            <form action="" class="row g-3">
+            <!-- <form action="" class="row g-3">
                 <div class="col-lg-4 col-md-6">
                     <div class="form-floating">
                         <input type="text" class="form-control h-65px" id="floatingInput" value="Abdullah Okutan" />
@@ -220,7 +220,7 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-gray-600 px-5 fw-bold py-3">SEND</button>
                 </div>
-            </form>
+            </form>-->
         </div>
     </div>
 </div>
