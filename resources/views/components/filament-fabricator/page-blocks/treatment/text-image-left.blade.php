@@ -2,6 +2,14 @@
 <section class="py-lg-5 py-4">
     <div class="container-xxl">
         <div class="row g-xl-5 g-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb text-primary mt-4">
+                    <li class="breadcrumb-item text-primary"><a href="#">Smile Center Turkey</a></li>
+                    @if($page->title)
+                        <li class="breadcrumb-item active" aria-current="page" style="color:#475174 !important;">{{ $page->title }}</li>
+                    @endif
+                </ol>
+            </nav>
             <div class="col-lg-6 order-md-1 order-2">
                 @if($title)
                 <div class="title d-md-flex d-none gap-3 pb-lg-5 pb-4">
