@@ -58,9 +58,9 @@
                     <div class="accordion faq-accordion" id="accordionExample">
                         @foreach($cons as $item)
                             <div class="accordion-item mb-3">
-                                <h2 class="accordion-header" id="headingOne">
+                                <span class="accordion-header" id="headingOne">
                                     <button class="accordion-button fs-18 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cons{{ $loop->iteration }}" aria-expanded="true" aria-controls="cons{{ $loop->iteration }}">{{ $item['title'] }}</button>
-                                </h2>
+                                </span>
                                 <div id="cons{{ $loop->iteration }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body fs-16 text-justify">
                                         {!! $item['description'] !!}
