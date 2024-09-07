@@ -35,7 +35,7 @@
                         </svg>
                     </div>
                     @if($title)
-                        <div class="fs-2 fw-bold text-primary lh-sm">{!! $title !!}</span></div>
+                        <div class="fs-2 fw-bold text-primary lh-sm"><span>{!! $title !!}</span></div>
                     @endif
                 </div>
                 <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="img-fluid rounded-1" />
