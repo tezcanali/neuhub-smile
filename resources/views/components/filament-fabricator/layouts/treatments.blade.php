@@ -92,68 +92,14 @@
 
 {{ Filament::renderHook('filament-fabricator.body.end') }}
 
+</body>
+
 <script src="{{asset('front/js/jquery-3.7.1.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('front/js/fancybox.umd.js')}}"></script>
 <script src="{{asset('front/js/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('front/js/main.js')}}"></script>
-<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
-<script>
-    mapboxgl.accessToken = "pk.eyJ1Ijoidm9sa2Fua2FyYXRhcyIsImEiOiJjaWtza3BmNWwwMDAyd3NrcnUyZGptNHJ6In0._zEoaXwKsNTzu3zv8Q-FGA";
-    var map = new mapboxgl.Map({
-        style: "mapbox://styles/mapbox/light-v11",
-        center: [30.70673, 36.88584],
-        zoom: 13,
-        container: "map",
-        antialias: true,
-    });
-    var pos = [30.70673, 36.88584];
-    map.on("load", function () {
-        var layers = map.getStyle().layers;
-
-        var labelLayerId;
-        for (var i = 0; i < layers.length; i++) {
-            if (layers[i].type === "symbol" && layers[i].layout["text-field"]) {
-                labelLayerId = layers[i].id;
-                break;
-            }
-        }
-        map.addLayer(
-            {
-                id: "3d-buildings",
-                source: "composite",
-                "source-layer": "building",
-                filter: ["==", "extrude", "true"],
-                type: "fill-extrusion",
-                zoom: 50,
-                paint: {
-                    "fill-extrusion-color": "#ccc",
-
-                    // use an 'interpolate' expression to add a smooth transition effect to the
-                    // buildings as the user zooms in
-                    "fill-extrusion-height": ["interpolate", ["linear"], ["zoom"], 15, 0, 15.05, ["get", "height"]],
-                    "fill-extrusion-base": ["interpolate", ["linear"], ["zoom"], 15, 0, 15.05, ["get", "min_height"]],
-                    "fill-extrusion-opacity": 0.6,
-                },
-            },
-            labelLayerId
-        );
-    });
-    var popup = new mapboxgl.Popup({offset: 25}).setText("Buraya adres girilecek");
-
-    // create DOM element for the marker
-    var el = document.createElement("div");
-    //el.id = 'marker';
-    el.classList.add("marker-pin");
-
-    // create the marker
-    new mapboxgl.Marker(el)
-        .setLngLat(pos)
-        .setPopup(popup) // sets a popup on this marker
-        .addTo(map);
-</script>
-</body>
 
 </html>
 

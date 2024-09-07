@@ -851,6 +851,7 @@
 
 {{ Filament::renderHook('filament-fabricator.body.end') }}
 
+</body>
 <script type="application/ld+json">
     {
     "@context": "http://schema.org",
@@ -947,7 +948,6 @@
         .setPopup(popup) // sets a popup on this marker
         .addTo(map);
 </script>
-</body>
 
 </html>
 
