@@ -15,9 +15,9 @@
                             />
                         </svg>
                     </div>
-                        <h2 class="fs-54 fw-bold text-primary lh-sm">
+                        <{{ $tag ?? 'h2' }} class="fs-54 fw-bold text-primary lh-sm">
                             {!! $title !!}
-                        </h2>
+                        </{{ $tag ?? 'h2' }}>
                 </div>
                 @endif
                 {!! $content !!}
