@@ -38,7 +38,7 @@
                         @foreach($galleries as $item)
                             <div class="swiper-slide w-auto">
                                 <a href="https://cms.smilecenterturkey.co{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
-                                   class="d-block w-400px h-425px rounded-3 overflow-hidden position-relative" data-fancybox>
+                                   class="d-block w-400px h-425px rounded-3 overflow-hidden position-relative" data-fancybox="before-after">
                                     <div
                                         class="position-absolute start-0 top-0 m-3 bg-white text-primary fs-14 rounded-1 py-2 px-3 fw-semibold z-1">
                                         Before
