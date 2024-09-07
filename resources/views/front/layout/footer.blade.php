@@ -2,8 +2,14 @@
 <div class="modal fade" id="quateModal" tabindex="-1" role="dialog" aria-labelledby="quateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <p class="h2 text-center mb-0">Contact Us</p>
+                <!-- Close Button -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
             <div class="modal-body pt-3">
-                <p class="h2 text-center">Contact Us</p>
                 <iframe frameborder="0" allow="camera;"
                         style="height:700px; width:100%;border:none;"
                         src='https://forms.smilecenterturkey.co/smilecenterturkey/form/WebsiteContactForm/formperma/0Am-d1LwjZn32n9L0bdgykDPomn62j-n5WrO0Vj_LUM?zf_enablecamera=true'></iframe>
