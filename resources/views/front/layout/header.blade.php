@@ -22,7 +22,7 @@
             <svg width="48" height="48" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M35.53 78L52.36 54.06L35.62 30.21H42.37L57.76 52.26H53.71L69.01 30.21H75.76L59.02 54.06L75.76 78H69.01L53.71 55.86H57.76L42.28 78H35.53Z"
-                    fill="#192D74"></path>
+                    fill="currentcolor"></path>
                 <rect x="2" y="2" width="103" height="103" rx="51.5" stroke="#C2CCF2" stroke-width="4"></rect>
             </svg>
         </button>
