@@ -57,6 +57,7 @@
 
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.end') }}
 
+</body>
 <script type="application/ld+json">
     {"@context": "https://schema.org/",
     "@type": "Product",
@@ -132,7 +133,5 @@
         .setPopup(popup) // sets a popup on this marker
         .addTo(map);
 </script>
-</body>
-
 </html>
 
