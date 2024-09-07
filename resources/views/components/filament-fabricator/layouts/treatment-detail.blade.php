@@ -57,6 +57,19 @@
 
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.end') }}
 
+<script type="application/ld+json">
+    {"@context": "https://schema.org/",
+    "@type": "Product",
+    "name": "Smile Center",
+    "description": "Medical Travel and Tourism",
+    "image": "https://smilecenterturkey.co/files/smile-center-turkey-logo.png",
+    "aggregateRating": {"@type": "AggregateRating",
+    "reviewCount": 234,
+    "ratingValue": 4.90,
+    "bestRating": 5,
+    "worstRating": 1}}
+</script>
+
 <script src="{{asset('front/js/jquery-3.7.1.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="{{asset('front/js/bootstrap.min.js')}}"></script>

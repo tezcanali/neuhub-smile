@@ -60,3 +60,22 @@
         </div>
     </div>
 </section>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+      @foreach($faqs as $faq)
+        {
+          "@type": "Question",
+          "name": "{{ $faq['title'] }}",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ $faq['description'] }}"
+          }
+        },
+      @endforeach
+      ]
+    }
+</script>
+

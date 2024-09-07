@@ -1,41 +1,44 @@
+@php use Z3d0X\FilamentFabricator\Facades\FilamentFabricator; @endphp
+@php use Illuminate\Support\Str; @endphp
+@php use Filament\Facades\Filament; @endphp
 @props(['page'])
     <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    {{ \Filament\Facades\Filament::renderHook('filament-fabricator.head.start') }}
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('front/apple-touch-icon.png')}}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('front/favicon-32x32.png')}}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('front/favicon-16x16.png')}}" />
-    <link rel="shortcut icon" href="{{asset('front/favicon.png')}}" />
-    <link rel="mask-icon" href="{{asset('front/safari-pinned-tab.svg')}}" color="#FFF" />
-    <meta name="msapplication-TileColor" content="#FFF" />
-    <meta name="theme-color" content="#FFF" />
+    {{ Filament::renderHook('filament-fabricator.head.start') }}
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset('front/apple-touch-icon.png')}}"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('front/favicon-32x32.png')}}"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('front/favicon-16x16.png')}}"/>
+    <link rel="shortcut icon" href="{{asset('front/favicon.png')}}"/>
+    <link rel="mask-icon" href="{{asset('front/safari-pinned-tab.svg')}}" color="#FFF"/>
+    <meta name="msapplication-TileColor" content="#FFF"/>
+    <meta name="theme-color" content="#FFF"/>
 
-    @foreach (\Z3d0X\FilamentFabricator\Facades\FilamentFabricator::getMeta() as $tag)
+    @foreach (FilamentFabricator::getMeta() as $tag)
         {{ $tag }}
     @endforeach
 
     {!! seo()->for($page) !!}
 
-    <link rel="stylesheet" href="{{ asset('front/css/fancybox.css') }}" />
-    <link rel="stylesheet" href="{{ asset('front/css/swiper-bundle.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('front/css/main.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('front/css/fancybox.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('front/css/swiper-bundle.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('front/css/main.min.css') }}"/>
 
-    @foreach (\Z3d0X\FilamentFabricator\Facades\FilamentFabricator::getStyles() as $name => $path)
-        @if (\Illuminate\Support\Str::of($path)->startsWith('<'))
+    @foreach (FilamentFabricator::getStyles() as $name => $path)
+        @if (Str::of($path)->startsWith('<'))
             {!! $path !!}
         @else
-            <link rel="stylesheet" href="{{ $path }}" />
+            <link rel="stylesheet" href="{{ $path }}"/>
         @endif
     @endforeach
 
-    {{ \Filament\Facades\Filament::renderHook('filament-fabricator.head.end') }}
+    {{ Filament::renderHook('filament-fabricator.head.end') }}
 </head>
 <body>
-{{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.start') }}
+{{ Filament::renderHook('filament-fabricator.body.start') }}
 
 @include('front.layout.header')
 
@@ -45,25 +48,28 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="shape position-absolute start-0 end-0 top-50 translate-middle-y z-1 mt-n5">
-                    <svg width="100%" height="276" viewBox="0 0 1920 276" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="100%" height="276" viewBox="0 0 1920 276" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M1913.49 0C1912.46 1.37516 1911.38 2.78961 1910.35 4.16477C1900.46 17.4056 1891.06 29.8999 1876.89 41.2548C1864.04 51.5096 1844.93 58.4247 1826.35 65.1433C1810.74 70.8011 1795.96 76.1446 1784.45 83.3347C1772.45 90.8392 1766.36 100.112 1760.39 109.07C1749.29 125.808 1739.64 140.227 1694.42 138.145C1620.13 134.648 1557.66 133.98 1486.45 159.44C1472.21 164.508 1457.56 170.009 1443.33 175.313C1412.04 187.022 1379.72 199.123 1346.91 208.946C1307.54 220.733 1274.55 226.548 1243.08 227.373C1207.38 228.277 1173.43 222.619 1140.51 217.118C1095.7 209.614 1049.39 201.874 999.767 211.421C988.13 213.661 976.13 216.922 961.899 221.637C950.262 225.487 938.684 229.848 927.468 234.092C887.912 248.983 850.526 263.049 808.979 258.491C763.695 253.501 737.042 229.22 711.234 205.763C706.289 201.284 701.405 196.805 696.4 192.522C682.712 180.735 663.055 169.38 642.432 161.365C608.544 148.203 576.645 146.16 552.525 155.629C523.099 167.18 521.109 185.725 519.24 203.681C518.155 214.211 517.009 225.094 510.316 234.602C496.206 254.955 452.971 269.178 400.269 270.907C388.631 271.26 376.873 270.985 365.416 270.081C330.382 267.331 295.408 260.337 261.58 253.54C237.158 248.629 211.833 243.561 186.507 240.064C151.231 235.192 115.655 233.266 80.5603 233.266C53.3049 233.266 26.2906 234.445 0 236.292V240.221C59.9378 236.056 123.132 235.31 185.301 243.914C210.385 247.372 235.53 252.44 259.891 257.312C293.961 264.149 329.236 271.221 364.813 274.011C373.255 274.678 381.817 275.032 390.38 275.032C393.817 275.032 397.254 274.993 400.631 274.875C456.468 273.068 500.607 258.255 515.863 236.292C522.979 226.116 524.185 214.879 525.33 203.995C527.2 186.275 528.948 169.538 555.721 159.047C585.509 147.339 620.965 157.633 639.417 164.823C659.376 172.602 678.431 183.564 691.637 194.958C696.581 199.241 701.465 203.681 706.35 208.121C732.821 232.245 760.197 257.155 807.954 262.42C851.611 267.213 891.711 252.126 930.423 237.549C941.578 233.345 953.156 229.023 964.613 225.173C978.482 220.576 990.18 217.393 1001.46 215.232C1049.45 206.038 1092.93 213.307 1139 220.969C1172.28 226.548 1206.66 232.284 1243.26 231.341C1275.52 230.516 1309.23 224.544 1349.32 212.561C1382.37 202.659 1414.87 190.519 1446.23 178.771C1460.4 173.467 1475.05 167.966 1489.22 162.898C1558.99 137.948 1620.61 138.616 1693.88 142.074C1743.44 144.431 1754.3 128.008 1765.81 110.641C1771.54 102.037 1777.39 93.1573 1788.49 86.2029C1799.46 79.3271 1813.87 74.1408 1829.13 68.6009C1848.18 61.7251 1867.84 54.5742 1881.41 43.7694C1896.06 32.0609 1905.53 19.3701 1915.6 5.93283C1917.05 3.96832 1918.55 2.00381 1920 0.0392903H1913.49V0Z"
                             fill="#20388D"
                         />
                     </svg>
                 </div>
-                <img src="{{asset('front/img/ht1.png')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px" />
-                <img src="{{asset('front/img/ht3.png')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px" />
+                <img src="{{asset('front/img/ht1.png')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px"/>
+                <img src="{{asset('front/img/ht3.png')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px"/>
                 <div class="container-xxl h-100 position-relative z-3">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-4">
                             <div class="hero-text mb-md-5 mb-3 pt-md-0 pt-2">
                                 <div class="title text-white fs-1 lh-sm fw-normal pb-lg-4 pb-3 text-balance">
-                                    The place <br class="d-lg-block d-none" />
-                                    where your <br class="d-lg-block d-none" />
+                                    The place <br class="d-lg-block d-none"/>
+                                    where your <br class="d-lg-block d-none"/>
                                     smile matters!
                                 </div>
-                                <p class="text-white-50 fs-15 text-balance mb-0">Smile Center is one of the leading dental clinics in Turkey. Housing some of Europe’s finest dentists, it is considered a safe haven for patients seeking experienced hands and guaranteed results.</p>
+                                <p class="text-white-50 fs-15 text-balance mb-0">Smile Center is one of the leading
+                                    dental clinics in Turkey. Housing some of Europe’s finest dentists, it is considered
+                                    a safe haven for patients seeking experienced hands and guaranteed results.</p>
                                 <a href="/before-after" class="d-flex align-items-center gap-2 mt-lg-5 mt-3 text-white">
                                     <i class="fa fa-arrow-right"></i>
                                     Our Gallery *
@@ -71,16 +77,22 @@
                             </div>
                         </div>
                         <div class="col-lg-4 align-self-end position-relative h-100">
-                            <div class="gradient-hero d-lg-none d-block z-3 position-absolute start-0 end-0 bottom-0 w-100 h-50"></div>
-                            <img src="{{asset('front/img/ht2.png')}}" class="hero-2 position-absolute end-100 top-0 z-1 h-50px mt-5 d-lg-block d-none" />
-                            <img src="{{asset('front/img/hero-bg.png')}}" class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5" />
-                            <img src="{{asset('front/img/h1.png')}}" class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4" />
+                            <div
+                                class="gradient-hero d-lg-none d-block z-3 position-absolute start-0 end-0 bottom-0 w-100 h-50"></div>
+                            <img src="{{asset('front/img/ht2.png')}}"
+                                 class="hero-2 position-absolute end-100 top-0 z-1 h-50px mt-5 d-lg-block d-none"/>
+                            <img src="{{asset('front/img/hero-bg.png')}}"
+                                 class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5"/>
+                            <img src="{{asset('front/img/h1.png')}}"
+                                 class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4"/>
                         </div>
                         <div class="col-lg-4">
                             <div class="row g-3">
                                 <div class="col-6 position-relative z-2">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quateModal" class="hero-box rounded-1 p-xl-4 p-3 d-flex flex-column gap-xl-3 gap-lg-1 gap-2">
-                                        <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#quateModal"
+                                       class="hero-box rounded-1 p-xl-4 p-3 d-flex flex-column gap-xl-3 gap-lg-1 gap-2">
+                                        <svg width="30" height="33" viewBox="0 0 30 33" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 fill-rule="evenodd"
                                                 clip-rule="evenodd"
@@ -89,19 +101,23 @@
                                             />
                                         </svg>
                                         <div class="fs-5 fw-normal text-white">Get a Free Quote</div>
-                                        <div class="fs-12 text-white">Contact us to make an appointment, ask questions.</div>
+                                        <div class="fs-12 text-white">Contact us to make an appointment, ask
+                                            questions.
+                                        </div>
                                         <i class="fa fa-arrow-right fs-14 text-white"></i>
                                     </a>
                                 </div>
                                 <div class="col-6 position-relative z-1">
-                                    <a href="#" class="hero-box rounded-1 p-xl-4 p-3 pb-xl-0 pb-0 d-flex flex-column gap-xl-3 gap-1">
+                                    <a href="#"
+                                       class="hero-box rounded-1 p-xl-4 p-3 pb-xl-0 pb-0 d-flex flex-column gap-xl-3 gap-1">
                                         <div class="d-flex flex-column">
                                             <div class="fs-12 text-white">Smile Center Turkey</div>
                                             <div class="fs-5 fw-normal text-white">Treatments</div>
                                         </div>
                                         <div class="image position-relative text-center">
                                             <div class="icon position-absolute start-50 translate-middle-x top-0">
-                                                <svg width="140" height="140" viewBox="0 0 154 163" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="140" height="140" viewBox="0 0 154 163" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         fill-rule="evenodd"
                                                         clip-rule="evenodd"
@@ -110,7 +126,8 @@
                                                     />
                                                 </svg>
                                             </div>
-                                            <img src="{{asset('front/img/h2.png')}}" class="h-170px position-relative z-1" />
+                                            <img src="{{asset('front/img/h2.png')}}"
+                                                 class="h-170px position-relative z-1"/>
                                         </div>
                                     </a>
                                 </div>
@@ -144,7 +161,7 @@
                         <div class="fw-lighter fs-4">Popular Treatments</div>
                     </div>
                     <div class="image position-relative">
-                        <img src="{{asset('front/img/girl.png')}}" class="img-fluid" />
+                        <img src="{{asset('front/img/girl.png')}}" class="img-fluid"/>
                         <a href="/dental-treatment-turkey.html" class="d-flex align-items-center gap-2 fs-13 mt-n5">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
@@ -153,7 +170,8 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="popular-list swiper">
-                        <div class="gradient position-absolute end-0 top-0 bottom-0 h-100 w-200px z-3 d-lg-block d-none"></div>
+                        <div
+                            class="gradient position-absolute end-0 top-0 bottom-0 h-100 w-200px z-3 d-lg-block d-none"></div>
                         <div class="mb-4 text-white d-lg-none d-block">
                             <div class="fs-18 fw-normal">Treatments</div>
                             <div class="fw-lighter fs-4">Popular Treatments</div>
@@ -162,10 +180,12 @@
                             <div class="swiper-slide w-auto">
                                 <a href="/zirconia-crown-turkey" class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
-                                        <img src="{{asset('front/img/popular-zirconia.webp')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                                        <img src="{{asset('front/img/popular-zirconia.webp')}}"
+                                             class="w-100 h-300px object-fit-cover rounded-1"/>
                                     </div>
                                     <div class="fs-5 fw-normal pb-2">Zirconia Crown Turkey</div>
-                                    <p class="fs-12">Zirconia dental crowns are frequently preferred in Turkey due to affordable prices and attractive package options.</p>
+                                    <p class="fs-12">Zirconia dental crowns are frequently preferred in Turkey due to
+                                        affordable prices and attractive package options.</p>
                                     <span class="d-flex align-items-center fs-13 gap-2 pb-2">
                                                 <i class="fa fa-arrow-right"></i>
                                                 View More *
@@ -173,13 +193,16 @@
                                 </a>
                             </div>
                             <div class="swiper-slide w-auto">
-                                <a href="/all-on-4-dental-implants-turkey" class="d-block w-400px bg-white rounded-3 p-3">
+                                <a href="/all-on-4-dental-implants-turkey"
+                                   class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
-                                        <img src="{{asset('front/img/popular-all.webp')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                                        <img src="{{asset('front/img/popular-all.webp')}}"
+                                             class="w-100 h-300px object-fit-cover rounded-1"/>
                                     </div>
                                     <div class="fs-5 fw-normal pb-2">All On 4 Dental Implants</div>
                                     <p class="fs-12">
-                                        All on 4 dental implants are frequently preferred in Turkey due to affordable prices and comprehensive package solutions.</p>
+                                        All on 4 dental implants are frequently preferred in Turkey due to affordable
+                                        prices and comprehensive package solutions.</p>
                                     <span class="d-flex align-items-center fs-13 gap-2 pb-2">
                                                 <i class="fa fa-arrow-right"></i>
                                                 View More *
@@ -188,7 +211,8 @@
                             </div>
                         </div>
 
-                        <a href="/all-on-4-dental-implants-turkey" class="d-lg-none d-flex align-items-center gap-2 fs-14 mt-4">
+                        <a href="/all-on-4-dental-implants-turkey"
+                           class="d-lg-none d-flex align-items-center gap-2 fs-14 mt-4">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
                         </a>
@@ -202,10 +226,10 @@
     <!-- section -->
     <section class="py-lg-5 py-4 position-relative overflow-hidden">
         <div class="position-absolute start-0 top-50 translate-middle-y z-1 ms-3 d-md-block d-none">
-            <img src="{{asset('front/img/teeth.png')}}" class="h-100px" />
+            <img src="{{asset('front/img/teeth.png')}}" class="h-100px"/>
         </div>
         <div class="position-absolute end-0 top-50 translate-middle-y z-1 me-3 d-md-block d-none">
-            <img src="{{asset('front/img/teeth-4.png')}}" class="h-75px" />
+            <img src="{{asset('front/img/teeth-4.png')}}" class="h-75px"/>
         </div>
         <div class="shape position-absolute start-0 end-0 top-50 translate-middle-y z-0 d-md-block d-none">
             <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,24 +241,32 @@
             </svg>
         </div>
         <div class="container-xxl position-relative z-3">
-            <img src="{{asset('front/img/simple.png')}}" class="position-absolute end-0 top-0 h-400px mt-n5 z-0 me-3 d-lg-block d-none" style="filter: grayscale(1)" />
+            <img src="{{asset('front/img/simple.png')}}"
+                 class="position-absolute end-0 top-0 h-400px mt-n5 z-0 me-3 d-lg-block d-none"
+                 style="filter: grayscale(1)"/>
             <div class="heading position-relative z-2">
                 <div class="d-flex align-items-start gap-3 pb-md-5 pb-4">
                     <div class="icon mt-md-4 mt-3">
                         <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                                  fill="#192D74"/>
                         </svg>
                     </div>
                     <div class="d-flex flex-column gap-1">
                         <span class="fs-48 fw-lighter"><span class="fw-normal">6 Simple Steps</span> To Your Dream Smile</span>
-                        <div class="fw-lighter">Perhaps you just want your teeth to be taken to the next level and have a better, brighter smile.</div>
+                        <div class="fw-lighter">Perhaps you just want your teeth to be taken to the next level and have
+                            a better, brighter smile.
+                        </div>
                     </div>
                 </div>
                 <div class="simple-list row row-cols-xl-6 row-cols-lg-3 row-cols-md-4 row-cols-2 g-md-3 g-2">
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="55" height="37" viewBox="0 0 55 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="55" height="37" viewBox="0 0 55 37" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0 19.3654C0 14.8282 0 10.2909 0 5.7537C0.0344405 5.65268 0.0803611 5.55599 0.0990164 5.45209C0.677329 2.27141 3.3436 0.00711778 6.56809 0.0042315C16.6821 -0.00298421 26.7961 -9.79232e-05 36.9087 0.0157766C37.1728 0.0157766 37.5042 0.154318 37.6922 0.341926C43.362 6.01924 49.0203 11.7095 54.6656 17.4114C54.8508 17.599 54.9828 17.9324 54.9828 18.1994C55.0029 22.2142 55 26.2275 54.9957 30.2424C54.9914 34.123 52.1371 36.9977 48.2841 36.9991C38.2418 37.002 28.201 36.9977 18.1587 37.0093C17.7641 37.0093 17.4986 36.8851 17.226 36.6095C11.638 30.9769 6.04287 25.3516 0.446291 19.7276C0.311399 19.5934 0.149242 19.4852 0 19.3654ZM32.5836 10.8206C32.5836 15.9423 32.5836 21.0972 32.5836 26.2521C33.6555 26.2521 34.6859 26.2521 35.7693 26.2521C35.7693 25.3487 35.7693 24.4712 35.7693 23.5953C35.7693 22.7193 35.7693 21.8433 35.7693 20.8879C36.5442 20.8879 37.2574 20.9168 37.9677 20.8821C40.5006 20.7595 42.5483 18.6352 42.6847 16.0159C42.8138 13.5322 40.9756 11.1034 38.5145 10.8595C36.5672 10.6662 34.5883 10.8206 32.5836 10.8206ZM17.1442 20.39C17.0222 20.0495 16.9404 19.8315 16.8644 19.6122C15.8957 16.7937 14.9299 13.9738 13.9527 11.1583C13.8967 10.9952 13.7504 10.7412 13.6413 10.7383C12.5808 10.7066 11.5189 10.7196 10.4713 10.7196C10.4556 10.809 10.4455 10.8292 10.4498 10.8451C12.1804 15.8889 13.9096 20.9341 15.6561 25.9721C15.7049 26.1106 15.9488 26.2578 16.1095 26.2665C16.7524 26.2997 17.3996 26.2449 18.0411 26.2925C18.4874 26.3257 18.6538 26.1525 18.7858 25.747C20.0357 21.9053 21.3057 18.0709 22.57 14.235C22.9503 13.0805 23.3334 11.926 23.7338 10.7167C22.7178 10.7167 21.7707 10.734 20.825 10.708C20.4648 10.6979 20.2912 10.7946 20.1835 11.1612C19.9281 12.04 19.6196 12.903 19.3326 13.7718C18.6179 15.9336 17.9019 18.0969 17.1442 20.39ZM25.9236 10.7484C25.9236 15.9423 25.9236 21.0943 25.9236 26.2362C27.0042 26.2362 28.0475 26.2362 29.0821 26.2362C29.0821 21.0539 29.0821 15.9134 29.0821 10.7484C28.0245 10.7484 26.9942 10.7484 25.9236 10.7484Z"
                                         fill="#34B550"
@@ -243,17 +275,23 @@
                                         d="M-2.9824e-05 23.9028C0.0946815 23.9822 0.198003 24.0544 0.284104 24.1409C4.41122 28.29 8.53834 32.4405 12.664 36.5924C12.7616 36.6905 12.8506 36.7958 13.0113 36.9705C12.7429 36.9835 12.5564 37.0008 12.3698 37.0008C10.5086 37.0022 8.64596 37.0022 6.78474 37.0022C3.31774 37.0008 0.754791 34.8736 0.0832013 31.4432C0.0702861 31.3754 0.0272356 31.3148 -0.00146484 31.2499C-2.9824e-05 28.7994 -2.9824e-05 26.3518 -2.9824e-05 23.9028Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M42.1652 0.0245645C42.2455 0.0202351 42.4149 0.00291736 42.5842 0.00291736C44.5172 0.00147422 46.4501 -0.0028552 48.3831 0.00291736C52.0998 0.0144625 54.9799 2.90507 54.9957 6.63992C55.0043 8.61991 54.9971 10.5999 54.9971 12.5799C54.9971 12.7184 54.9971 12.8584 54.9971 12.9306C50.7222 8.63001 46.4343 4.31935 42.1652 0.0245645Z" fill="#34B550" />
-                                    <path d="M35.8052 17.6555C35.8052 16.4173 35.8052 15.2223 35.8052 13.9812C36.4882 13.9812 37.167 13.9278 37.8343 13.9942C38.7958 14.0895 39.509 14.9626 39.4702 15.8862C39.43 16.8271 38.6695 17.605 37.7008 17.6511C37.0809 17.68 36.4581 17.6555 35.8052 17.6555Z" fill="#34B550" />
+                                    <path
+                                        d="M42.1652 0.0245645C42.2455 0.0202351 42.4149 0.00291736 42.5842 0.00291736C44.5172 0.00147422 46.4501 -0.0028552 48.3831 0.00291736C52.0998 0.0144625 54.9799 2.90507 54.9957 6.63992C55.0043 8.61991 54.9971 10.5999 54.9971 12.5799C54.9971 12.7184 54.9971 12.8584 54.9971 12.9306C50.7222 8.63001 46.4343 4.31935 42.1652 0.0245645Z"
+                                        fill="#34B550"/>
+                                    <path
+                                        d="M35.8052 17.6555C35.8052 16.4173 35.8052 15.2223 35.8052 13.9812C36.4882 13.9812 37.167 13.9278 37.8343 13.9942C38.7958 14.0895 39.509 14.9626 39.4702 15.8862C39.43 16.8271 38.6695 17.605 37.7008 17.6511C37.0809 17.68 36.4581 17.6555 35.8052 17.6555Z"
+                                        fill="#34B550"/>
                                 </svg>
                             </div>
                             <span class="fs-18 text-balance">VIP Transfer</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="55" height="49" viewBox="0 0 55 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="55" height="49" viewBox="0 0 55 49" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M55 30.7361C55 36.684 55 42.6319 55 48.5841C36.6792 48.5841 18.3584 48.5841 0 48.5841C0 38.2809 0 27.9725 0 17.665C0.0333008 17.7649 0.0794922 17.8627 0.0977539 17.9647C0.545703 20.6114 1.96797 22.5813 4.40537 23.7373C5.38398 24.2016 6.49365 24.396 7.64307 24.7435C7.56143 25.4979 7.48623 26.3936 7.36377 27.2829C7.10811 29.1423 8.5959 30.327 10.3533 29.631C12.6511 28.7215 14.4128 27.2223 15.4988 24.9932C15.6138 24.7573 15.7008 24.5469 16.066 24.5512C18.4282 24.5735 20.7904 24.5629 23.1516 24.565C23.2364 24.565 23.3213 24.5862 23.4276 24.6001C23.4395 24.7605 23.4566 24.8976 23.4566 25.0346C23.4588 26.5742 23.4652 28.1148 23.4566 29.6544C23.4319 34.372 27.152 37.5149 30.9665 37.5808C33.5597 37.6254 36.155 37.6137 38.7492 37.6031C39.1445 37.6009 39.3519 37.7168 39.5237 38.0716C40.6033 40.3029 42.3758 41.7968 44.6778 42.6946C46.4084 43.3704 47.8897 42.1782 47.6373 40.3486C47.5138 39.4582 47.4375 38.5615 47.3419 37.6806C47.4547 37.6349 47.502 37.6073 47.5524 37.5988C47.6577 37.5797 47.7651 37.5701 47.8715 37.5595C50.4872 37.2992 52.5336 36.0762 53.8431 33.8375C54.3941 32.8972 54.624 31.7752 55 30.7361Z"
                                         fill="white"
@@ -270,35 +308,45 @@
                                         d="M37.3968 28.6013C37.2164 29.2399 37.0305 29.8476 36.8758 30.4628C36.7663 30.8984 36.488 31.1046 36.0637 31.0663C35.7146 31.0344 35.3547 30.9675 35.0335 30.8347C34.4051 30.5754 34.2773 30.2556 34.4739 29.6171C35.4299 26.5071 36.3881 23.3982 37.3485 20.2903C37.6009 19.4743 38.1112 19.1471 39.1038 19.146C40.0996 19.1439 40.627 19.469 40.8762 20.2701C41.8495 23.3929 42.8184 26.5177 43.7841 29.6426C43.9657 30.2312 43.8421 30.5638 43.2782 30.8071C42.943 30.9516 42.566 31.0281 42.1997 31.0674C41.7496 31.1163 41.4638 30.8889 41.3542 30.4352C41.2296 29.9199 41.0921 29.4067 40.9235 28.9041C40.8816 28.7798 40.7 28.6183 40.5797 28.6151C39.527 28.5917 38.4732 28.6013 37.3968 28.6013ZM37.9275 26.607C38.746 26.607 39.4991 26.607 40.2994 26.607C39.9137 25.2098 39.5431 23.8657 39.1725 22.5205C39.1338 22.5216 39.0952 22.5227 39.0565 22.5237C38.6859 23.8636 38.3153 25.2034 37.9275 26.607Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M29.2907 14.8791C29.2789 15.4433 28.7783 15.9203 28.2079 15.9118C27.6267 15.9033 27.1583 15.4252 27.1659 14.8483C27.1734 14.2692 27.6482 13.8144 28.239 13.8219C28.8148 13.8304 29.3025 14.3202 29.2907 14.8791Z" fill="#34B550" />
+                                    <path
+                                        d="M29.2907 14.8791C29.2789 15.4433 28.7783 15.9203 28.2079 15.9118C27.6267 15.9033 27.1583 15.4252 27.1659 14.8483C27.1734 14.2692 27.6482 13.8144 28.239 13.8219C28.8148 13.8304 29.3025 14.3202 29.2907 14.8791Z"
+                                        fill="#34B550"/>
                                 </svg>
                             </div>
                             <span class="fs-18 text-balance">Private Patient Advisor and Translator</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="55" height="38" viewBox="0 0 55 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="55" height="38" viewBox="0 0 55 38" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0 29.4781C0.291264 29.1997 0.549528 28.8753 0.878097 28.65C4.66166 26.0535 8.68341 23.9522 13.1557 22.7967C13.2059 22.7838 13.2504 22.7508 13.3494 22.7006C13.2174 22.1422 13.0667 21.5796 12.9534 21.0083C12.1872 17.1574 12.4368 13.3552 13.5445 9.60332C13.8056 8.71773 14.5187 8.40914 15.2993 8.88997C16.9407 9.9033 18.5491 10.9697 20.1704 12.0161C20.3038 12.1022 20.4287 12.2041 20.6224 12.3462C20.6984 12.1338 20.7673 11.963 20.8218 11.7864C22.0744 7.71014 24.0975 4.02425 26.5165 0.540743C27.0316 -0.201315 27.9011 -0.174044 28.4291 0.588109C30.8726 4.12185 32.9043 7.86372 34.1554 11.9974C34.1855 12.0979 34.2314 12.1926 34.2831 12.3247C35.0794 11.7663 35.8327 11.2008 36.6233 10.6913C37.5846 10.0727 38.5674 9.48419 39.5589 8.91437C40.4154 8.42206 41.0984 8.69764 41.3768 9.65069C42.582 13.7887 42.7872 17.954 41.6852 22.1494C41.6408 22.3188 41.6035 22.4896 41.5618 22.6632C42.7212 23.0436 43.8676 23.3795 44.9838 23.7943C48.357 25.043 51.4677 26.7927 54.4133 28.8452C55.1939 29.3891 55.1939 30.2503 54.4234 30.7871C51.5237 32.8081 48.4604 34.529 45.1517 35.7964C44.3482 36.1035 43.7384 35.8394 43.5376 35.1046C43.374 34.5046 43.6538 34.041 44.3697 33.7654C46.6123 32.9042 48.7444 31.8206 50.789 30.5618C51.1535 30.3379 51.515 30.1068 51.9598 29.8283C48.4647 27.5433 44.8246 25.7578 40.7856 24.776C40.5001 25.3085 40.2375 25.8324 39.9448 26.3391C38.6033 28.6586 36.8227 30.5503 34.5385 31.9727C33.2027 32.8037 31.9042 33.6951 30.5899 34.5606C30.5211 34.6065 30.4608 34.6668 30.2542 34.839C31.4221 35.0371 32.4451 35.2395 33.4753 35.3758C34.1468 35.4648 34.8312 35.4648 35.5099 35.4935C36.3148 35.528 36.8428 35.9657 36.8299 36.6045C36.817 37.2417 36.2875 37.6594 35.4682 37.6609C32.8842 37.6652 30.3848 37.2087 27.9599 36.3145C27.716 36.2241 27.3875 36.181 27.1565 36.2686C22.6325 37.9694 18.0397 38.0484 13.3895 36.9016C8.66906 35.7361 4.4651 33.4827 0.50218 30.734C0.294134 30.5905 0.167872 30.3293 0.0043044 30.124C0 29.9087 0 29.6934 0 29.4781ZM27.4549 3.01523C24.449 7.73741 22.1347 12.6204 21.8477 18.2281C21.6296 22.4853 22.5651 26.474 24.9196 30.0767C25.6341 31.1689 26.4663 32.165 27.4391 33.0377C27.518 32.9817 27.5668 32.9559 27.6041 32.92C27.7591 32.7707 27.914 32.6229 28.0618 32.4665C31.3762 28.9758 32.9028 24.7502 33.0635 20.0079C33.2787 13.7055 30.7707 8.27853 27.4549 3.01523ZM14.16 24.7918C10.1182 25.7678 6.51686 27.5649 3.04895 29.814C3.25699 29.9532 3.3933 30.0637 3.54539 30.1455C5.22267 31.0598 6.86265 32.0545 8.59015 32.8626C12.2575 34.5764 16.1042 35.604 20.1948 35.4921C21.7056 35.4505 23.1921 35.2438 24.7589 34.7831C24.0013 34.3094 23.3614 33.8544 22.6727 33.4884C20.5047 32.3344 18.5663 30.8919 16.9306 29.0518C15.8072 27.7888 14.8975 26.3822 14.16 24.7918ZM39.5531 11.3113C38.0997 12.3462 36.7294 13.338 35.3377 14.3011C34.9259 14.5853 34.8455 14.9025 34.9259 15.3805C35.5859 19.2974 35.3535 23.1556 33.9488 26.8874C33.4064 28.3299 32.6776 29.702 32.0821 31.001C38.1513 27.8835 41.6365 20.0137 39.5531 11.3113ZM15.3567 11.4262C14.3207 15.201 14.457 20.3065 16.582 24.4775C18.0283 27.318 20.1388 29.5183 22.9726 31.1574C22.4374 30.1154 21.9051 29.1896 21.4746 28.2194C19.6223 24.0397 19.2349 19.6807 20.0011 15.2025C20.0671 14.8164 19.971 14.604 19.6797 14.4016C18.4644 13.5533 17.2563 12.6936 16.0411 11.8438C15.8258 11.6917 15.5934 11.5683 15.3567 11.4262Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M40.3796 37.3309C39.7669 37.328 39.2949 36.85 39.3049 36.2429C39.3135 35.6602 39.7798 35.1865 40.3552 35.1765C40.9564 35.165 41.4542 35.6487 41.4585 36.2443C41.4614 36.8544 40.9851 37.3337 40.3796 37.3309Z" fill="#34B550" />
+                                    <path
+                                        d="M40.3796 37.3309C39.7669 37.328 39.2949 36.85 39.3049 36.2429C39.3135 35.6602 39.7798 35.1865 40.3552 35.1765C40.9564 35.165 41.4542 35.6487 41.4585 36.2443C41.4614 36.8544 40.9851 37.3337 40.3796 37.3309Z"
+                                        fill="#34B550"/>
                                 </svg>
                             </div>
                             <span class="fs-18 text-balance">Medication Package</span>
                         </div>
                     </div>
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="45" height="45" viewBox="0 0 45 45" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M0 21.2737C0.112702 20.4367 0.199576 19.5961 0.342802 18.7649C1.06832 14.5315 2.89503 10.8312 5.75954 7.63676C5.88516 7.49706 6.0096 7.35618 6.2127 7.12843C5.95559 7.12843 5.79124 7.13312 5.62688 7.12725C4.90254 7.10377 4.33785 6.55552 4.3132 5.85466C4.28972 5.16553 4.8321 4.52337 5.54588 4.50576C6.84782 4.47406 8.15211 4.47523 9.45405 4.50576C10.1103 4.52102 10.6351 5.0317 10.6539 5.68795C10.6903 7.00398 10.6926 8.32354 10.6574 9.63957C10.6386 10.3569 10.041 10.8593 9.34722 10.8523C8.6534 10.8452 8.11924 10.3334 8.05232 9.61257C8.03941 9.47051 8.03354 9.32729 7.91379 9.12184C7.33267 9.86145 6.71281 10.5717 6.17865 11.3407C3.64755 14.9823 2.49705 19.0361 2.65202 23.4632C2.96547 32.4183 9.77103 40.3344 18.5794 41.9933C22.2751 42.6894 25.8862 42.4053 29.4152 41.0869C29.7087 40.9778 30.0409 40.8897 30.3474 40.9097C30.9566 40.9519 31.4098 41.4368 31.4779 42.0132C31.5554 42.6612 31.2525 43.186 30.6256 43.4372C29.0724 44.0595 27.4664 44.4927 25.8111 44.7357C25.1185 44.8378 24.4223 44.9118 23.7273 44.9998C22.8198 44.9998 21.9111 44.9998 21.0037 44.9998C20.9062 44.9763 20.8099 44.9376 20.7113 44.9294C16.8548 44.6382 13.2941 43.449 10.0927 41.2865C4.79336 37.7082 1.51678 32.7705 0.347498 26.4662C0.196054 25.6503 0.11505 24.8203 0.00117398 23.9973C0 23.0898 0 22.1812 0 21.2737Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M0 23.9971C0.113876 24.82 0.194881 25.65 0.346324 26.4659C1.51561 32.7702 4.79218 37.7091 10.0915 41.2863C13.293 43.4476 16.8536 44.638 20.7102 44.9291C20.8088 44.9362 20.905 44.9749 21.0025 44.9996C14.002 44.9996 7.00044 44.9996 0 44.9996C0 37.9991 0 30.9987 0 23.9971Z" fill="white" />
+                                    <path
+                                        d="M0 23.9971C0.113876 24.82 0.194881 25.65 0.346324 26.4659C1.51561 32.7702 4.79218 37.7091 10.0915 41.2863C13.293 43.4476 16.8536 44.638 20.7102 44.9291C20.8088 44.9362 20.905 44.9749 21.0025 44.9996C14.002 44.9996 7.00044 44.9996 0 44.9996C0 37.9991 0 30.9987 0 23.9971Z"
+                                        fill="white"/>
                                     <path
                                         d="M38.8575 37.8796C39.0583 37.8796 39.2168 37.8749 39.3764 37.8807C40.102 37.9066 40.6619 38.4572 40.6807 39.1627C40.6995 39.853 40.1536 40.4858 39.4375 40.5022C38.1496 40.5327 36.8606 40.5304 35.5727 40.5046C34.8801 40.4905 34.3483 39.9634 34.3319 39.2637C34.3013 37.9758 34.3013 36.6868 34.3319 35.3989C34.3495 34.6734 34.9188 34.1639 35.615 34.1545C36.3253 34.144 36.8759 34.664 36.9428 35.406C36.9557 35.548 36.9663 35.6901 36.9768 35.831C37.0156 35.858 37.0531 35.885 37.0919 35.912C37.16 35.8028 37.2151 35.6819 37.2985 35.5868C40.244 32.255 41.9522 28.3868 42.2797 23.9421C42.9618 14.6946 37.3102 6.32301 28.4737 3.54772C24.157 2.19177 19.8508 2.34557 15.5987 3.91165C15.3028 4.02083 14.9753 4.11593 14.6677 4.10066C14.0608 4.07014 13.5935 3.58763 13.5172 3.01591C13.428 2.35026 13.7426 1.8161 14.386 1.56017C16.0518 0.898049 17.7752 0.442545 19.5503 0.211271C24.0513 -0.375718 28.388 0.240621 32.4359 2.30917C39.2426 5.78767 43.449 11.3159 44.6805 18.8705C45.8263 25.9015 43.8704 32.1341 39.1381 37.4757C39.0606 37.5638 38.982 37.6506 38.9068 37.7399C38.8916 37.7598 38.8892 37.7915 38.8575 37.8796Z"
                                         fill="#34B550"
@@ -325,9 +373,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="40" height="49" viewBox="0 0 40 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="40" height="49" viewBox="0 0 40 49" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M34.724 48.0137C24.9083 48.0137 15.0913 48.0137 5.27549 48.0137C4.64047 47.8108 3.96037 47.6943 3.37671 47.3912C1.14102 46.2301 0 44.3689 0 41.8301C0.00125249 29.9528 0 18.0767 0 6.19929C0 6.05902 0.00125249 5.91748 0.00626245 5.77721C0.111472 2.61717 2.72417 0.0182582 5.88545 0.0119957C15.2942 -0.00553912 24.7041 -0.00679161 34.1128 0.0282781C34.8856 0.0307831 35.7173 0.217404 36.4186 0.541799C38.7608 1.6252 39.9907 3.50895 39.9933 6.10786C40.0045 18.0466 39.9983 29.9866 39.9983 41.9253C39.9983 42.0343 39.9958 42.1445 39.992 42.2535C39.9106 44.0959 39.1178 45.5751 37.6987 46.7349C36.8282 47.445 35.7999 47.7832 34.724 48.0137ZM3.98542 23.9959C3.98542 24.1675 3.98542 24.3391 3.98542 24.5119C3.98542 30.2784 3.98292 36.0436 3.98668 41.8101C3.98793 43.1528 4.78451 44.0019 6.07332 44.0019C15.3568 44.0082 24.6402 44.0095 33.9237 43.9907C34.3232 43.9894 34.7666 43.8567 35.111 43.6525C35.8425 43.2179 36.0179 42.4839 36.0179 41.6698C36.0116 29.9039 36.0028 18.1368 36.0279 6.37089C36.0304 4.97686 35.1925 3.98239 33.6682 3.99491C28.027 4.03875 22.3845 4.01245 16.7433 4.01245C13.2263 4.01245 9.71055 4.0162 6.19356 4.00869C5.66 4.00744 5.16903 4.10137 4.74694 4.44456C4.16578 4.918 3.98292 5.54925 3.98417 6.2757C3.98918 12.1824 3.98542 18.0892 3.98542 23.9959Z"
                                         fill="#34B550"
@@ -346,20 +396,28 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
+                        <div
+                            class="simple-item bg-white rounded-1 p-4 border-bottom border-5 border-primary d-flex flex-column gap-4">
                             <div class="icon">
-                                <svg width="55" height="33" viewBox="0 0 55 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="55" height="33" viewBox="0 0 55 33" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M9.19843e-05 9.97951C0.678732 8.47957 1.36311 6.98104 2.03458 5.47689C2.71465 3.95305 3.3976 2.42922 4.04754 0.894139C4.30723 0.278421 4.71614 -0.00554115 5.39765 8.18498e-05C7.41922 0.0169509 9.4408 0.0141394 11.4638 0.0014876C12.0951 -0.00272965 12.5069 0.2489 12.7565 0.82104C14.0492 3.78296 15.3577 6.73784 16.6533 9.69836C17.0794 10.6711 16.6017 11.3571 15.5084 11.36C13.7192 11.3642 11.9287 11.3614 10.1395 11.3614C9.94583 11.3614 9.75214 11.3614 9.52114 11.3614C9.52114 12.9569 9.52114 14.5074 9.52114 16.1311C9.75071 16.1311 9.95875 16.1311 10.1668 16.1311C11.6518 16.1311 13.1382 16.1255 14.6231 16.1325C16.2459 16.1395 17.177 17.0617 17.1784 18.66C17.1813 21.9045 17.1698 25.149 17.1842 28.3934C17.1885 29.5068 16.7495 30.3137 15.692 30.7832C15.573 30.8366 15.4682 31.0278 15.4481 31.167C15.4051 31.4594 15.4496 31.7644 15.4108 32.0582C15.3319 32.6402 14.8613 33.0268 14.3089 32.9987C13.7508 32.9706 13.3304 32.5531 13.2974 31.9683C13.2788 31.6407 13.2946 31.3104 13.2946 30.9533C10.1424 30.9533 7.05336 30.9533 3.88111 30.9533C3.88111 31.2794 3.89259 31.6056 3.87824 31.9303C3.85385 32.5446 3.42629 32.9804 2.84809 33.0001C2.28279 33.0198 1.72324 32.5868 1.76484 31.9936C1.8208 31.2077 1.56541 30.7537 0.850903 30.3587C0.45778 30.1408 0.275565 29.556 -0.00134277 29.1371C-0.00134277 25.3823 -0.00134277 21.6276 -0.00134277 17.8742C0.493649 16.557 1.47215 16.0524 2.87678 16.1184C4.16232 16.1789 5.45217 16.1325 6.73915 16.1297C6.9271 16.1297 7.11362 16.1114 7.28292 16.1016C7.28292 14.4877 7.28292 12.94 7.28292 11.3614C5.32304 11.3614 3.41051 11.3375 1.49941 11.374C0.820773 11.3867 0.322912 11.2039 9.19843e-05 10.6107C9.19843e-05 10.4012 9.19843e-05 10.1904 9.19843e-05 9.97951ZM2.16945 28.818C2.40331 28.818 2.57835 28.818 2.75339 28.818C6.65163 28.818 10.5513 28.8095 14.4495 28.8292C14.9345 28.832 15.045 28.6886 15.0421 28.2346C15.022 25.0984 15.022 21.9607 15.0421 18.8231C15.045 18.3634 14.9216 18.2242 14.4438 18.2256C10.5269 18.2425 6.61146 18.2355 2.69457 18.2369C2.52383 18.2369 2.35166 18.2622 2.17088 18.2762C2.16945 21.7962 2.16945 25.2628 2.16945 28.818ZM14.0378 9.22602C14.0378 9.16558 14.0535 9.10794 14.0349 9.06436C13.055 6.83203 12.0764 4.59689 11.0721 2.37299C11.0119 2.23944 10.7464 2.12558 10.5743 2.12277C9.16245 2.10309 7.74922 2.12277 6.33598 2.10309C5.97873 2.09746 5.80369 2.20289 5.66165 2.53465C4.86105 4.4057 4.02889 6.26551 3.20965 8.12813C3.05613 8.47816 2.90548 8.8282 2.73331 9.22602C6.54115 9.22602 10.2859 9.22602 14.0378 9.22602Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M0 10.6108C0.32282 11.2041 0.820681 11.3868 1.50219 11.3742C3.41329 11.3376 5.32582 11.3615 7.2857 11.3615C7.2857 12.9402 7.2857 14.4879 7.2857 16.1017C7.1164 16.1101 6.92988 16.1298 6.74193 16.1298C5.45351 16.1326 4.16367 16.179 2.87956 16.1186C1.4735 16.0525 0.496426 16.5586 0.00143476 17.8744C0 15.4537 0 13.0329 0 10.6108Z" fill="white" />
+                                    <path
+                                        d="M0 10.6108C0.32282 11.2041 0.820681 11.3868 1.50219 11.3742C3.41329 11.3376 5.32582 11.3615 7.2857 11.3615C7.2857 12.9402 7.2857 14.4879 7.2857 16.1017C7.1164 16.1101 6.92988 16.1298 6.74193 16.1298C5.45351 16.1326 4.16367 16.179 2.87956 16.1186C1.4735 16.0525 0.496426 16.5586 0.00143476 17.8744C0 15.4537 0 13.0329 0 10.6108Z"
+                                        fill="white"/>
                                     <path
                                         d="M51.9827 30.8661C51.9827 31.2611 51.9971 31.5929 51.9799 31.9218C51.9469 32.5558 51.4835 33.0085 50.8938 33C50.3041 32.9916 49.8593 32.5305 49.8392 31.8951C49.8292 31.5802 49.8378 31.2667 49.8378 30.9097C41.7084 30.9097 33.6121 30.9097 25.4555 30.9097C25.4555 31.2485 25.467 31.5774 25.4526 31.905C25.4268 32.5432 24.9763 32.9972 24.3837 33C23.7941 33.0028 23.3349 32.5432 23.3106 31.9134C23.2976 31.5844 23.3077 31.2555 23.3077 30.8689C22.596 30.8689 21.9375 30.8759 21.2789 30.8675C20.3506 30.8549 19.9776 30.488 19.9776 29.5827C19.9762 25.5313 19.9747 21.4785 19.9776 17.4271C19.979 16.2336 20.5185 15.3326 21.5931 14.7773C21.8916 14.6227 21.9432 14.4427 21.9418 14.1602C21.9346 11.6172 21.9274 9.07275 21.9418 6.52975C21.9533 4.55608 23.1829 3.05614 25.0739 2.67096C25.2819 2.62879 25.5 2.60771 25.7123 2.60771C27.985 2.60208 30.2591 2.59646 32.5317 2.60349C33.2563 2.60489 33.7398 3.06176 33.7154 3.68029C33.6925 4.2918 33.2032 4.70087 32.4614 4.70227C30.5288 4.7079 28.5919 4.76975 26.6621 4.68681C24.4627 4.59122 24.0179 5.56822 24.0681 7.2256C24.1341 9.41576 24.0839 11.6101 24.0839 13.8031C24.0839 13.9915 24.0839 14.1798 24.0839 14.3977C24.9261 14.3977 25.7066 14.3977 26.5775 14.3977C26.5775 14.1897 26.5775 13.9887 26.5775 13.7876C26.5775 12.9976 26.566 12.209 26.5804 11.419C26.6134 9.5718 27.8372 8.36847 29.7239 8.33473C30.6723 8.31787 31.6207 8.33192 32.5705 8.33192C33.3754 8.33192 34.1817 8.34457 34.9866 8.32911C35.8833 8.31084 36.737 8.4247 37.4788 9.02918C38.2421 8.40924 39.1316 8.31646 40.0628 8.3263C41.7271 8.34457 43.3914 8.32771 45.0572 8.33192C47.1663 8.33755 48.3758 9.52962 48.3858 11.6073C48.3901 12.5182 48.3858 13.4292 48.3858 14.3837C49.2137 14.3837 50.0085 14.3837 50.8809 14.3837C50.8809 14.1967 50.8809 14.0098 50.8809 13.8228C50.8809 11.4541 50.8823 9.08681 50.8809 6.71812C50.8794 5.32502 50.241 4.70368 48.8091 4.70227C46.6971 4.70087 44.5851 4.70368 42.4732 4.69946C42.278 4.69946 42.0757 4.69665 41.8892 4.65026C41.3584 4.51812 41.0456 4.0739 41.0929 3.55237C41.1389 3.03787 41.532 2.61473 42.0729 2.61192C44.578 2.59927 47.0874 2.54304 49.5896 2.63863C51.5566 2.71314 53.0143 4.45205 53.0273 6.53959C53.043 9.04745 53.0402 11.5567 53.0215 14.0646C53.0186 14.4441 53.1277 14.6437 53.4792 14.8349C54.4663 15.3677 54.9828 16.2322 54.9871 17.3329C55.0029 21.4546 54.9972 25.5777 54.9914 29.6993C54.99 30.4444 54.5983 30.8366 53.8379 30.8619C53.2367 30.8816 52.6327 30.8661 51.9827 30.8661ZM52.8493 23.1457C52.8493 22.9784 52.8493 22.8604 52.8493 22.7409C52.8493 21.0216 52.8522 19.3024 52.8479 17.5832C52.8465 16.8227 52.5595 16.5345 51.7733 16.5345C42.2494 16.5317 32.7254 16.5317 23.2029 16.5345C22.4138 16.5345 22.1297 16.8198 22.1283 17.5804C22.1254 19.2996 22.1269 21.0188 22.1283 22.7381C22.1283 22.8716 22.1527 23.0051 22.167 23.1457C32.394 23.1457 42.5793 23.1457 52.8493 23.1457ZM52.8135 28.7462C52.8135 27.564 52.8135 26.4352 52.8135 25.3036C42.5693 25.3036 32.3624 25.3036 22.1728 25.3036C22.1728 26.4759 22.1728 27.6048 22.1728 28.7462C32.3997 28.7462 42.5837 28.7462 52.8135 28.7462ZM28.7512 14.3935C31.3194 14.3935 33.8445 14.3935 36.4085 14.3935C36.4085 13.3125 36.4328 12.2652 36.3984 11.2207C36.3826 10.7329 36.0268 10.4532 35.5404 10.4504C33.5576 10.4349 31.5748 10.4349 29.5919 10.4518C29.1328 10.456 28.777 10.7133 28.7612 11.1856C28.7282 12.2455 28.7512 13.3097 28.7512 14.3935ZM46.2251 14.409C46.2251 13.3097 46.2452 12.261 46.2165 11.2123C46.2021 10.7119 45.8405 10.4518 45.3556 10.4476C43.3871 10.4321 41.4172 10.4349 39.4487 10.4448C39.0097 10.4476 38.6223 10.6767 38.6008 11.1041C38.5477 12.1991 38.5835 13.2984 38.5835 14.4076C41.1417 14.409 43.6439 14.409 46.2251 14.409Z"
                                         fill="#34B550"
                                     />
-                                    <path d="M37.4787 4.68419C36.8948 4.68279 36.4185 4.21748 36.4185 3.65237C36.4185 3.07883 36.8848 2.61212 37.463 2.60649C38.0584 2.60087 38.5677 3.09288 38.5577 3.66502C38.5491 4.22592 38.0627 4.6856 37.4787 4.68419Z" fill="#34B550" />
-                                    <path d="M5.27561 22.4893C5.86673 22.495 6.33303 22.9504 6.33303 23.5212C6.33303 24.0891 5.85095 24.5699 5.28279 24.5699C4.69023 24.5684 4.17659 24.0638 4.19237 23.4973C4.20959 22.9251 4.68449 22.4823 5.27561 22.4893Z" fill="#34B550" />
+                                    <path
+                                        d="M37.4787 4.68419C36.8948 4.68279 36.4185 4.21748 36.4185 3.65237C36.4185 3.07883 36.8848 2.61212 37.463 2.60649C38.0584 2.60087 38.5677 3.09288 38.5577 3.66502C38.5491 4.22592 38.0627 4.6856 37.4787 4.68419Z"
+                                        fill="#34B550"/>
+                                    <path
+                                        d="M5.27561 22.4893C5.86673 22.495 6.33303 22.9504 6.33303 23.5212C6.33303 24.0891 5.85095 24.5699 5.28279 24.5699C4.69023 24.5684 4.17659 24.0638 4.19237 23.4973C4.20959 22.9251 4.68449 22.4823 5.27561 22.4893Z"
+                                        fill="#34B550"/>
                                 </svg>
                             </div>
                             <span class="fs-18 text-balance">B&B Accommo-dation</span>
@@ -386,16 +444,21 @@
             <div class="d-md-flex d-none align-items-start gap-3 pb-lg-5 pb-4 position-relative z-1">
                 <div class="icon mt-4">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                              fill="#192D74"/>
                     </svg>
                 </div>
                 <div class="d-flex flex-column gap-2">
                     <span class="fs-54">Our Doctors</span>
-                    <p class="m-0 fs-5">Our success is led by a team of skilled and dedicated dentists. With their expertise and commitment to excellence, we are able to provide the best dental care to our patients. Each of our members brings a wealth of experience and a long record of successful cases in a wide range of procedures addressing all oral health problems.</p>
+                    <p class="m-0 fs-5">Our success is led by a team of skilled and dedicated dentists. With their
+                        expertise and commitment to excellence, we are able to provide the best dental care to our
+                        patients. Each of our members brings a wealth of experience and a long record of successful
+                        cases in a wide range of procedures addressing all oral health problems.</p>
                 </div>
             </div>
             <div class="d-md-none d-block pb-4 text-center fs-4">
-                <span class="fw-normal">6 Simple Steps</span> <br />
+                <span class="fw-normal">6 Simple Steps</span> <br/>
                 To Your Dream Smile
             </div>
             <div class="position-relative">
@@ -405,12 +468,13 @@
                             <a href="/doctors/aydin-egem-y" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/aydın-yuva.png')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/aydın-yuva.png')}}" class="h-300px"/>
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
                                         <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     fill-rule="evenodd"
                                                     clip-rule="evenodd"
@@ -431,12 +495,13 @@
                             <a href="/doctors/berkin-o" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/berkin-ozturk.png')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/berkin-ozturk.png')}}" class="h-300px"/>
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
                                         <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     fill-rule="evenodd"
                                                     clip-rule="evenodd"
@@ -457,12 +522,13 @@
                             <a href="/doctors/emre-s" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px" />
+                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px"/>
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">
                                         <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     fill-rule="evenodd"
                                                     clip-rule="evenodd"
@@ -481,14 +547,20 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="our-doctor-button-prev w-60px h-60px rounded-1 d-flex align-items-center justify-content-center bg-white position-absolute start-0 top-50 translate-middle-y z-3">
+                <button type="button"
+                        class="our-doctor-button-prev w-60px h-60px rounded-1 d-flex align-items-center justify-content-center bg-white position-absolute start-0 top-50 translate-middle-y z-3">
                     <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M31.75 12.125L9.9 12.125L18.45 3.575L15.125 0.249999L0.875001 14.5L15.125 28.75L18.45 25.425L9.9 16.875L31.75 16.875L31.75 12.125Z" fill="currentcolor" />
+                        <path
+                            d="M31.75 12.125L9.9 12.125L18.45 3.575L15.125 0.249999L0.875001 14.5L15.125 28.75L18.45 25.425L9.9 16.875L31.75 16.875L31.75 12.125Z"
+                            fill="currentcolor"/>
                     </svg>
                 </button>
-                <button type="button" class="our-doctor-button-next w-60px h-60px rounded-1 d-flex align-items-center justify-content-center bg-white position-absolute end-0 top-50 translate-middle-y z-3">
+                <button type="button"
+                        class="our-doctor-button-next w-60px h-60px rounded-1 d-flex align-items-center justify-content-center bg-white position-absolute end-0 top-50 translate-middle-y z-3">
                     <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.249999 12.125L22.1 12.125L13.55 3.575L16.875 0.249999L31.125 14.5L16.875 28.75L13.55 25.425L22.1 16.875L0.249999 16.875L0.249999 12.125Z" fill="currentcolor" />
+                        <path
+                            d="M0.249999 12.125L22.1 12.125L13.55 3.575L16.875 0.249999L31.125 14.5L16.875 28.75L13.55 25.425L22.1 16.875L0.249999 16.875L0.249999 12.125Z"
+                            fill="currentcolor"/>
                     </svg>
                 </button>
             </div>
@@ -511,14 +583,18 @@
             <div class="d-flex align-items-center gap-3 pb-lg-5 pb-4">
                 <div class="icon">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                              fill="#192D74"/>
                     </svg>
                 </div>
                 <span class="fs-48">Review / Trustpilot / Winner</span>
             </div>
         </div>
         <div>
-            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="54ad5defc6454f065c28af8b" data-businessunit-id="62f21650759a69faaab38715" data-style-height="240px" data-style-width="100%" data-theme="light" data-stars="5" data-review-languages="en" data-font-family="Oxygen">
+            <div class="trustpilot-widget" data-locale="en-GB" data-template-id="54ad5defc6454f065c28af8b"
+                 data-businessunit-id="62f21650759a69faaab38715" data-style-height="240px" data-style-width="100%"
+                 data-theme="light" data-stars="5" data-review-languages="en" data-font-family="Oxygen">
                 <a href="https://uk.trustpilot.com/review/smilecenterturkey.co" target="_blank" rel="noopener">Trustpilot</a>
             </div>
         </div>
@@ -531,7 +607,9 @@
             <div class="d-flex align-items-center gap-3 pb-lg-5 pb-4">
                 <div class="icon">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                              fill="#192D74"/>
                     </svg>
                 </div>
                 <span class="fs-48">Smile Clinic</span>
@@ -540,49 +618,62 @@
         <div class="clinic-list swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="{{asset('/front/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover" />
+                    <a href="{{asset('/front/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover"
+                       data-fancybox="gallery">
+                        <img src="{{asset('/front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover"/>
                     </a>
                 </div>
             </div>
-            <button type="button" class="clinic-button-prev w-60px h-60px rounded bg-white text-primary position-absolute top-50 translate-middle-y z-3">
+            <button type="button"
+                    class="clinic-button-prev w-60px h-60px rounded bg-white text-primary position-absolute top-50 translate-middle-y z-3">
                 <svg width="24" height="24" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M31.75 16.875L9.9 16.875L18.45 25.425L15.125 28.75L0.875002 14.5L15.125 0.250002L18.45 3.575L9.9 12.125L31.75 12.125L31.75 16.875Z" fill="currentcolor" />
+                    <path
+                        d="M31.75 16.875L9.9 16.875L18.45 25.425L15.125 28.75L0.875002 14.5L15.125 0.250002L18.45 3.575L9.9 12.125L31.75 12.125L31.75 16.875Z"
+                        fill="currentcolor"/>
                 </svg>
             </button>
-            <button type="button" class="clinic-button-next w-60px h-60px rounded bg-white text-primary position-absolute top-50 translate-middle-y z-3">
+            <button type="button"
+                    class="clinic-button-next w-60px h-60px rounded bg-white text-primary position-absolute top-50 translate-middle-y z-3">
                 <svg width="24" height="24" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.249999 12.125L22.1 12.125L13.55 3.575L16.875 0.249999L31.125 14.5L16.875 28.75L13.55 25.425L22.1 16.875L0.249999 16.875L0.249999 12.125Z" fill="currentcolor" />
+                    <path
+                        d="M0.249999 12.125L22.1 12.125L13.55 3.575L16.875 0.249999L31.125 14.5L16.875 28.75L13.55 25.425L22.1 16.875L0.249999 16.875L0.249999 12.125Z"
+                        fill="currentcolor"/>
                 </svg>
             </button>
         </div>
@@ -595,7 +686,9 @@
             <div class="d-flex align-items-center gap-3 pb-lg-5 pb-4">
                 <div class="icon">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                              fill="#192D74"/>
                     </svg>
                 </div>
                 <span class="fs-48">News</span>
@@ -606,14 +699,19 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('/front/img/blog/01J3JEGMJFG5V1ZKYKV5ENN22X.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('/front/img/blog/01J3JEGMJFG5V1ZKYKV5ENN22X.jpg')}}"
+                                 class="w-100 h-300px object-fit-cover rounded-1"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
                                 <div class="fs-3 fw-normal pb-3">12 Things You Should Know About Dentures</div>
-                                <p class="fs-13">A Denture is a exact solution for people who have lost substantial pieces of their teeth. Denture, which we know as a solution for oral health, are preferred by people very often. It has a feature that will not disrupt and protect people's smiles and oral aesthetics. </p>
-                                <a href="/blog/12-things-you-should-know-about-dentures" class="d-flex align-items-center gap-2 fs-13">
+                                <p class="fs-13">A Denture is a exact solution for people who have lost substantial
+                                    pieces of their teeth. Denture, which we know as a solution for oral health, are
+                                    preferred by people very often. It has a feature that will not disrupt and protect
+                                    people's smiles and oral aesthetics. </p>
+                                <a href="/blog/12-things-you-should-know-about-dentures"
+                                   class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -624,13 +722,16 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('/front/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('/front/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}"
+                                 class="w-100 h-300px object-fit-cover rounded-1"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
                                 <div class="fs-3 fw-normal pb-3">How To Do Facial Care?</div>
-                                <p class="fs-13">The way to create a positive effect in our relationships and to contribute to ourselves with a healthy appearance depends on both the hygienic care of our face and a healthy lifestyle.</p>
+                                <p class="fs-13">The way to create a positive effect in our relationships and to
+                                    contribute to ourselves with a healthy appearance depends on both the hygienic care
+                                    of our face and a healthy lifestyle.</p>
                                 <a href="/blog/how-to-do-facial-care" class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
@@ -642,14 +743,18 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('/front/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('/front/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}"
+                                 class="w-100 h-300px object-fit-cover rounded-1"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
                                 <div class="fs-3 fw-normal pb-3">Hair Care Recommendations For Men</div>
-                                <p class="fs-13">Different hairstyles, which are becoming more and more common among men, actually require more healthy and regular care than aesthetics. Because applying the model that best reflects you is possible with healthy hair strands.</p>
-                                <a href="/blog/hair-care-recommendations-for-men" class="d-flex align-items-center gap-2 fs-13">
+                                <p class="fs-13">Different hairstyles, which are becoming more and more common among
+                                    men, actually require more healthy and regular care than aesthetics. Because
+                                    applying the model that best reflects you is possible with healthy hair strands.</p>
+                                <a href="/blog/hair-care-recommendations-for-men"
+                                   class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -660,14 +765,19 @@
                 <div class="swiper-slide">
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
-                            <img src="{{asset('/front/img/blog/01J3JES39AKG9DB55NYVY11BH2.jpg')}}" class="w-100 h-300px object-fit-cover rounded-1" />
+                            <img src="{{asset('/front/img/blog/01J3JES39AKG9DB55NYVY11BH2.jpg')}}"
+                                 class="w-100 h-300px object-fit-cover rounded-1"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
                                 <span class="fs-10 fw-semibold text-gray-500 pb-2">SMILE CENTER TURKEY NEWS</span>
                                 <div class="fs-3 fw-normal pb-3">Significant Considerations In Cosmetic</div>
-                                <p class="fs-13">Accordingly, we not only follow the developments in the sector day by day, but also try to provide better service by researching the possibilities of all our aesthetic/cosmetic surgery operations so that there is no question mark in our patients' minds.</p>
-                                <a href="blog/significant-considerations-in-cosmetic-plastic-surgery" class="d-flex align-items-center gap-2 fs-13">
+                                <p class="fs-13">Accordingly, we not only follow the developments in the sector day by
+                                    day, but also try to provide better service by researching the possibilities of all
+                                    our aesthetic/cosmetic surgery operations so that there is no question mark in our
+                                    patients' minds.</p>
+                                <a href="blog/significant-considerations-in-cosmetic-plastic-surgery"
+                                   class="d-flex align-items-center gap-2 fs-13">
                                     <i class="fa fa-arrow-right"></i>
                                     <span class="text-decoration-underline">Read More *</span>
                                 </a>
@@ -686,8 +796,9 @@
             <div class="d-flex justify-content-center">
                 <div class="d-flex align-items-center justify-content-center gap-lg-5 gap-md-4 gap-3 flex-wrap">
                     <div class="d-flex align-items-center gap-3">
-                        <div class="w-100px h-100px rounded-circle d-flex align-items-center justify-content-center bg-white">
-                            <img src="{{asset('front/img/logo-2.png')}}" class="h-30px" />
+                        <div
+                            class="w-100px h-100px rounded-circle d-flex align-items-center justify-content-center bg-white">
+                            <img src="{{asset('front/img/logo-2.png')}}" class="h-30px"/>
                         </div>
                         <div class="d-flex flex-column">
                             <div class="fw-semibold text-black">Smile Center Turkey</div>
@@ -704,7 +815,9 @@
                             <span class="fs-13 text-black-50">follower</span>
                         </div>
                     </div>
-                    <a href="https://www.instagram.com/smile_centre_turkey/" class="btn d-flex align-items-center gap-3 px-4 fw-normal text-white" style="background: #0095f6">
+                    <a href="https://www.instagram.com/smile_centre_turkey/"
+                       class="btn d-flex align-items-center gap-3 px-4 fw-normal text-white"
+                       style="background: #0095f6">
                         <i class="fab fa-instagram"></i>
                         Follow Us
                     </a>
@@ -720,12 +833,12 @@
 <div id="map" class="h-500px"></div>
 <!-- end #map -->
 
-<x-filament-fabricator::page-blocks :blocks="$page->blocks" />
+<x-filament-fabricator::page-blocks :blocks="$page->blocks"/>
 
-{{ \Filament\Facades\Filament::renderHook('filament-fabricator.scripts.start') }}
+{{ Filament::renderHook('filament-fabricator.scripts.start') }}
 
-@foreach (\Z3d0X\FilamentFabricator\Facades\FilamentFabricator::getScripts() as $name => $path)
-    @if (\Illuminate\Support\Str::of($path)->startsWith('<'))
+@foreach (FilamentFabricator::getScripts() as $name => $path)
+    @if (Str::of($path)->startsWith('<'))
         {!! $path !!}
     @else
         <script defer src="{{ $path }}"></script>
@@ -734,10 +847,44 @@
 
 @stack('scripts')
 
-{{ \Filament\Facades\Filament::renderHook('filament-fabricator.scripts.end') }}
+{{ Filament::renderHook('filament-fabricator.scripts.end') }}
 
-{{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.end') }}
+{{ Filament::renderHook('filament-fabricator.body.end') }}
 
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": ["MedicalOrganization"],
+    "name": "Smile Center Turkey",
+    "alternateName": "Smile Center Turkey",
+    "description": "Smile Center Turkey is the top satisfaction-rated dental centre and cosmetic surgery clinic in Antalya for implant, dental veneers, and smile makeover",
+    "logo": "https://smilecenterturkey.co/files/smile-center-turkey-logo.png",
+    "image": "https://smilecenterturkey.co/files/coverwebsite.webp",
+    "url": "https://smilecenterturkey.co/",
+    "sameAs": [
+    "https://www.facebook.com/smilecenterturkey/",
+    "https://www.instagram.com/smile_centre_turkey/",
+    "https://www.linkedin.com/company/smilecenterturkey/",
+    "https://www.youtube.com/@smilecenterturkey",
+    "https://www.tiktok.com/@smilecenterturkey"
+    ],
+    "telephone": "+44 (808) 175 47 46",
+    "founder": {
+    "@type": "Person",
+    "name": "Smile Center Turkey"
+    },
+    "areaServed": "Turkey",
+    "location": {
+    "@type": "Place",
+    "address": {
+    "@type": "PostalAddress",
+    "addressRegion":"Antalya",
+    "postalCode": "7010",
+    "streetAddress": "Barbaros, Mescit Sk. No:19, 07100 Muratpaşa/Antalya"
+    }
+    }
+    }
+</script>
 <script src="{{asset('front/js/jquery-3.7.1.min.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="{{asset('front/js/bootstrap.min.js')}}"></script>
@@ -787,7 +934,7 @@
             labelLayerId
         );
     });
-    var popup = new mapboxgl.Popup({ offset: 25 }).setText("Buraya adres girilecek");
+    var popup = new mapboxgl.Popup({offset: 25}).setText("Buraya adres girilecek");
 
     // create DOM element for the marker
     var el = document.createElement("div");
