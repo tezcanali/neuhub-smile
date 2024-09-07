@@ -65,17 +65,17 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-      @foreach($faqs as $faq)
+    @foreach($faqs as $faq)
         {
           "@type": "Question",
           "name": "{{ $faq['title'] }}",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "{{ $faq['description'] }}"
-          }
-        },
-      @endforeach
-      ]
-    }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{ $faq['description'] }}"
+        }
+      }@if(!$loop->last),@endif
+    @endforeach
+    ]
+  }
 </script>
 
