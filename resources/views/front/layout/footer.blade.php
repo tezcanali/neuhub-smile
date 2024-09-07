@@ -285,7 +285,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pt-5 position-relative text-center d-lg-none d-block">
+            <div class="pt-5 mt-5 position-relative text-center d-lg-none d-block">
                 <div class="teeth-body position-absolute start-0 bottom-0 z-3 ms-lg-5 ms-3">
                     <img src="{{asset('front/img/teeth-2.png')}}" class="h-100px" />
                 </div>
