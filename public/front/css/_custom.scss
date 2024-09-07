@@ -2,7 +2,7 @@
 $white: #fff !default;
 $gray-100: #f3f7fd !default;
 $gray-200: #f4f4f6 !default;
-$gray-300: #eef1fc !default;
+$gray-300: #eef3f6 !default;
 $gray-400: #eef3f6 !default;
 $gray-500: #a2add2 !default;
 $gray-600: #acbeff !default;
@@ -11,9 +11,9 @@ $gray-800: #313131 !default;
 $gray-900: #1f2632 !default;
 $black: #000000 !default;
 
-$blue: #1a76bc !default;
-$indigo: #192d74 !default;
-$purple: #4a8cfc !default;
+$blue: #25b3e8 !default;
+$indigo: #1a76bc !default;
+$purple: #12588d !default;
 $pink: #b0178f !default;
 $red: #ff3a3a !default;
 $orange: #d16603 !default;
@@ -106,7 +106,7 @@ $font-weight-bolder: 800 !default;
 $font-weight-base: $font-weight-light !default;
 
 // body
-$body-bg: $gray-300 !default;
+$body-bg: $gray-400 !default;
 $body-color: $indigo !default;
 
 // border-radius
@@ -2444,11 +2444,3 @@ a.mapboxgl-ctrl-logo.mapboxgl-compact {
         height: 250px !important;
     }
 }
-
-@media screen and (min-width: 750px){
-    .footer-container {
-        padding-bottom: 250px !important;
-    }
-}
-
-

@@ -22,7 +22,7 @@
                 ></path>
             </svg>
         </div>
-        <div>
+        <div class="who-list1">
             <div class="row">
                 @if(isset($title1))
                     <div class="col">
