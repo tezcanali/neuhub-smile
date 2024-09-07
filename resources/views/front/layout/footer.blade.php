@@ -181,7 +181,7 @@
                     <div class="menu-box pb-3">
                         <div class="menu-box-item border-bottom border-white border-opacity-10">
                             <div class="heading d-flex align-items-center justify-content-between px-3 pb-3 fw-semibold fs-5">
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-3 text-white">
                                     <svg width="24" height="24" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             fill-rule="evenodd"
@@ -219,7 +219,7 @@
                     <div class="menu-box pb-3">
                         <div class="menu-box-item border-bottom border-white border-opacity-10">
                             <div class="heading d-flex align-items-center justify-content-between px-3 pb-3 fw-semibold fs-5">
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-3 text-white">
                                     <svg width="24" height="24" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             fill-rule="evenodd"
@@ -251,7 +251,7 @@
                     <div class="menu-box">
                         <div class="menu-box-item">
                             <div class="heading d-flex align-items-center justify-content-between px-3 pb-3 fw-semibold fs-5">
-                                <div class="d-flex align-items-center gap-3">
+                                <div class="d-flex align-items-center gap-3 text-white">
                                     <svg width="24" height="24" viewBox="0 0 37 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             fill-rule="evenodd"
