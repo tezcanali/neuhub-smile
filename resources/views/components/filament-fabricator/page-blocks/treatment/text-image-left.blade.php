@@ -15,9 +15,9 @@
                             />
                         </svg>
                     </div>
-                        <div class="fs-54 fw-bold text-primary lh-sm">
+                        <h2 class="fs-54 fw-bold text-primary lh-sm">
                             {!! $title !!}
-                        </div>
+                        </h2>
                 </div>
                 @endif
                 {!! $content !!}

@@ -10,7 +10,7 @@
                               fill="#192D74"></path>
                     </svg>
                 </div>
-                <span class="fs-48 fw-lighter">{{ $title }}</span>
+                <h2 class="fs-48 fw-lighter">{{ $title }}</h2>
             @endif
         </div>
         <div class="shape position-absolute start-0 end-0 top-50 translate-middle-y z-0 mt-n5">

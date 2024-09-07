@@ -10,7 +10,7 @@
                               fill="#192D74"/>
                     </svg>
                 </div>
-                <span class="fs-48">Who Should Have It Done</span>
+                <h2 class="fs-48">{!! $title !!}</h2>
             </div>
         @endif
     </div>

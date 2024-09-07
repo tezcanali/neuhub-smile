@@ -4,7 +4,7 @@
         <div class="row g-4 align-items-center">
             <div class="col-xl-3 col-lg-4 text-md-start text-center">
                 @if($title)
-                    <div class="fs-1 text-white fw-normal lh-sm pb-4">{!! $title !!}</div>
+                    <h2 class="fs-1 text-white fw-normal lh-sm pb-4">{!! $title !!}</h2>
                 @endif
                 @if($description)
                     <p class="text-white text-balance fw-lighter pe-xl-5">{!! $description !!}</p>

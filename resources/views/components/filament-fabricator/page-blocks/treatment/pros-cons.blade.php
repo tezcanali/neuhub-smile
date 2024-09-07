@@ -8,7 +8,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="#192D74"></path>
                     </svg>
                 </div>
-                <span class="fs-48">{{ $title }}</span>
+                <h2 class="fs-48">{{ $title }}</h2>
             @endif
         </div>
         <div class="row g-3">
@@ -27,9 +27,9 @@
                     <div class="accordion faq-accordion" id="accordionExample">
                         @foreach($pros as $item)
                             <div class="accordion-item mb-3">
-                                <h2 class="accordion-header" id="headingOne">
+                                <span class="accordion-header" id="headingOne">
                                     <button class="accordion-button fs-18 fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pros{{ $loop->iteration }}" aria-expanded="true" aria-controls="pros{{ $loop->iteration }}">{{ $item['title'] }}</button>
-                                </h2>
+                                </span>
                                 <div id="pros{{ $loop->iteration }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body fs-16 text-justify">
                                         {!! $item['description'] !!}

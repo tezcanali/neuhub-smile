@@ -19,7 +19,7 @@
                     </div>
                     <div class="py-4 d-flex flex-column gap-2">
                         @if($subtitle)
-                            <div class="fs-4 fw-semibold text-success">{{ $subtitle }}</div>
+                            <h2 class="fs-4 fw-semibold text-success">{{ $subtitle }}</h2>
                         @endif
                             @if($title)
                                 <div class="fs-5 text-white">{{ $title }}</div>
@@ -38,7 +38,7 @@
                         @foreach($faqs as $faq)
                             <div class="menu-box pb-3">
                                 <div class="menu-box-item bg-white bg-opacity-10 text-white rounded-1 py-3 px-4">
-                                    <div class="heading d-flex align-items-center justify-content-between fw-normal fs-5">
+                                    <h3 class="heading d-flex align-items-center justify-content-between fw-normal fs-5" style="margin-bottom: 0px !important;">
                                         {{ $faq['title'] }}
                                         <div class="icon">
                                             <svg width="28" height="28" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@
                                                 </g>
                                             </svg>
                                         </div>
-                                    </div>
+                                    </h3>
                                     <div class="menu-box-item-content pt-4 text-white">
                                         <p>{{ $faq['description'] }}</p>
                                     </div>

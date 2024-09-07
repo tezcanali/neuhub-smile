@@ -15,7 +15,7 @@
                                 ></path>
                             </svg>
                         </div>
-                        <div class="fs-54 fw-bold text-primary lh-sm text-md-start text-center">{{ $title }}</div>
+                        <h2 class="fs-54 fw-bold text-primary lh-sm text-md-start text-center">{{ $title }}</h2>
                     @endif
                 </div>
                     {!! $content !!}
