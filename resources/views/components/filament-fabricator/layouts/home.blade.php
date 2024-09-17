@@ -108,11 +108,11 @@
                                     </a>
                                 </div>
                                 <div class="col-6 position-relative z-1">
-                                    <a href="#"
+                                    <a href="/dental-implants-turkey"
                                        class="hero-box rounded-1 p-xl-4 p-3 pb-xl-0 pb-0 d-flex flex-column gap-xl-3 gap-1">
                                         <div class="d-flex flex-column">
                                             <div class="fs-12 text-white">Smile Center Turkey</div>
-                                            <div class="fs-5 fw-normal text-white">Treatments</div>
+                                            <div class="fs-5 fw-normal text-white">Implant Treatments</div>
                                         </div>
                                         <div class="image position-relative text-center">
                                             <div class="icon position-absolute start-50 translate-middle-x top-0">
