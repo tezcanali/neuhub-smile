@@ -44,7 +44,7 @@
     <div class="container-xxl position-relative z-3 h-100 py-4">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb text-text-primary dark mb-lg-4 mb-2">
-                <li class="breadcrumb-item"><a href="#">Smile Center Turkey</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Blog</li>
             </ol>
         </nav>

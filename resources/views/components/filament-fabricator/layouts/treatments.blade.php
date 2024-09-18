@@ -46,7 +46,7 @@
     <div class="container-xxl position-relative z-3 h-100 py-4 d-flex justify-content-center flex-column">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb text-text-primary dark mb-lg-3 mb-2">
-                <li class="breadcrumb-item"><a href="/">Smile Center Turkey</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ $page->title}}</li>
             </ol>
         </nav>
