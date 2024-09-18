@@ -1,5 +1,5 @@
 @aware(['page'])
-<section class="pb-lg-5 pb-4 position-relative overflow-hidden">
+<section class="position-relative overflow-hidden">
     <div class="container-xxl">
         @if($title)
             <div class="d-flex align-items-center gap-3 pb-lg-5 pb-4 position-relative z-1">
@@ -16,7 +16,7 @@
     </div>
 </section>
 
-<section class="py-lg-5 py-4">
+<section>
     <div class="container-xxl">
         <div class="table-responsive">
             <table class="table table-page table-bordered border-primary m-0">
