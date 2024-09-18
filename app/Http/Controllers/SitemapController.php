@@ -22,12 +22,15 @@ class SitemapController extends Controller
         $pages = \Z3d0X\FilamentFabricator\Models\Page::all();
 
         foreach ($pages as $page) {
-            $sitemap->add(
-                Url::create("/{$page->slug}")
-                    ->setLastModificationDate($page->updated_at)
-                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
-                    ->setPriority(0.8)
-            );
+            if ($page->slug != '/') {
+                $sitemap->add(
+                    Url::create("/{$page->slug}")
+                        ->setLastModificationDate($page->updated_at)
+                        ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
+                        ->setPriority(0.8)
+                );
+            }
+
         }
 
         foreach ($blogs as $blog) {
