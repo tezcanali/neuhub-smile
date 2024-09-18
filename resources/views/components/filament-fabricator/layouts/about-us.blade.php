@@ -95,7 +95,7 @@
             <span class="fs-48 fw-lighter">What Do We Offer You?</span>
         </div>
 
-        <div class="who-list">
+        <div>
             <div class="row">
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
