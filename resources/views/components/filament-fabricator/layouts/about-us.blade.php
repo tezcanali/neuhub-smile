@@ -199,7 +199,7 @@
                     </div>
                     <div class="fs-5 text-white">You can ask all your questions about our treatments in Turkey right now!</div>
                     <div class="mt-4 pt-lg-3">
-                        <a href="#" class="btn btn-success rounded-pill text-white fs-18 fw-semibold px-5">Ask Now</a>
+                        <a href="/contact" class="btn btn-success rounded-pill text-white fs-18 fw-semibold px-5">Ask Now</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
