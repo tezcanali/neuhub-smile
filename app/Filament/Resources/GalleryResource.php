@@ -57,7 +57,7 @@ class GalleryResource extends Resource
                                         'xl' => 6,
                                         '2xl' => 12,
                                     ]),
-                                Select::make('category_id')
+                                /* Select::make('category_id')
                                     ->relationship('category', 'title')
                                     ->options(GalleryCategory::all()->pluck('title', 'id'))
                                     ->required()
@@ -67,8 +67,8 @@ class GalleryResource extends Resource
                                         'xl' => 3,
                                         '2xl' => 3,
                                     ])
-                                    ->native(false),
-                                Select::make('status')
+                                    ->native(false),*/
+                                /* Select::make('status')
                                     ->options([
                                         'published' => 'Published',
                                         'draft' => 'Draft'
@@ -80,7 +80,7 @@ class GalleryResource extends Resource
                                         'xl' => 3,
                                         '2xl' => 3,
                                     ])
-                                    ->native(false),
+                                    ->native(false), */
                                 TextInput::make('title')
                                     ->label('Başlık')
                                     ->required()
