@@ -51,7 +51,7 @@
         <div class="row g-4">
             @foreach($beforeAfter->images as $item)
                 <div class="col-lg-3">
-                    <a href="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="d-block w-100 h-300px rounded-3 overflow-hidden position-relative" data-fancybox="">
+                    <a href="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="d-block w-100 h-300px rounded-3 overflow-hidden position-relative" data-fancybox="gallery">
                         <div class="position-absolute start-0 top-0 m-2 bg-white text-primary fs-13 rounded-1 py-2 px-3 fw-semibold z-1">Before</div>
                         <div class="position-absolute start-0 bottom-0 m-2 bg-white text-primary fs-13 rounded-1 py-2 px-3 fw-semibold z-1">After</div>
                         <img src="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="w-100 h-100 object-fit-cover" />
