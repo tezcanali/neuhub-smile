@@ -65,117 +65,51 @@
     <div class="container-xxl">
         <div class="row">
             <div class="col-lg-8">
-                <img src="{{asset('front/img/blog.png')}}" class="mobile-img w-100 h-500px object-fit-cover" />
-                <div class="bg-primary p-lg-5 p-4">
-                    <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-4">
-                        <span class="fs-14 text-gray-600">Oral and Dental Health</span>
-                        <div class="d-flex align-items-center gap-2 fs-14 text-gray-600">
-                            <i class="far fa-eye"></i>
-                            <span>360views</span>
+                @php
+                    $blogs = \App\Models\Blog::all();
+                 @endphp
+
+                @foreach($blogs as $blog)
+                    @if($loop->first)
+                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="mobile-img w-100 h-500px object-fit-cover" />
+                        <div class="bg-primary p-lg-5 p-4">
+                            <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-4">
+                                <span class="fs-14 text-gray-600">{!! $blog->category->title !!}</span>
+                            </div>
+                            <div class="fs-3 fw-semibold text-white lh-sm pb-3">{{ $blog->title }}</div>
+                            <p class="text-gray-600">{{ \Illuminate\Support\Str::words(strip_tags($blog->content), 50, '...') }}</p>
+                            <span class="fs-14 text-gray-600 d-block mt-4">{{ $blog->created_at }}</span>
+                            <a href="/blog/{{ $blog->slug }}" class="d-flex align-items-center gap-2 text-white fs-13 fw-semibold ls-1 mt-4">
+                                READ MORE
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                    </div>
-                    <div class="fs-3 fw-semibold text-white lh-sm pb-3">Methods of Teeth Whitening at Home and Correct Application Techniques</div>
-                    <p class="text-gray-600">A glamorous smile is one of the important elements that strengthen the first impression.</p>
-                    <span class="fs-14 text-gray-600 d-block mt-4">24.06.2023</span>
-                    <a href="#" class="d-flex align-items-center gap-2 text-white fs-13 fw-semibold ls-1 mt-4">
-                        READ MORE
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="blog-list pt-3 row g-3">
-                    <div class="col-lg-6">
-                        <a href="#" class="d-block hover-img-scale bg-white">
-                            <div class="image overflow-hidden">
-                                <img src="{{asset('front/img/blog/1.png')}}" class="w-100 h-250px object-fit-cover" />
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">
-                                    <span class="fs-14">Oral and Dental Health</span>
-                                    <div class="d-flex align-items-center gap-2 fs-14">
-                                        <i class="far fa-eye"></i>
-                                        <span>360views</span>
+                    @endif
+                @endforeach
+                    <div class="blog-list pt-3 row g-3">
+                        @foreach($blogs->slice(1) as $blog)
+                            <div class="col-lg-6">
+                                <a href="/blog/{{ $blog->slug }}" class="d-block hover-img-scale bg-white">
+                                    <div class="image overflow-hidden">
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="w-100 h-250px object-fit-cover" />
                                     </div>
-                                </div>
-                                <div class="fs-4 fw-semibold pb-3">Effective Products Against Bad Breath and Their Use</div>
-                                <p class="fs-14 text-primary text-opacity-50 mb-3">A glamorous smile is one of the important elements that strengthen the first impression.</p>
-                                <span class="fs-14 text-primary text-opacity-75 d-block">24.06.2023</span>
-                                <span class="d-flex align-items-center gap-2 fs-13 fw-semibold ls-1 mt-4">
+                                    <div class="p-4">
+                                        <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">
+                                            <span class="fs-14">{{ $blog->category->title }}</span>
+                                        </div>
+                                        <div class="fs-4 fw-semibold pb-3">{{ $blog->title }}</div>
+                                        <p class="fs-14 text-primary text-opacity-50 mb-3">{{ \Illuminate\Support\Str::words(strip_tags($blog->content), 50, '...') }}</p>
+                                        <span class="fs-14 text-primary text-opacity-75 d-block">{{ $blog->created_at }}</span>
+                                        <span class="d-flex align-items-center gap-2 fs-13 fw-semibold ls-1 mt-4">
                                             READ MORE
                                             <i class="fa fa-arrow-right"></i>
                                         </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="#" class="d-block hover-img-scale bg-white">
-                            <div class="image overflow-hidden">
-                                <img src="{{asset('front/img/blog/2.png')}}" class="w-100 h-250px object-fit-cover" />
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">
-                                    <span class="fs-14">Oral and Dental Health</span>
-                                    <div class="d-flex align-items-center gap-2 fs-14">
-                                        <i class="far fa-eye"></i>
-                                        <span>360views</span>
                                     </div>
-                                </div>
-                                <div class="fs-4 fw-semibold pb-3">Effective Products Against Bad Breath and Their Use</div>
-                                <p class="fs-14 text-primary text-opacity-50 mb-3">A glamorous smile is one of the important elements that strengthen the first impression.</p>
-                                <span class="fs-14 text-primary text-opacity-75 d-block">24.06.2023</span>
-                                <span class="d-flex align-items-center gap-2 fs-13 fw-semibold ls-1 mt-4">
-                                            READ MORE
-                                            <i class="fa fa-arrow-right"></i>
-                                        </span>
+                                </a>
                             </div>
-                        </a>
+                        @endforeach
                     </div>
-                    <div class="col-lg-6">
-                        <a href="#" class="d-block hover-img-scale bg-white">
-                            <div class="image overflow-hidden">
-                                <img src="{{asset('front/img/blog/3.png')}}" class="w-100 h-250px object-fit-cover" />
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">
-                                    <span class="fs-14">Oral and Dental Health</span>
-                                    <div class="d-flex align-items-center gap-2 fs-14">
-                                        <i class="far fa-eye"></i>
-                                        <span>360views</span>
-                                    </div>
-                                </div>
-                                <div class="fs-4 fw-semibold pb-3">Effective Products Against Bad Breath and Their Use</div>
-                                <p class="fs-14 text-primary text-opacity-50 mb-3">A glamorous smile is one of the important elements that strengthen the first impression.</p>
-                                <span class="fs-14 text-primary text-opacity-75 d-block">24.06.2023</span>
-                                <span class="d-flex align-items-center gap-2 fs-13 fw-semibold ls-1 mt-4">
-                                            READ MORE
-                                            <i class="fa fa-arrow-right"></i>
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="#" class="d-block hover-img-scale bg-white">
-                            <div class="image overflow-hidden">
-                                <img src="{{asset('front/img/blog/4.png')}}" class="w-100 h-250px object-fit-cover" />
-                            </div>
-                            <div class="p-4">
-                                <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">
-                                    <span class="fs-14">Oral and Dental Health</span>
-                                    <div class="d-flex align-items-center gap-2 fs-14">
-                                        <i class="far fa-eye"></i>
-                                        <span>360views</span>
-                                    </div>
-                                </div>
-                                <div class="fs-4 fw-semibold pb-3">Effective Products Against Bad Breath and Their Use</div>
-                                <p class="fs-14 text-primary text-opacity-50 mb-3">A glamorous smile is one of the important elements that strengthen the first impression.</p>
-                                <span class="fs-14 text-primary text-opacity-75 d-block">24.06.2023</span>
-                                <span class="d-flex align-items-center gap-2 fs-13 fw-semibold ls-1 mt-4">
-                                            READ MORE
-                                            <i class="fa fa-arrow-right"></i>
-                                        </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+
                 <!--
                 <div class="mt-md-5 mt-4 pt-md-5 pt-4 mb-md-0 mb-3 border-top border-primary border-opacity-10 d-flex align-items-center justify-content-md-between justify-content-center">
                     <a href="#" class="d-md-flex d-none align-items-center gap-3 flex-1 text-primary">

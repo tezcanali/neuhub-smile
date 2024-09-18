@@ -207,8 +207,7 @@
                 <ul class="webmenu d-xxl-flex d-none align-items-center gap-3 list-unstyled mb-0">
 
                     <li class="position-relative">
-                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Dental Treatment
-                            Turkey</a>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Dental Treatment</a>
                         <div class="submenu w-300px start-50 translate-middle-x" style="right: inherit">
                             <div class="submenu-content bg-white p-4">
                                 <div class="row p-lg-2">
@@ -241,8 +240,7 @@
                     </div>
 
                     <li>
-                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Plastic Surgery
-                            Turkey</a>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Plastic Surgery</a>
                         <div class="submenu">
                             <div class="submenu-content bg-white p-xl-5 p-4">
                                 <div class="row">
@@ -296,8 +294,7 @@
                         </svg>
                     </div>
                     <li class="position-relative">
-                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Hair Transplant
-                            Turkey</a>
+                        <a href="#" class="d-block text-white fw-normal hover-text-secondary py-4">Hair Transplant</a>
                         <div class="submenu w-300px start-50 translate-middle-x" style="right: inherit">
                             <div class="submenu-content bg-white p-4">
                                 <div class="row p-lg-2">
@@ -336,9 +333,28 @@
                     <li class="position-relative">
                         <a href="/doctors" class="d-block text-white fw-normal hover-text-secondary py-4">Doctors</a>
                     </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z"
+                                  fill="#7996FF"/>
+                        </svg>
+                    </div>
+                    <li class="position-relative">
+                        <a href="/about-us" class="d-block text-white fw-normal hover-text-secondary py-4">About</a>
+                    </li>
+                    <div class="icon">
+                        <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M7.4799 0.277465C6.45212 6.7699 0 8.60429 0 8.60429C2.36282 8.60429 7.00094 10.9597 7.4799 15.3102V16.0491C7.4799 15.8714 7.48673 15.6966 7.5 15.5249C7.51328 15.6966 7.52011 15.8714 7.52011 16.0491V15.3102C7.99906 10.9597 12.6372 8.60429 15 8.60429C15 8.60429 8.54788 6.7699 7.52011 0.277465V0C7.51371 0.0486151 7.507 0.0969771 7.5 0.145087C7.493 0.0969771 7.4863 0.0486151 7.4799 0V0.277465Z"
+                                  fill="#7996FF"/>
+                        </svg>
+                    </div>
+                    <li class="position-relative">
+                        <a href="/blogs" class="d-block text-white fw-normal hover-text-secondary py-4">Blog</a>
+                    </li>
                 </ul>
                 <div class="button d-flex align-items-center gap-md-3 gap-2">
-                    <a href="/about-us" class="d-xxl-block d-none text-white hover-text-secondary">About</a>
                     <a href="/contact"
                        class="d-xxl-block d-none text-white hover-text-secondary bg-secondary bg-opacity-25 rounded-pill py-2 px-4">Contact</a>
                     <div class="mobile-menu-button d-xxl-none block">

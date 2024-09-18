@@ -31,6 +31,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb text-white mb-lg-4 mb-2">
                     <li class="breadcrumb-item"><a href="/">Smile Center Turkey</a></li>
+                    <li class="breadcrumb-item"><a href="/blogs">Blogs</a></li>
                     <li class="breadcrumb-item active" aria-current="page">{{ $blog->title }}</li>
                 </ol>
             </nav>
@@ -46,10 +47,6 @@
                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-md-3 gap-2">
                     <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap">
                         <span class="fs-14 text-gray-600">{{ $blog->category->title }}</span>
-                        <div class="d-flex align-items-center gap-2 fs-14 text-gray-600">
-                            <i class="far fa-eye"></i>
-                            <span>360views</span>
-                        </div>
                         <span class="fs-14 text-gray-600">{{ $blog->created_at }}</span>
                     </div>
                     <div class="dropdown">
@@ -82,6 +79,7 @@
         <div class="container-xxl position-relative z-1">
             <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="mobile-img w-100 h-600px object-fit-cover mb-lg-5 mb-4" />
             {!! $blog->content !!}
+            <!--
             <div class="pagination py-4 d-flex align-items-center justify-content-center gap-lg-5 gap-4">
                 <a href="#" class="fs-18 fw-semibold d-md-flex align-items-center gap-xl-4 gap-3 d-none text-end">
                     <span>Effective Products Against Bad Breath and Their Use</span>
@@ -107,7 +105,7 @@
                     </div>
                     <span>Root Canal Treatment: Objectives and Processes</span>
                 </a>
-            </div>
+            </div> -->
         </div>
         <!--
             <div class="d-none">
