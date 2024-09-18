@@ -93,7 +93,7 @@
                 <!-- <img src="{{asset('front/img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" /> -->
                 <div class="row">
                     <div class="col-lg-3">
-                        <a href="index.html" class="d-block text-lg-start text-center">
+                        <a href="/" class="d-block text-lg-start text-center">
                             <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
                         </a>
                         <div class="pt-5 d-flex flex-column gap-lg-2 gap-1 text-lg-start text-center">
