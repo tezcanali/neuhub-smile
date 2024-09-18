@@ -77,5 +77,6 @@
 <script src="{{asset('front/js/fancybox.umd.js')}}"></script>
 <script src="{{asset('front/js/swiper-bundle.min.js')}}"></script>
 <script src="{{asset('front/js/main.js')}}"></script>
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
 </html>
 
