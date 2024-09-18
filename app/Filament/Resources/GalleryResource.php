@@ -55,7 +55,7 @@ class GalleryResource extends Resource
                                     ->columnSpan([
                                         'sm' => 3,
                                         'xl' => 6,
-                                        '2xl' => 12,
+                                        '2xl' => 6,
                                     ]),
                                 /* Select::make('category_id')
                                     ->relationship('category', 'title')
@@ -85,7 +85,7 @@ class GalleryResource extends Resource
                                     ->label('Başlık')
                                     ->required()
                                     ->columnSpan([
-                                        'sm' => 1,
+                                        'sm' => 3,
                                         'xl' => 6,
                                         '2xl' => 6,
                                     ]),
