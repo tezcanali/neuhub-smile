@@ -162,7 +162,7 @@
                     </div>
                     <div class="image position-relative">
                         <img src="{{asset('front/img/girl.png')}}" class="img-fluid"/>
-                        <a href="/dental-treatment-turkey.html" class="d-flex align-items-center gap-2 fs-13 mt-n5">
+                        <a href="/dental-implants-turkey" class="d-flex align-items-center gap-2 fs-13 mt-n5">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
                         </a>
