@@ -161,6 +161,7 @@
                         <div class="fw-lighter fs-4">Popular Treatments</div>
                     </div>
                     <div class="image position-relative">
+
                         <img src="{{asset('front/img/girl.png')}}" class="img-fluid"/>
                         <a href="/dental-implants-turkey" class="d-flex align-items-center gap-2 fs-13 mt-n5">
                             <i class="fa fa-arrow-right"></i>

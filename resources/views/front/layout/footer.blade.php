@@ -53,7 +53,7 @@
                     <div class="d-flex flex-column">
                         <div class="fs-4 fw-normal lh-sm">
                             Get a Free <br class="d-lg-block d-none" />
-                            Quate
+                            Quote
                         </div>
                         <div class="fs-12">
                             Contact us to make <br class="d-lg-block d-none" />
