@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
 use App\Filament\Resources\BlogResource\Pages;
 use App\Filament\Resources\BlogResource\RelationManagers;
 use App\Models\Blog;
@@ -45,8 +46,13 @@ class BlogResource extends Resource
                                 TextInput::make('title')
                                     ->label('Başlık')
                                     ->required(),
-                                RichEditor::make('content')
-                                    ->label('İçerik')
+                                TinyEditor::make('content')
+                                    ->fileAttachmentsDisk('public')
+                                    ->fileAttachmentsVisibility('public')
+                                    ->fileAttachmentsDirectory('uploads')
+                                    ->profile('default|simple|full|minimal|none|custom')
+                                    ->rtl() // Set RTL or use ->direction('auto|rtl|ltr')
+                                    ->columnSpan('full')
                                     ->required(),
                             ]),
                         Tabs\Tab::make('Info')
@@ -126,8 +132,8 @@ class BlogResource extends Resource
                     ->label(__('table.labels.title')),
                 TextColumn::make('status')
                     ->label(__('table.labels.status'))
-                ->badge()
-                    ->color(fn (string $state): string => match ($state) {
+                    ->badge()
+                    ->color(fn(string $state): string => match ($state) {
                         'draft' => 'gray',
                         'published' => 'success',
                     }),
@@ -138,7 +144,7 @@ class BlogResource extends Resource
             ->actions([
                 Action::make('visit')
                     ->label(__('filament-fabricator::page-resource.actions.visit'))
-                    ->url(fn ($record) => url('/blog/' . $record->slug))
+                    ->url(fn($record) => url('/blog/' . $record->slug))
                     ->icon('heroicon-o-arrow-top-right-on-square')
                     ->openUrlInNewTab()
                     ->color('success'),
