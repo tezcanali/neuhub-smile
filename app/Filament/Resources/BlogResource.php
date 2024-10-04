@@ -51,7 +51,6 @@ class BlogResource extends Resource
                                     ->fileAttachmentsVisibility('public')
                                     ->fileAttachmentsDirectory('uploads')
                                     ->profile('default|simple|full|minimal|none|custom')
-                                    ->rtl() // Set RTL or use ->direction('auto|rtl|ltr')
                                     ->columnSpan('full')
                                     ->required(),
                             ]),
