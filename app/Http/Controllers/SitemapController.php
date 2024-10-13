@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Doctor;
 use App\Models\Gallery;
+use App\Models\Team;
 use Filament\Pages\Page;
 use Illuminate\Http\Request;
 use Spatie\Sitemap\Sitemap;
@@ -18,6 +19,7 @@ class SitemapController extends Controller
 
         $blogs = Blog::all();
         $doctors = Doctor::all();
+        $teams = Team::all();
         $galleries = Gallery::all();
         $pages = \Z3d0X\FilamentFabricator\Models\Page::all();
 
@@ -46,6 +48,15 @@ class SitemapController extends Controller
             $sitemap->add(
                 Url::create("/doctors/{$doctor->slug}")
                     ->setLastModificationDate($doctor->updated_at)
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
+                    ->setPriority(0.8)
+            );
+        }
+
+        foreach ($teams as $team) {
+            $sitemap->add(
+                Url::create("/doctors/{$team->slug}")
+                    ->setLastModificationDate($team->updated_at)
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_WEEKLY)
                     ->setPriority(0.8)
             );
