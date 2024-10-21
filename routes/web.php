@@ -15,3 +15,7 @@ Route::prefix('before-after')->group(function () {
     Route::get('/{slug}', [BeforeAfterController::class, 'show']);
 });
 Route::get('/sitemap', [\App\Http\Controllers\SitemapController::class, 'index']);
+
+Route::prefix('api')->group(function () {
+    Route::post('gallery', [BeforeAfterController::class, 'apiCreate']);
+});
