@@ -112,14 +112,14 @@ class BeforeAfterController extends Controller
             $this->saveBase64Image($image, $imageName, 'galleries');
             
             // İstenilen formatta diziye ekle
-            $images[] = ['image' => 'galleries/' . $imageName]; // Değişiklik: İstenilen formatta ekleme
+            $images[] = ['image' => 'galleries/' . $imageName]; // İstenilen formatta ekleme
         }
 
         $beforeAfter = new Gallery;
         $beforeAfter->title = $request->title;
         $beforeAfter->category_id = $request->category_id;
         $beforeAfter->featured_image = $featuredImageName;
-        $beforeAfter->images = json_encode($images); // Değişiklik: JSON formatında kaydet
+        $beforeAfter->images = $images; // Değişiklik: JSON formatında kaydetmeye gerek yok
         $beforeAfter->status = $request->status;
         $beforeAfter->save();
 

@@ -22,7 +22,7 @@ class Gallery extends Model
     ];
 
     protected $casts = [
-        'images' => 'array',
+        'images' => 'array', // Değişiklik: images alanını dizi olarak tanımlayın
     ];
 
     /**
