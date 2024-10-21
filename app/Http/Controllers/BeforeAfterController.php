@@ -110,7 +110,7 @@ class BeforeAfterController extends Controller
             $image = $imageData['image'];
             $imageName = time() . '_' . uniqid() . '.png'; // Dosya adını belirle
             $this->saveBase64Image($image, $imageName, 'galleries');
-            
+
             // İstenilen formatta diziye ekle
             $images[] = ['image' => 'galleries/' . $imageName]; // İstenilen formatta ekleme
         }
@@ -118,7 +118,7 @@ class BeforeAfterController extends Controller
         $beforeAfter = new Gallery;
         $beforeAfter->title = $request->title;
         $beforeAfter->category_id = $request->category_id;
-        $beforeAfter->featured_image = $featuredImageName;
+        $beforeAfter->featured_image = 'galleries/' . $featuredImageName;
         $beforeAfter->images = $images; // Değişiklik: JSON formatında kaydetmeye gerek yok
         $beforeAfter->status = $request->status;
         $beforeAfter->save();
@@ -131,7 +131,7 @@ class BeforeAfterController extends Controller
         // Base64 string'i çöz ve dosyayı kaydet
         $image = str_replace('data:image/png;base64,', '', $base64String);
         $image = str_replace(' ', '+', $image);
-        
+
         // Storage kullanarak dosyayı kaydet
         Storage::disk('public')->put($directory . '/' . $fileName, base64_decode($image));
     }
