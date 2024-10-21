@@ -38,12 +38,15 @@ class BlogController extends Controller
     {
         $blog = Blog::findBySlug($slug);
 
-        if ($blog->status == 'published') {
-            return view('front.layout.blog', compact('blog'));
+        if ($blog) {
+            if ($blog->status == 'published') {
+                return view('front.layout.blog', compact('blog'));
+            } else {
+                abort(404);
+            }
         } else {
             abort(404);
         }
-
     }
 
     /**
