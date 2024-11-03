@@ -38,7 +38,12 @@ class TeamController extends Controller
     {
         $team = Team::findBySlug($slug);
 
-        return view('front.layout.team-detail', compact('team'));
+        if ($team) {
+            return view('front.layout.team-detail', compact('team'));
+        } else {
+            return abort(404);
+        }
+
     }
 
     /**

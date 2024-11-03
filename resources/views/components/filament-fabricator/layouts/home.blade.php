@@ -466,7 +466,7 @@
                 <div class="our-doctor-list our-doctor-list-home swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="/doctors/aydin-egem-y" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/dr-yuvanc" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
                                     <img src="{{asset('front/img/doctors/aydın-yuva.png')}}" class="h-300px"/>
@@ -485,7 +485,7 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Aydın Egem Y.</div>
+                                            <div class="fs-18 fw-normal">Dr. Yuvanc</div>
                                             <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>
@@ -493,7 +493,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/doctors/berkin-o" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/dr-ozturk" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
                                     <img src="{{asset('front/img/doctors/berkin-ozturk.png')}}" class="h-300px"/>
@@ -512,7 +512,7 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Berkin Ö.</div>
+                                            <div class="fs-18 fw-normal">Dr. Ozturk</div>
                                             <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>
@@ -520,7 +520,7 @@
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="/doctors/emre-s" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                            <a href="/doctors/dr-siva" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
                                     <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px"/>
@@ -539,7 +539,7 @@
                                             </svg>
                                         </div>
                                         <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Emre S.</div>
+                                            <div class="fs-18 fw-normal">Dr. Siva</div>
                                             <span class="text-gray-700">Prosthodontist</span>
                                         </div>
                                     </div>

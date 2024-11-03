@@ -38,7 +38,12 @@ class DoctorController extends Controller
     {
         $doctor = Doctor::findBySlug($slug);
 
-        return view('front.layout.doctor-detail', compact('doctor'));
+        if ($doctor) {
+            return view('front.layout.doctor-detail', compact('doctor'));
+        } else {
+            return abort(404);
+        }
+
     }
 
     /**
