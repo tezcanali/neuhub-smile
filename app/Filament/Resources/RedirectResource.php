@@ -23,7 +23,7 @@ class RedirectResource extends Resource
 
     protected static ?string $navigationLabel = 'Yönlendirmeler';
 
-    protected static ?string $navigationParentItem = 'General Settings';
+    protected static ?string $navigationParentItem = 'Genel Ayarlar';
 
     protected static ?string $navigationGroup = 'Sistem';
 
