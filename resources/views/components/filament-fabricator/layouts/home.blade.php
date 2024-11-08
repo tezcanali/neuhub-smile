@@ -255,7 +255,7 @@
                         </svg>
                     </div>
                     <div class="d-flex flex-column gap-1">
-                        <span class="fs-48 fw-lighter"><span class="fw-normal">6 Simple Steps</span> To Your Dream Smile</span>
+                        <span class="fs-48 fw-lighter"><span class="fw-normal">Exclusive Services Included To Your Treatment</span>
                         <div class="fw-lighter">Perhaps you just want your teeth to be taken to the next level and have
                             a better, brighter smile.
                         </div>

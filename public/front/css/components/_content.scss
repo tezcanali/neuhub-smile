@@ -419,3 +419,14 @@
 .mobile-nav {
     z-index: 101;
 }
+
+.blog-body {
+    img {
+        @include media-breakpoint-down(lg) {
+            height: auto !important;
+            -o-object-fit: contain !important;
+            object-fit: contain !important;
+            width: 100% !important;
+        }
+    }
+}
