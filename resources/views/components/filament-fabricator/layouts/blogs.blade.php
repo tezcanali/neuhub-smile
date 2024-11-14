@@ -69,7 +69,7 @@
                     $blogs = \App\Models\Blog::all();
                  @endphp
 
-                @foreach($blogs as $blog)
+                @foreach($blogs->reverse() as $blog)
                     @if($loop->first)
                         <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="mobile-img w-100 h-500px object-fit-cover" />
                         <div class="bg-primary p-lg-5 p-4">
