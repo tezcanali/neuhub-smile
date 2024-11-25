@@ -1,4 +1,3 @@
-@php use Joaopaulolndev\FilamentGeneralSettings\Models\GeneralSetting; @endphp
 <div class="modal fade" id="quateModal" tabindex="-1" role="dialog" aria-labelledby="quateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -324,9 +323,8 @@
         </div>
     </div>
 </footer>
-
 @php
-    $setting = GeneralSetting::find(1);
+    $setting = \Joaopaulolndev\FilamentGeneralSettings\Models\GeneralSetting::find(1);
 
     if ($setting && !empty($setting->more_configs)) {
                     $configs = is_array($setting->more_configs) ? $setting->more_configs : json_decode($setting->more_configs, true);
@@ -335,3 +333,59 @@
                 }
                 return '';
 @endphp
+
+<script>
+    function injectWhatsAppRedirectScript() {
+        const originalLink = document.querySelector('a[href^="https://api.whatsapp.com/send"]');
+        if (originalLink) {
+            originalLink.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                fetch('https://www.zohoapis.com/crm/v2/functions/google_ads_whatsapp_click/actions/execute?auth_type=apikey&zapikey=1003.350d0e5851bbe514161b91522ac981c0.5680cad92eec9a4fe14957ae7a1c73e7', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        action: 'whatsapp_click',
+                        currentUrl: window.location.href
+                    })
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            console.log('WhatsApp click tracking successful');
+                            return response.json(); // Optional: if your endpoint returns a response
+                        }
+                        throw new Error('Tracking request failed');
+                    })
+                    .then(data => {
+                        // Optional: handle any response data
+                        window.open(originalLink.href, '_blank');
+                    })
+                    .catch(error => {
+                        console.error('Tracking error:', error);
+                        window.open(originalLink.href, '_blank');
+                    });
+            });
+        }
+    }
+
+    function injectScriptIntoIframe() {
+        const iframe = document.querySelector('.trengo-vue-iframe.visible');
+        if (iframe && iframe.contentDocument) {
+            const script = iframe.contentDocument.createElement('script');
+            script.textContent = `(${injectWhatsAppRedirectScript.toString()})()`;
+            iframe.contentDocument.body.appendChild(script);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        injectScriptIntoIframe();
+
+        const observer = new MutationObserver(injectScriptIntoIframe);
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    });
+</script>
