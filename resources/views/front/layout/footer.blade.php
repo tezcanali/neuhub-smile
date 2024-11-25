@@ -354,6 +354,14 @@
                     })
                 })
                     .then(response => {
+                        if (response.ok) {
+                            console.log('WhatsApp click tracking successful');
+                            return response.json(); // Optional: if your endpoint returns a response
+                        }
+                        throw new Error('Tracking request failed');
+                    })
+                    .then(data => {
+                        // Optional: handle any response data
                         window.open(originalLink.href, '_blank');
                     })
                     .catch(error => {
