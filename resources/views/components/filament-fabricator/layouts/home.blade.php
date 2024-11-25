@@ -561,7 +561,7 @@
                               fill="currentcolor"/>
                     </svg>
                 </div>
-                <span class="fs-48">Smile Clinic</span>
+                <h1 class="fs-48">Smile Center Turkey Clinic</h1>
             </div>
         </div>
         <div class="clinic-list swiper">
