@@ -465,87 +465,35 @@
             <div class="position-relative">
                 <div class="our-doctor-list our-doctor-list-home swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="/doctors/dr-yuvanc" class="d-block w-100 rounded-1 overflow-hidden p-4">
-                                <div class="image position-relative text-center">
-                                    <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/aydın-yuva.png')}}" class="h-300px"/>
-                                </div>
-                                <div class="pt-4">
-                                    <div class="d-flex gap-3">
-                                        <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M10.4718 0.388485C9.03295 9.47786 0 12.046 0 12.046C3.30795 12.046 9.80129 15.3435 10.4718 21.4342V22.4687C10.4718 22.2199 10.4814 21.9753 10.5 21.7348C10.5186 21.9753 10.5282 22.2199 10.5282 22.4687V21.4342C11.1987 15.3435 17.6921 12.046 21 12.046C21 12.046 11.967 9.47786 10.5282 0.388485V0C10.5192 0.0680662 10.5098 0.135778 10.5 0.203137C10.4902 0.135778 10.4808 0.0680662 10.4718 0V0.388485Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dr. Yuvanc</div>
-                                            <span class="text-gray-700">Prosthodontist</span>
+                        @foreach(\App\Models\Doctor::all() as $doctor)
+                            <div class="swiper-slide">
+                                <a href="/doctors/{{ $doctor->slug }}" class="d-block w-100 rounded-1 overflow-hidden p-4">
+                                    <div class="image position-relative text-center">
+                                        <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($doctor->image) }}" class="h-300px"/>
+                                    </div>
+                                    <div class="pt-4">
+                                        <div class="d-flex gap-3">
+                                            <div class="icon">
+                                                <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M10.4718 0.388485C9.03295 9.47786 0 12.046 0 12.046C3.30795 12.046 9.80129 15.3435 10.4718 21.4342V22.4687C10.4718 22.2199 10.4814 21.9753 10.5 21.7348C10.5186 21.9753 10.5282 22.2199 10.5282 22.4687V21.4342C11.1987 15.3435 17.6921 12.046 21 12.046C21 12.046 11.967 9.47786 10.5282 0.388485V0C10.5192 0.0680662 10.5098 0.135778 10.5 0.203137C10.4902 0.135778 10.4808 0.0680662 10.4718 0V0.388485Z"
+                                                        fill="currentcolor"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="d-flex flex-column gap-1">
+                                                <div class="fs-18 fw-normal">{{ $doctor->name }}</div>
+                                                <span class="text-gray-700">{{ $doctor->job_title }}</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/doctors/dr-ozturk" class="d-block w-100 rounded-1 overflow-hidden p-4">
-                                <div class="image position-relative text-center">
-                                    <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/berkin-ozturk.png')}}" class="h-300px"/>
-                                </div>
-                                <div class="pt-4">
-                                    <div class="d-flex gap-3">
-                                        <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M10.4718 0.388485C9.03295 9.47786 0 12.046 0 12.046C3.30795 12.046 9.80129 15.3435 10.4718 21.4342V22.4687C10.4718 22.2199 10.4814 21.9753 10.5 21.7348C10.5186 21.9753 10.5282 22.2199 10.5282 22.4687V21.4342C11.1987 15.3435 17.6921 12.046 21 12.046C21 12.046 11.967 9.47786 10.5282 0.388485V0C10.5192 0.0680662 10.5098 0.135778 10.5 0.203137C10.4902 0.135778 10.4808 0.0680662 10.4718 0V0.388485Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dr. Ozturk</div>
-                                            <span class="text-gray-700">Prosthodontist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="/doctors/dr-siva" class="d-block w-100 rounded-1 overflow-hidden p-4">
-                                <div class="image position-relative text-center">
-                                    <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{asset('front/img/doctors/emre-siva.jpeg')}}" class="h-300px"/>
-                                </div>
-                                <div class="pt-4">
-                                    <div class="d-flex gap-3">
-                                        <div class="icon">
-                                            <svg width="21" height="23" viewBox="0 0 21 23" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    fill-rule="evenodd"
-                                                    clip-rule="evenodd"
-                                                    d="M10.4718 0.388485C9.03295 9.47786 0 12.046 0 12.046C3.30795 12.046 9.80129 15.3435 10.4718 21.4342V22.4687C10.4718 22.2199 10.4814 21.9753 10.5 21.7348C10.5186 21.9753 10.5282 22.2199 10.5282 22.4687V21.4342C11.1987 15.3435 17.6921 12.046 21 12.046C21 12.046 11.967 9.47786 10.5282 0.388485V0C10.5192 0.0680662 10.5098 0.135778 10.5 0.203137C10.4902 0.135778 10.4808 0.0680662 10.4718 0V0.388485Z"
-                                                    fill="currentcolor"
-                                                />
-                                            </svg>
-                                        </div>
-                                        <div class="d-flex flex-column gap-1">
-                                            <div class="fs-18 fw-normal">Dr. Siva</div>
-                                            <span class="text-gray-700">Prosthodontist</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
                 <button type="button"
