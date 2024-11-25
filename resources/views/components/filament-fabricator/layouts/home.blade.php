@@ -3,7 +3,7 @@
 @php use Filament\Facades\Filament; @endphp
 @props(['page'])
     <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
 <head>
     {{ Filament::renderHook('filament-fabricator.head.start') }}
     <meta charset="UTF-8"/>
