@@ -2,7 +2,7 @@
 <div class="hero-page-alt d-flex flex-md-row flex-column-reverse w-100 h-600px position-relative">
     <div class="container-xxl position-relative z-3 h-100">
         <div class="position-absolute start-0 bottom-0 mb-n5 d-lg-block d-none">
-            <img src="{{asset('front/img/teeth-4.png')}}" class="h-100px" />
+            <img src="{{asset('front/img/teeth-4.png')}}" alt="Smile Center Turkey" class="h-100px" />
         </div>
         <div class="row h-100">
             <div class="col-lg-12 d-lg-block d-none">

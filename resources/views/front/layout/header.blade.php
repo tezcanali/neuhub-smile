@@ -14,7 +14,7 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu" aria-labelledby="mobile-menu-label">
     <div class="offcanvas-header px-4 pt-4 d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-block">
-            <img src="{{asset('front/img/logo-2.png')}}" class="h-65px">
+            <img src="{{asset('front/img/logo-2.png')}}" alt="Smile Center Turkey" class="h-65px">
         </a>
         <button type="button" class="shadow-none px-0" data-bs-dismiss="offcanvas" aria-label="Close">
             <svg width="48" height="48" viewBox="0 0 107 107" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +198,7 @@
             <!-- logo -->
             <div class="logo flex-1">
                 <a href="/">
-                    <img src="{{asset('front/img/logo.png')}}" class="h-75px"/>
+                    <img src="{{asset('front/img/logo.png')}}" class="h-75px" alt="Smile Center Turkey"/>
                 </a>
             </div>
             <!-- end #logo -->

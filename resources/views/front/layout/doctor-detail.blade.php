@@ -61,7 +61,7 @@
                 <div class="doctor-image">
                     <div class="image position-relative">
                         <div class="position-absolute start-0 top-50 translate-middle-y ms-n5">
-                            <img src="{{asset('front/img/teeth-3.png')}}" class="h-150px" />
+                            <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-150px" />
                         </div>
                         <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
                             <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">

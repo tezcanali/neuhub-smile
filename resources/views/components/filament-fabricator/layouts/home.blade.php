@@ -227,10 +227,10 @@
     <!-- section -->
     <section class="py-lg-5 py-4 position-relative overflow-hidden">
         <div class="position-absolute start-0 top-50 translate-middle-y z-1 ms-3 d-md-block d-none">
-            <img src="{{asset('front/img/teeth.png')}}" class="h-100px"/>
+            <img src="{{asset('front/img/teeth.png')}}" alt="Smile Center Turkey" class="h-100px"/>
         </div>
         <div class="position-absolute end-0 top-50 translate-middle-y z-1 me-3 d-md-block d-none">
-            <img src="{{asset('front/img/teeth-4.png')}}" class="h-75px"/>
+            <img src="{{asset('front/img/teeth-4.png')}}" alt="Smile Center Turkey" class="h-75px"/>
         </div>
         <div class="shape position-absolute start-0 end-0 top-50 translate-middle-y z-0 d-md-block d-none">
             <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -747,7 +747,7 @@
                     <div class="d-flex align-items-center gap-3">
                         <div
                             class="w-100px h-100px rounded-circle d-flex align-items-center justify-content-center bg-white">
-                            <img src="{{asset('front/img/logo-2.png')}}" class="h-30px"/>
+                            <img src="{{asset('front/img/logo-2.png')}}" alt="Smile Center Turkey" class="h-30px"/>
                         </div>
                         <div class="d-flex flex-column">
                             <div class="fw-semibold text-black">Smile Center Turkey</div>

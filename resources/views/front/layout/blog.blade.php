@@ -119,7 +119,7 @@
                     </svg>
                 </div>
                 <div class="teeth position-absolute end-0 top-0 mt-n4 d-md-block d-none">
-                    <img src="{{asset('front/img/teeth.png')}}" class="h-400px" />
+                    <img src="{{asset('front/img/teeth.png')}}" alt="Smile Center Turkey" class="h-400px" />
                 </div>
                 <div class="container-xxl">
                     <div class="d-flex align-items-center gap-2 pb-4">

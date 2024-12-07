@@ -15,7 +15,7 @@
             <div class="col-xl-4 col">
                 <div class="row g-0 align-items-end">
                     <div class="col-md-6 align-items-end d-xl-block d-md-none d-block">
-                        <img src="https://smilecenterturkey.co/front/img/step-man.png" class="h-300px">
+                        <img src="https://smilecenterturkey.co/front/img/step-man.png" class="h-300px" alt="Smile Center Turkey">
                     </div>
                     <div class="col-xl-6 col">
                         <div class="bg-white rounded p-xl-4 p-3">

@@ -66,7 +66,7 @@
 <!-- page -->
 <div class="page page-margin-detail pb-lg-5 pb-4 position-relative">
     <div class="position-absolute top-50 mt-n5 end-0 z-2 me-3">
-        <img src="{{('front/img/teeth.png')}}" class="h-100px" />
+        <img src="{{('front/img/teeth.png')}}" alt="Smile Center Turkey" class="h-100px" />
     </div>
     <div class="shape position-absolute top-50 mt-n5 start-0 end-0">
         <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-n5">
@@ -86,7 +86,7 @@
                     <a href="/doctors/{{ $doctor->slug }}" class="doctor-item">
                         <div class="image position-relative">
                             <div class="position-absolute start-0 top-50 translate-middle-y ms-n5">
-                                <img src="{{asset('front/img/teeth-3.png')}}" class="h-150px" />
+                                <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-150px" />
                             </div>
                             <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
                                 <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">

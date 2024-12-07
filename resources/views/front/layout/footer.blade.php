@@ -32,7 +32,7 @@
                     </svg>
                 </div>
                 <div class="teeth-1 position-absolute end-0 bottom-0 mb-lg-n5 mb-n3">
-                    <img src="{{asset('front/img/teeth.png')}}" class="h-100px" style="transform: rotate(-10deg)" />
+                    <img src="{{asset('front/img/teeth.png')}}" class="h-100px" style="transform: rotate(-10deg)" alt="Smile Center Turkey"/>
                 </div>
                 <div class="pt-lg-5 pt-4 pb-lg-5 pb-1">
                     <div class="top-title fs-1 text-white fw-lighter lh-sm py-4 text-lg-start text-center">
@@ -81,19 +81,19 @@
             </div>
             <div class="container-xxl position-relative footer-container">
                 <div class="teeth-body position-absolute start-0 bottom-0 d-lg-block d-none">
-                    <img src="{{asset('front/img/teeth-2.png')}}" class="h-150px" />
+                    <img src="{{asset('front/img/teeth-2.png')}}" alt="Smile Center Turkey" class="h-150px" />
                 </div>
                 <div class="teeth-2 position-absolute end-0 bottom-0 mb-4 d-lg-block d-none">
-                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-90px" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-90px" />
                 </div>
                 <div class="teeth-3 position-absolute end-0 bottom-0 me-n3 opacity-50 d-lg-block d-none">
-                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-50px" style="transform: rotate(30deg)" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-50px" style="transform: rotate(30deg)" />
                 </div>
                 <!-- <img src="{{asset('front/img/nurse.png')}}" class="nurse h-250px position-absolute end-0 bottom-0 d-lg-block d-none" /> -->
                 <div class="row">
                     <div class="col-lg-3">
                         <a href="/" class="d-block text-lg-start text-center">
-                            <img src="{{asset('front/img/logo.png')}}" class="h-75px" />
+                            <img src="{{asset('front/img/logo.png')}}" class="h-75px" alt="Smile Center Turkey"/>
                         </a>
                         <div class="pt-5 d-flex flex-column gap-lg-2 gap-1 text-lg-start text-center">
                             <a href="mailto:smile@smilecenterturkey.co" class="text-white d-block fs-18">smile@smilecenterturkey.co</a>
@@ -286,13 +286,13 @@
             </div>
             <div class="pt-5 mt-5 position-relative text-center d-lg-none d-block">
                 <div class="teeth-body position-absolute start-0 bottom-0 z-3 ms-lg-5 ms-3">
-                    <img src="{{asset('front/img/teeth-2.png')}}" class="h-100px" />
+                    <img src="{{asset('front/img/teeth-2.png')}}" alt="Smile Center Turkey" class="h-100px" />
                 </div>
                 <div class="teeth-1 position-absolute end-0 top-0 mt-5 me-lg-4 z-1">
-                    <img src="{{asset('front/img/teeth.png')}}" class="h-90px" style="transform: rotate(30deg)" />
+                    <img src="{{asset('front/img/teeth.png')}}" alt="Smile Center Turkey" class="h-90px" style="transform: rotate(30deg)" />
                 </div>
                 <div class="position-absolute start-0 top-50 translate-middle-y z-1 ms-lg-5 ms-2">
-                    <img src="{{asset('front/img/teeth-3.png')}}" class="h-90px" />
+                    <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-90px" />
                 </div>
                 <div class="position-absolute start-0 top-0 end-0">
                     <svg width="100%" height="279" viewBox="0 0 1920 279" fill="none" xmlns="http://www.w3.org/2000/svg">

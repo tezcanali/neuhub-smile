@@ -4,7 +4,7 @@
         <div class="d-flex align-items-center justify-content-center gap-lg-5 gap-md-4 gap-3 flex-wrap">
             <div class="d-flex align-items-center gap-3">
                 <div class="w-100px h-100px rounded-circle d-flex align-items-center justify-content-center bg-white">
-                    <img src="{{asset('front/img/logo-2.png')}}" class="h-30px" />
+                    <img src="{{asset('front/img/logo-2.png')}}" alt="Smile Center Turkey" class="h-30px" />
                 </div>
                 <div class="d-flex flex-column">
                     <div class="fw-semibold text-black">Smile Center Turkey</div>
