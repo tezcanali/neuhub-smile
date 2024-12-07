@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
-    <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" />
+    <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 <!-- end #hero-page -->
 
@@ -71,7 +71,7 @@
 
                 @foreach($blogs->reverse() as $blog)
                     @if($loop->first)
-                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="mobile-img w-100 h-500px object-fit-cover" />
+                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="mobile-img w-100 h-500px object-fit-cover" alt="{{ $blog->title }}"/>
                         <div class="bg-primary p-lg-5 p-4">
                             <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-4">
                                 <span class="fs-14 text-gray-600">{!! $blog->category->title !!}</span>
@@ -91,7 +91,7 @@
                             <div class="col-lg-6">
                                 <a href="/blog/{{ $blog->slug }}" class="d-block hover-img-scale bg-white">
                                     <div class="image overflow-hidden">
-                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="w-100 h-250px object-fit-cover" />
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($blog->image) }}" class="w-100 h-250px object-fit-cover" alt="{{ $blog->title }}"/>
                                     </div>
                                     <div class="p-4">
                                         <div class="d-flex align-items-center gap-md-4 gap-md-3 gap-2 flex-wrap pb-3">

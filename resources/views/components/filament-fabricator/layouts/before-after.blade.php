@@ -61,7 +61,7 @@
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
     <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover"
-         style="filter: grayscale(1)"/>
+         style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 
 @php
@@ -83,7 +83,7 @@
                 <div class="col-lg-3">
                     <a href="/before-after/{{ $item->slug }}" class="d-block w-100 h-300px rounded-3 overflow-hidden position-relative">
                         <div class="position-absolute start-0 bottom-0 m-2 bg-white text-primary fs-13 rounded-1 py-2 px-3 fw-semibold z-1">{{ $item->title }}</div>
-                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item->featured_image) }}" class="w-100 h-100 object-fit-cover" />
+                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item->featured_image) }}" class="w-100 h-100 object-fit-cover" alt="{{ $item->title }}"/>
                     </a>
                 </div>
             @endforeach

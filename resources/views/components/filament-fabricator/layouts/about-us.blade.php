@@ -56,7 +56,7 @@
         </div>
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
-    <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" />
+    <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 <!-- end #hero-page -->
 
@@ -75,7 +75,7 @@
                 <p>Whether you are seeking the finest dental veneers in Turkey or exploring comprehensive teeth restoration options, we have you covered. Our clinic specializes in a range of dental services, including:</p>
             </div>
             <div class="col-lg-6 order-md-1 order-1">
-                <img src="{{ asset('front/img/1.webp') }}" class="img-fluid rounded-1" />
+                <img src="{{ asset('front/img/1.webp') }}" class="img-fluid rounded-1" alt="Smile Center Turkey"/>
             </div>
         </div>
     </div>
@@ -171,7 +171,7 @@
 
             </div>
             <div class="col-lg-6 order-md-2 order-1">
-                <img src="{{asset('front/img/as.jpg')}}" class="img-fluid rounded-1" />
+                <img src="{{asset('front/img/as.jpg')}}" class="img-fluid rounded-1" alt="Smile Center Turkey"/>
             </div>
         </div>
     </div>

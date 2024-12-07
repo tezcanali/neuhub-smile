@@ -61,7 +61,7 @@
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
     <img src="{{asset('front/img/blog.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover"
-         style="filter: grayscale(1)"/>
+         style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 
 <div class="page py-lg-5 py-4">

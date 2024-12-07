@@ -56,8 +56,8 @@
                         />
                     </svg>
                 </div>
-                <img src="{{asset('front/img/ht1.png')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px"/>
-                <img src="{{asset('front/img/ht3.png')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px"/>
+                <img src="{{asset('front/img/ht1.png')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px" alt="Smile Center Turkey"/>
+                <img src="{{asset('front/img/ht3.png')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px" alt="Smile Center Turkey"/>
                 <div class="container-xxl h-100 position-relative z-3">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-4">
@@ -80,11 +80,11 @@
                             <div
                                 class="gradient-hero d-lg-none d-block z-3 position-absolute start-0 end-0 bottom-0 w-100 h-50"></div>
                             <img src="{{asset('front/img/ht2.png')}}"
-                                 class="hero-2 position-absolute end-100 top-0 z-1 h-50px mt-5 d-lg-block d-none"/>
+                                 class="hero-2 position-absolute end-100 top-0 z-1 h-50px mt-5 d-lg-block d-none" alt="Smile Center Turkey"/>
                             <img src="{{asset('front/img/hero-bg.png')}}"
-                                 class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5"/>
+                                 class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5" alt="Smile Center Turkey"/>
                             <img src="{{asset('front/img/h1.png')}}"
-                                 class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4"/>
+                                 class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4" alt="Smile Center Turkey"/>
                         </div>
                         <div class="col-lg-4">
                             <div class="row g-3">
@@ -127,7 +127,7 @@
                                                 </svg>
                                             </div>
                                             <img src="{{asset('front/img/h2.png')}}"
-                                                 class="h-170px position-relative z-1"/>
+                                                 class="h-170px position-relative z-1" alt="Smile Center Turkey"/>
                                         </div>
                                     </a>
                                 </div>
@@ -162,7 +162,7 @@
                     </div>
                     <div class="image position-relative">
 
-                        <img src="{{asset('front/img/girl.png')}}" class="img-fluid"/>
+                        <img src="{{asset('front/img/girl.png')}}" class="img-fluid" alt="Smile Center Turkey"/>
                         <a href="/dental-implants-turkey" class="d-flex align-items-center gap-2 fs-13 mt-n5">
                             <i class="fa fa-arrow-right"></i>
                             <span class="text-decoration-underline">All Treatments *</span>
@@ -182,7 +182,7 @@
                                 <a href="/zirconia-crown-turkey" class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
                                         <img src="{{asset('front/img/popular-zirconia.webp')}}"
-                                             class="w-100 h-300px object-fit-cover rounded-1"/>
+                                             class="w-100 h-300px object-fit-cover rounded-1" alt="Smile Center Turkey"/>
                                     </div>
                                     <div class="fs-5 fw-normal pb-2">Zirconia Crown Turkey</div>
                                     <p class="fs-12">Zirconia dental crowns are frequently preferred in Turkey due to
@@ -198,7 +198,7 @@
                                    class="d-block w-400px bg-white rounded-3 p-3">
                                     <div class="image mb-3">
                                         <img src="{{asset('front/img/popular-all.webp')}}"
-                                             class="w-100 h-300px object-fit-cover rounded-1"/>
+                                             class="w-100 h-300px object-fit-cover rounded-1" alt="Smile Center Turkey"/>
                                     </div>
                                     <div class="fs-5 fw-normal pb-2">All On 4 Dental Implants</div>
                                     <p class="fs-12">
@@ -244,7 +244,7 @@
         <div class="container-xxl position-relative z-3">
             <img src="{{asset('front/img/simple.png')}}"
                  class="position-absolute end-0 top-0 h-400px mt-n5 z-0 me-3 d-lg-block d-none"
-                 style="filter: grayscale(1)"/>
+                 style="filter: grayscale(1)" alt="Smile Center Turkey"/>
             <div class="heading position-relative z-2">
                 <div class="d-flex align-items-start gap-3 pb-md-5 pb-4">
                     <div class="icon mt-md-4 mt-3">
@@ -470,7 +470,7 @@
                                 <a href="/doctors/{{ $doctor->slug }}" class="d-block w-100 rounded-1 overflow-hidden p-4">
                                     <div class="image position-relative text-center">
                                         <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($doctor->image) }}" class="h-300px"/>
+                                        <img src="{{ \Illuminate\Support\Facades\Storage::url($doctor->image) }}" class="h-300px" alt="Smile Center Turkey"/>
                                     </div>
                                     <div class="pt-4">
                                         <div class="d-flex gap-3">
@@ -569,43 +569,43 @@
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/11.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/11.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/22.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/22.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/33.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/33.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/44.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/44.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/55.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/55.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/66.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/66.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="{{asset('/front/img/clinic/77.webp')}}" class="d-block w-100 h-400px object-fit-cover"
                        data-fancybox="gallery">
-                        <img src="{{asset('/front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover"/>
+                        <img src="{{asset('/front/img/clinic/77.webp')}}" class="w-100 h-100 object-fit-cover" alt="Smile Center Turkey"/>
                     </a>
                 </div>
             </div>
@@ -672,7 +672,7 @@
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
                             <img src="{{asset('/front/img/blog/01J3JEKM73XD21FR078B72Q6D4.jpg')}}"
-                                 class="w-100 h-300px object-fit-cover rounded-1"/>
+                                 class="w-100 h-300px object-fit-cover rounded-1" alt="Smile Center Turkey"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">
@@ -693,7 +693,7 @@
                     <div class="w-100 bg-white row g-0 align-items-center rounded-1 overflow-hidden p-3">
                         <div class="col-lg-4">
                             <img src="{{asset('/front/img/blog/01J3JEPRXN58WJ6V18DFDDRXMD.jpg')}}"
-                                 class="w-100 h-300px object-fit-cover rounded-1"/>
+                                 class="w-100 h-300px object-fit-cover rounded-1" alt="Smile Center Turkey"/>
                         </div>
                         <div class="col-lg-8">
                             <div class="px-lg-4 px-3 py-lg-0 py-3">

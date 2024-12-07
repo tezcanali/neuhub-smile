@@ -58,7 +58,7 @@
         </div>
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
-    <img src="{{('front/img/detay.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" />
+    <img src="{{('front/img/detay.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 <!-- end #hero-page -->
 
@@ -97,12 +97,12 @@
                                     />
                                 </svg>
                             </div>
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($team->image) }}" class="w-100 h-400px mobile-img object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($team->image) }}" class="w-100 h-400px mobile-img object-fit-cover" alt="{{ $team->name }}"/>
                         </div>
                         <div class="bg-primary p-4">
                             <div class="p-lg-2">
                                 <div class="d-flex flex-column">
-                                    <div class="fs-5 fw-semibold text-white">{{ $team->title }}</div>
+                                    <div class="fs-5 fw-semibold text-white">{{ $team->name }}</div>
                                     <span class="text-gray-600">{{ $team->job_title }}</span>
                                 </div>
                             </div>

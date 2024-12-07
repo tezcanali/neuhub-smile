@@ -59,7 +59,7 @@
         </div>
     </div>
     <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-25 z-1"></div>
-    <img src="{{('front/img/detay.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" />
+    <img src="{{('front/img/detay.jpg')}}" class="position-absolute start-0 top-0 w-100 h-100 object-fit-cover" style="filter: grayscale(1)" alt="Smile Center Turkey"/>
 </div>
 <!-- end #hero-page -->
 
@@ -86,7 +86,7 @@
                     <a href="/doctors/{{ $doctor->slug }}" class="doctor-item">
                         <div class="image position-relative">
                             <div class="position-absolute start-0 top-50 translate-middle-y ms-n5">
-                                <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-150px" />
+                                <img src="{{asset('front/img/teeth-3.png')}}" alt="Smile Center Turkey" class="h-150px" alt="{{ $doctor->name }}"/>
                             </div>
                             <div class="shape position-absolute start-0 bottom-0 ms-3 mb-n4">
                                 <svg width="50" height="53" viewBox="0 0 50 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +103,7 @@
                         <div class="bg-primary p-4">
                             <div class="p-lg-2">
                                 <div class="d-flex flex-column">
-                                    <div class="fs-5 fw-semibold text-white">{{ $doctor->title }}</div>
+                                    <div class="fs-5 fw-semibold text-white">{{ $doctor->name }}</div>
                                     <span class="text-gray-600">{{ $doctor->job_title }}</span>
                                 </div>
                             </div>
