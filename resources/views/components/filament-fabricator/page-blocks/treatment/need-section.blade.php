@@ -23,9 +23,9 @@
             <div class="col-lg-6">
                 <div class="position-relative">
                     <div class="position-absolute start-0 bottom-0 z-2 ms-n5 mb-n3 d-md-block d-none">
-                        <img src="{{ asset('front/img/king.png')}}" class="h-300px" />
+                        <img src="{{ asset('front/img/king.png')}}" class="h-300px" alt="{{ $title }}"/>
                     </div>
-                    <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="img-fluid rounded-1" />
+                    <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="img-fluid rounded-1" alt="{{ $altTag ?? $title }}"/>
                 </div>
             </div>
         </div>

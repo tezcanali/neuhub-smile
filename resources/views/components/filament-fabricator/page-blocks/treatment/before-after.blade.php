@@ -48,7 +48,7 @@
                                         After
                                     </div>
                                     <img src="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}"
-                                         class="w-100 h-100 object-fit-cover"/>
+                                         class="w-100 h-100 object-fit-cover" alt="Before & After"/>
                                 </a>
                             </div>
                         @endforeach

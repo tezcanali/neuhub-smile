@@ -35,7 +35,7 @@
                         </div>
                         <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-50 z-2"></div>
                         <div class="image overflow-hidden w-100 h-100">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover1) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover1) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag ?? 'Smile Center Turkey' }}"/>
                         </div>
                     </a>
                 </div>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-50 z-2"></div>
                         <div class="image overflow-hidden w-100 h-100">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover2) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover2) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag2 ?? 'Smile Center Turkey' }}"/>
                         </div>
                     </a>
                 </div>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="overlay position-absolute start-0 top-0 w-100 h-100 bg-primary bg-opacity-50 z-2"></div>
                         <div class="image overflow-hidden w-100 h-100">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover3) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($cover3) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag3 ?? 'Smile Center Turkey' }}"/>
                         </div>
                     </a>
                 </div>

@@ -28,6 +28,13 @@ class NeedSection extends PageBlock
                         'xl' => 6,
                         '2xl' => 6,
                     ]),
+                TextInput::make('alt_tag')
+                    ->columnSpan([
+                        'sm' => 2,
+                        'xl' => 6,
+                        '2xl' => 6,
+                    ])
+                    ->label('Image Alt Tag'),
                 TextInput::make('title')->columnSpan([
                     'sm' => 2,
                     'xl' => 6,

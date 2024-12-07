@@ -27,7 +27,7 @@
                             <a href="{{ $url }}" class="d-block w-100 rounded-1 bg-white overflow-hidden p-4">
                                 <div class="image position-relative text-center">
                                     <div class="gradient position-absolute start-0 end-0 bottom-0 z-2 h-75"></div>
-                                    <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="h-300px" />
+                                    <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="h-300px" alt="{{ $altTag ?? $doctor->name }}"/>
                                 </div>
                                 <div class="pt-4">
                                     <div class="d-flex gap-3">

@@ -15,7 +15,7 @@
             @foreach($galleries as $item)
                 <div class="swiper-slide">
                     <a href="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="d-block w-100 h-400px object-fit-cover" data-fancybox="gallery">
-                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="w-100 h-100 object-fit-cover" />
+                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item['image']) }}" class="w-100 h-100 object-fit-cover" alt="{{ $item['altTag'] ?? $title }}"/>
                     </a>
                 </div>
             @endforeach

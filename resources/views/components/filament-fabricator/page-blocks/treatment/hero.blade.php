@@ -18,6 +18,6 @@
         </div>
     </div>
     @if($image)
-        <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="w-100 h-100 object-fit-cover position-absolute start-0 top-0" />
+        <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="w-100 h-100 object-fit-cover position-absolute start-0 top-0" alt="{{ $altTag ?? 'Smile Center Turkey' }}"/>
     @endif
 </div>

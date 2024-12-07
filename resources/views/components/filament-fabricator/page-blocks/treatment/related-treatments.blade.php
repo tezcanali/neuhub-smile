@@ -24,7 +24,7 @@
                         </div>
                         <div class="gradient position-absolute start-0 end-0 bottom-0 w-100 h-75 z-2"></div>
                         <div class="image w-100 h-100 overflow-hidden position-relative z-1">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image1) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image1) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag1 ?? $title1 }}"/>
                         </div>
                     </a>
                 </div>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="gradient position-absolute start-0 end-0 bottom-0 w-100 h-75 z-2"></div>
                         <div class="image w-100 h-100 overflow-hidden position-relative z-1">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image2) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image2) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag2 ?? $title2 }}"/>
                         </div>
                     </a>
                 </div>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="gradient position-absolute start-0 end-0 bottom-0 w-100 h-75 z-2"></div>
                         <div class="image w-100 h-100 overflow-hidden position-relative z-1">
-                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image3) }}" class="w-100 h-100 object-fit-cover" />
+                            <img src="{{ \Illuminate\Support\Facades\Storage::url($image3) }}" class="w-100 h-100 object-fit-cover" alt="{{ $altTag3 ?? $title3 }}"/>
                         </div>
                     </a>
                 </div>

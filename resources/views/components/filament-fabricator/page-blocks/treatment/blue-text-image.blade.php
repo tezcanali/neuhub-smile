@@ -41,7 +41,7 @@
                 @if($title)
                 <span class="fs-48 pb-4 d-md-none d-block text-white text-center">{{ $title }}</span>
                 @endif
-                <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="w-100 h-700px object-fit-cover mobile-img" />
+                <img src="{{ \Illuminate\Support\Facades\Storage::url($image) }}" class="w-100 h-700px object-fit-cover mobile-img" alt="{{ $altTag ?? $title }}"/>
             </div>
         </div>
     </div>
