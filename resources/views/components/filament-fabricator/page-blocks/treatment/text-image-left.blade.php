@@ -5,7 +5,7 @@
             <div class="col-lg-6 order-md-1 order-2">
                 @if($title)
                 <div class="title d-md-flex d-none gap-3 pb-lg-5 pb-4">
-                    <div class="icon mt-3">
+                    <div class="icon mt-3 text-primary">
                         <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 fill-rule="evenodd"
