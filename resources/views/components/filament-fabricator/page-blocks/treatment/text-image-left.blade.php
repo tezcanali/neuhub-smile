@@ -24,7 +24,7 @@
             </div>
             <div class="col-lg-6 order-md-2 order-1">
                 <div class="title d-md-none d-flex gap-2 pb-lg-5 pb-4">
-                    <div class="icon">
+                    <div class="icon text-primary">
                         <svg width="18" height="18" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 fill-rule="evenodd"
