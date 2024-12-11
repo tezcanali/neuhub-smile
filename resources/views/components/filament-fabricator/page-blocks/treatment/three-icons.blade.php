@@ -23,7 +23,7 @@
             </svg>
         </div>
         <div class="who-list1">
-            <div class="row">
+            <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 g-4">
                 @if(isset($title1))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
