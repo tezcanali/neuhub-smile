@@ -165,7 +165,7 @@
                         </div>
                         <div class="d-flex flex-column gap-3 text-white fs-15">
                             <a href="/breast-augmentation-turkey" class="d-block">Breast Augmentation Turkey</a>
-                            <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turke2y</a>
+                            <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turkey</a>
                             <a href="/breast-lift-turkey" class="d-block">Breast Lift Turkey</a>
                             <a href="/liposuction-fat-removal-turkey" class="d-block">Liposuction Turkey</a>
                             <a href="/tummy-tuck-surgery-abdominoplasty-turkey" class="d-block">Tummy Tuck Turkey</a>
@@ -272,7 +272,7 @@
                             <div class="menu-box-item-content px-3" style="display: none">
                                 <div class="d-flex flex-column gap-3 text-white fs-15 ps-4 pb-4">
                                     <a href="/breast-augmentation-turkey" class="d-block">Breast Augmentation Turkey</a>
-                                    <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turke2y</a>
+                                    <a href="/breast-reduction-turkey" class="d-block">Breast Reduction Turkey</a>
                                     <a href="/breast-lift-turkey" class="d-block">Breast Lift Turkey</a>
                                     <a href="/liposuction-fat-removal-turkey" class="d-block">Liposuction Turkey</a>
                                     <a href="/tummy-tuck-surgery-abdominoplasty-turkey" class="d-block">Tummy Tuck Turkey</a>
@@ -308,7 +308,7 @@
     </div>
     <div class="footer-bottom bg-white py-4">
         <div class="container-xxl d-flex flex-lg-row flex-column gap-4 align-items-center justify-content-between py-lg-3">
-            <span>© 2024 Smile Center Turkey. All Right Reserved.</span>
+            <span>© 2024 Smile Center Turkey. All Right Reserved. <span class="text-primary" style="padding-left: 15px;"><a href="/privacy-policy">Privacy Policy</a></span></span>
             <div class="social d-flex gap-3">
                 <a href="https://www.facebook.com/smilecenterturkey/" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-facebook-f"></i>
