@@ -60,7 +60,7 @@
                     @endif
                 </div>
                 <div class="bg-white p-4">
-                    <div class="accordion faq-accordion" id="accordionExample">
+                    <div class="tab-accordion accordion faq-accordion" id="accordionExample">
                         @foreach($cons as $item)
                             <div class="accordion-item mb-3">
                                 <span class="accordion-header" id="headingOne">
