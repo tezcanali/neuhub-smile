@@ -26,72 +26,70 @@
             <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 g-4">
                 @if(isset($title1))
                     <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
+                        <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
                             <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
+                                class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
                                 {!! $svg1 !!}
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title1 }}</div>
+                            <div class="fs-5 fw-semibold">{{ $title1 }}</div>
                         </div>
                     </div>
                 @endif
                 @if(isset($title2))
-                    <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                            <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                                {!! $svg2 !!}
+                        <div class="col">
+                            <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                                <div
+                                    class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
+                                    {!! $svg2 !!}
+                                </div>
+                                <div class="fs-5 fw-semibold">{{ $title2 }}</div>
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title2 }}</div>
                         </div>
-                    </div>
                 @endif
                 @if(isset($title3))
-                    <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                            <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                                {!! $svg3 !!}
+                        <div class="col">
+                            <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                                <div
+                                    class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
+                                    {!! $svg3 !!}
+                                </div>
+                                <div class="fs-5 fw-semibold">{{ $title3 }}</div>
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title3 }}</div>
                         </div>
-                    </div>
                 @endif
                 @if(isset($title4))
-                    <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                            <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                                {!! $svg4 !!}
+                        <div class="col">
+                            <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                                <div
+                                    class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
+                                    {!! $svg4 !!}
+                                </div>
+                                <div class="fs-5 fw-semibold">{{ $title4 }}</div>
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title4 }}</div>
                         </div>
-                    </div>
                 @endif
                 @if(isset($title5))
-                    <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                            <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                                {!! $svg5 !!}
+                        <div class="col">
+                            <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                                <div
+                                    class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
+                                    {!! $svg5 !!}
+                                </div>
+                                <div class="fs-5 fw-semibold">{{ $title5 }}</div>
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title5 }}</div>
                         </div>
-                    </div>
                 @endif
                 @if(isset($title6))
-                    <div class="col">
-                        <div class="d-flex text-center align-items-center justify-content-center gap-4 flex-column">
-                            <div
-                                class="who-icon w-125px h-125px d-flex align-items-center justify-content-center bg-primary text-white">
-                                {!! $svg6 !!}
+                        <div class="col">
+                            <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                                <div
+                                    class="who-icon w-100px h-100px d-flex align-items-center justify-content-center bg-primary text-white rounded-circle">
+                                    {!! $svg6 !!}
+                                </div>
+                                <div class="fs-5 fw-semibold">{{ $title6 }}</div>
                             </div>
-                            <div class="fs-3 fw-normal">{{ $title6 }}</div>
                         </div>
-                    </div>
                 @endif
-
-
             </div>
         </div>
     </div>

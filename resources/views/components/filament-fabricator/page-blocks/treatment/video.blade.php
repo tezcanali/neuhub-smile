@@ -72,12 +72,12 @@
                     </a>
                 </div>
             </div>
-            <button type="button" class="video-button-prev w-45px h-45px rounded-1 d-xl-none d-flex align-items-center justify-content-center bg-white position-absolute start-0 top-50 translate-middle-y z-3 ms-1">
+            <button type="button" class="video-button-prev w-45px h-45px rounded-1 d-xl-none d-flex align-items-center justify-content-center bg-white position-absolute start-0 top-50 translate-middle-y z-3 ms-2">
                 <svg width="16" height="16" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.75 12.125L9.9 12.125L18.45 3.575L15.125 0.249999L0.875001 14.5L15.125 28.75L18.45 25.425L9.9 16.875L31.75 16.875L31.75 12.125Z" fill="currentcolor" />
                 </svg>
             </button>
-            <button type="button" class="video-button-next w-45px h-45px rounded-1 d-xl-none d-flex align-items-center justify-content-center bg-white position-absolute end-0 top-50 translate-middle-y z-3 me-1">
+            <button type="button" class="video-button-next w-45px h-45px rounded-1 d-xl-none d-flex align-items-center justify-content-center bg-white position-absolute end-0 top-50 translate-middle-y z-3 me-2">
                 <svg width="16" height="16" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.249999 12.125L22.1 12.125L13.55 3.575L16.875 0.249999L31.125 14.5L16.875 28.75L13.55 25.425L22.1 16.875L0.249999 16.875L0.249999 12.125Z" fill="currentcolor" />
                 </svg>

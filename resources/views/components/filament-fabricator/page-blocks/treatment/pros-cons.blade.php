@@ -5,7 +5,12 @@
             @if($title)
                 <div class="icon text-primary">
                     <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z" fill="currentcolor"></path>
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M14.9598 0.55499C12.9042 13.5398 0 17.2086 0 17.2086C4.72563 17.2086 14.0018 21.9193 14.9598 30.6203V32.0982C14.9598 31.7427 14.9734 31.3932 15 31.0497C15.0266 31.3932 15.0402 31.7427 15.0402 32.0982V30.6203C15.9982 21.9193 25.2744 17.2086 30 17.2086C30 17.2086 17.0958 13.5398 15.0402 0.55499V0C15.0274 0.0972397 15.014 0.193973 15 0.290203C14.986 0.193973 14.9726 0.0972397 14.9598 0V0.55499Z"
+                            fill="currentColor"
+                        ></path>
                     </svg>
                 </div>
                 <h2 class="fs-48 text-primary">{{ $title }}</h2>
@@ -13,10 +18,10 @@
         </div>
         <div class="row g-3">
             <div class="col-lg-6">
-                <div class="bg-primary p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
+                <div class="tab-box-title bg-primary p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
                     @if($prosTitle)
                         <div class="icon">
-                            <svg width="39" height="31" viewBox="0 0 39 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="24" height="24" viewBox="0 0 39 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.0833 30.6163L0.25 17.783L4.74167 13.2913L13.0833 21.633L34.2583 0.458008L38.75 4.94968L13.0833 30.6163Z" fill="white" />
                             </svg>
                         </div>
@@ -41,7 +46,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="bg-blue p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
+                <div class="tab-box-title bg-blue p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
                     @if($consTitle)
                         <div class="icon">
                             <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
