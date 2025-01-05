@@ -22,8 +22,8 @@
                 ></path>
             </svg>
         </div>
-        <div class="who-list1">
-            <div class="row row-cols-lg-6 row-cols-md-3 row-cols-2 g-4">
+        <div class="who-list1 position-relative z-1">
+            <div class="row row-cols-lg-6 row-cols-3 g-4">
                 @if(isset($title1))
                     <div class="col">
                         <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">

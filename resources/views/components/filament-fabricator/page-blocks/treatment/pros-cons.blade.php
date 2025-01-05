@@ -18,7 +18,7 @@
         </div>
         <div class="row g-3">
             <div class="col-lg-6">
-                <div class="tab-box-title bg-primary p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
+                <div class="tab-box-title bg-primary p-lg-4 p-md-3 p-2 text-white fw-semibold d-flex align-items-center gap-3 fs-5">
                     @if($prosTitle)
                         <div class="icon">
                             <svg width="24" height="24" viewBox="0 0 39 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +29,7 @@
                     @endif
                 </div>
                 <div class="bg-white p-4">
-                    <div class="accordion faq-accordion" id="accordionExample">
+                    <div class="tab-accordion accordion faq-accordion" id="accordionExample">
                         @foreach($pros as $item)
                             <div class="accordion-item mb-3">
                                 <span class="accordion-header" id="headingOne">
