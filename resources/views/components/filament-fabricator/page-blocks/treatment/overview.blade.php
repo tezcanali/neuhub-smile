@@ -26,7 +26,7 @@
                 <h2 class="fs-48 text-primary">{!! $title !!}</h2>
             </div>
         @endif
-        <div class="overview-list row gx-lg-1 gx-0 gy-lg-0 gy-1 align-items-center">
+        <div class="overview-list row gx-lg-1 gx-0 gy-lg-0 gy-1 align-items-stretch">
             @foreach($tables as $index => $item)
                 <div class="col-6">
                     <div class="overview-item {{ $index % 2 == 0 ? 'bg-white' : '' }} p-4 fw-semibold h-100" style="{{ $index % 2 == 0 ? '' : 'background: #d4daef' }}">{{ $item['leftTitle'] }}</div>

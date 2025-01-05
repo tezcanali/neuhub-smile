@@ -24,27 +24,6 @@
     <link rel="stylesheet" href="{{ asset('front/css/swiper-bundle.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('front/css/main.min.css') }}" />
 
-    <style>
-        @media(max-width: 767.98px) {
-            .who-icon {
-                width:100px !important;
-                height: 100px !important
-            }
-        }
-
-        .who-icon svg {
-            width: 48px !important;
-            height: 48px !important
-        }
-
-        @media(max-width: 767.98px) {
-            .who-icon svg {
-                width:40px !important;
-                height: 40px !important
-            }
-        }
-    </style>
-
     @foreach (\Z3d0X\FilamentFabricator\Facades\FilamentFabricator::getStyles() as $name => $path)
         @if (\Illuminate\Support\Str::of($path)->startsWith('<'))
             {!! $path !!}
