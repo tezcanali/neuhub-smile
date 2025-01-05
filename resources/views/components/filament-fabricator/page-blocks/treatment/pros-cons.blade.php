@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="tab-box-title bg-blue p-xxl-5 p-4 text-white fw-semibold d-flex align-items-center gap-lg-4 gap-3 fs-5">
+                <div class="tab-box-title bg-blue p-lg-4 p-md-3 p-2 text-white fw-semibold d-flex align-items-center gap-3 fs-5">
                     @if($consTitle)
                         <div class="icon">
                             <svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
