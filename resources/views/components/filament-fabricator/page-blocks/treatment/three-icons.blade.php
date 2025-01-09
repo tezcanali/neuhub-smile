@@ -133,7 +133,7 @@
                 </div>
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
-                        <img src="{{ asset('front/img/icons/14.svg') }}" height="100" width="100"/>
+                        <img src="{{ asset('front/img/icons/dis.png') }}" height="100" width="100"/>
                         <div class="fs-5 fw-semibold">Medicine Package</div>
                     </div>
                 </div>
