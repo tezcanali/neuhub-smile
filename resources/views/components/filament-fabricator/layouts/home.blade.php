@@ -50,8 +50,6 @@
 <div id="map" class="h-500px"></div>
 <!-- end #map -->
 
-<x-filament-fabricator::page-blocks :blocks="$page->blocks"/>
-
 {{ Filament::renderHook('filament-fabricator.scripts.start') }}
 
 @foreach (FilamentFabricator::getScripts() as $name => $path)

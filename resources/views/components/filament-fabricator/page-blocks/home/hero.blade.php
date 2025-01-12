@@ -19,7 +19,7 @@
                         <div class="col-lg-4">
                             <div class="hero-text mb-md-5 mb-3 pt-md-0 pt-2">
                                 <div class="title text-white fs-1 lh-sm fw-normal pb-lg-4 pb-3 text-balance">
-                                    {!! nl2br(e($title)) !!}
+                                    {!! $title !!}
                                 </div>
                                 <p class="text-white-50 fs-15 text-balance mb-0">{{ $description }}</p>
                                 <a href="/before-after" class="d-flex align-items-center gap-2 mt-lg-5 mt-3 text-white">
