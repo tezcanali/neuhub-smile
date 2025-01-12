@@ -81,6 +81,7 @@ class DoctorResource extends Resource
                                     ->acceptedFileTypes([
                                         'image/*'
                                     ])
+                                    ->optimize('webp')
                                     ->columnSpan([
                                         'sm' => 3,
                                         'xl' => 6,
