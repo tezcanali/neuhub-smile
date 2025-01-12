@@ -32,10 +32,6 @@ class PopularTreatment extends PageBlock
                                             ->label('Alt Başlık')
                                             ->required(),
                                     ]),
-                                
-                                Textarea::make('description')
-                                    ->label('Açıklama')
-                                    ->required(),
                             ]),
 
                         Tab::make('Tedaviler')
@@ -45,7 +41,7 @@ class PopularTreatment extends PageBlock
                                         TextInput::make('title')
                                             ->label('Tedavi Başlığı')
                                             ->required(),
-                                            
+
                                         Textarea::make('description')
                                             ->label('Tedavi Açıklaması')
                                             ->required(),

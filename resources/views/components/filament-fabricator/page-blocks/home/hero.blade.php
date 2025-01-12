@@ -12,8 +12,8 @@
                         />
                     </svg>
                 </div>
-                <img src="{{asset('front/img/ht1.png')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px" alt="Smile Center Turkey"/>
-                <img src="{{asset('front/img/ht3.png')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px" alt="Smile Center Turkey"/>
+                <img src="{{asset('front/img/ht1.webp')}}" class="ht-1 position-absolute start-0 top-50 z-2 h-150px" alt="Smile Center Turkey"/>
+                <img src="{{asset('front/img/ht3.webp')}}" class="ht-3 position-absolute end-0 top-0 z-2 h-250px" alt="Smile Center Turkey"/>
                 <div class="container-xxl h-100 position-relative z-3">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-4">
@@ -31,9 +31,9 @@
                         <div class="col-lg-4 align-self-end position-relative h-100">
                             <div
                                 class="gradient-hero d-lg-none d-block z-3 position-absolute start-0 end-0 bottom-0 w-100 h-50"></div>
-                            <img src="{{asset('front/img/ht2.png')}}"
+                            <img src="{{asset('front/img/ht2.webp')}}"
                                  class="hero-2 position-absolute end-100 top-0 z-1 h-50px mt-5 d-lg-block d-none" alt="Smile Center Turkey"/>
-                            <img src="{{asset('front/img/hero-bg.png')}}"
+                            <img src="{{asset('front/img/hero-bg.webp')}}"
                                  class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5" alt="Smile Center Turkey"/>
                             <img src="{{ asset(Storage::url($heroImage)) }}"
                                  class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4" alt="Smile Center Turkey"/>
@@ -76,7 +76,7 @@
                                                     />
                                                 </svg>
                                             </div>
-                                            <img src="{{asset('front/img/h2.png')}}"
+                                            <img src="{{asset('front/img/h2.webp')}}"
                                                  class="h-170px position-relative z-1" alt="Smile Center Turkey"/>
                                         </div>
                                     </a>
