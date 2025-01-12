@@ -116,37 +116,37 @@
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
                         <img src="{{ asset('front/img/icons/b-b.png') }}" height="100" width="100" style="border-radius: 50px;"/>
-                        <div class="fs-5 fw-semibold">B&amp;B Accommodation</div>
+                        <div class="fs-5 fw-semibold">Accommodation</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
                         <img src="{{ asset('front/img/icons/vip-transfer.png') }}" height="100" width="100"/>
-                        <div class="fs-5 fw-semibold">VIP Airport Transfer</div>
+                        <div class="fs-5 fw-semibold">VIP Transfer</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
                         <img src="{{ asset('front/img/icons/online_consulting_preview_rev_1.png') }}" height="100" width="100"/>
-                        <div class="fs-5 fw-semibold">Patient Advisor</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
-                        <img src="{{ asset('front/img/icons/dis.png') }}" height="100" width="100"/>
-                        <div class="fs-5 fw-semibold">Medicine Package</div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
-                        <img src="{{ asset('front/img/icons/checkup_preview_rev_1.png') }}" height="100" width="100"/>
-                        <div class="fs-5 fw-semibold">Online Consulting</div>
+                        <div class="fs-5 fw-semibold">Private Advisor</div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
                         <img src="{{ asset('front/img/icons/medicine_preview_rev_1.png') }}" height="100" width="100"/>
-                        <div class="fs-5 fw-semibold">Check-Up Service</div>
+                        <div class="fs-5 fw-semibold">Medication</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                        <img src="{{ asset('front/img/icons/checkup_preview_rev_1.png') }}" height="100" width="100"/>
+                        <div class="fs-5 fw-semibold">Lifetime Consultation</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex text-center align-items-center justify-content-center gap-md-4 gap-md-3 gap-2 flex-column">
+                        <img src="{{ asset('front/img/icons/dis.png') }}" height="100" width="100"/>
+                        <div class="fs-5 fw-semibold">Lifetime Check-Up</div>
                     </div>
                 </div>
             </div>
