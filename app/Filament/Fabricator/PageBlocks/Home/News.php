@@ -25,8 +25,7 @@ class News extends PageBlock
 
     public static function mutateData(array $data): array
     {
-        // Blog verilerini seçilen sıralamaya göre al
-        $blogs = \App\Models\Blog::where('status', 1)
+        $blogs = \App\Models\Blog::where('status', 'published')
             ->orderBy('created_at', $data['sort_order'])
             ->limit(4)
             ->get();
