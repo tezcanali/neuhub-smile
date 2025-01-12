@@ -36,7 +36,7 @@
                             <img src="{{asset('front/img/hero-bg.webp')}}"
                                  class="hero-bg h-500px position-absolute start-50 translate-middle-x top-0 ms-lg-5" alt="Smile Center Turkey"/>
                             <img src="{{ asset(Storage::url($heroImage)) }}"
-                                 class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4" alt="Smile Center Turkey"/>
+                                 class="hero-1 h-600px position-absolute start-50 translate-middle-x bottom-0 z-2 ms-lg-n4" loading="lazy" alt="Smile Center Turkey"/>
                         </div>
                         <div class="col-lg-4">
                             <div class="row g-3">
