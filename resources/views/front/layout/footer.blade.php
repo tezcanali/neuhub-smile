@@ -3,7 +3,7 @@
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-                <p class="h2 text-center mb-0">Contact Us</p>
+                <p class="h2 text-center mb-0">We will respond to you in a few seconds!</p>
                 <!-- Close Button -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>

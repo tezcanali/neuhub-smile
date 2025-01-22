@@ -3,7 +3,7 @@
     <a href="#"
        style="flex: 0 0 80% !important;"
        data-bs-toggle="modal" data-bs-target="#quateModal"
-       class="btn btn-blue h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill text-white">
+       class="btn btn-warning h-50px d-flex align-items-center justify-content-center gap-3 fw-semibold flex-fill text-white" style="background-color: #ff7f00 !important;">
         <i class="fa fa-phone"></i>
         <span>Get a Free Quote</span>
     </a>
