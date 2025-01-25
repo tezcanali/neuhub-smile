@@ -24,7 +24,7 @@
                 </div>
                 <a href="{{ $instagramUrl }}" class="btn d-flex align-items-center gap-3 px-4 fw-normal text-white" style="background: #0095f6">
                     <i class="fab fa-instagram"></i>
-                    Follow Us
+                    Follow us
                 </a>
             </div>
         </div>
