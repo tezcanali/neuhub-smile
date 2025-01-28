@@ -79,7 +79,11 @@
     <div class="container-xxl position-relative z-2">
         <div class="doctor-list row g-3">
             @php
+                if (get_country_code() === true) {
+                $doctors = \App\Models\Doctor::where('name', '!=', 'Dr. Celik')->get();
+                } else {
                 $doctors = \App\Models\Doctor::all();
+                }
             @endphp
             @foreach($doctors as $doctor)
                 <div class="col-xl-4 col-lg-6">
