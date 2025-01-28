@@ -312,7 +312,11 @@
     </div>
     <div class="footer-bottom bg-white py-4">
         <div class="container-xxl d-flex flex-lg-row flex-column gap-4 align-items-center justify-content-between py-lg-3">
-            <span>© 2024 Smile Center Turkey. All Right Reserved. <span class="text-primary" style="padding-left: 15px;"><a href="/privacy-policy">Privacy Policy</a></span></span>
+            <span>© 2024 Smile Center Turkey. All Right Reserved.
+                  @if(get_country_code() !== true)
+                <span class="text-primary" style="padding-left: 15px;"><a href="/privacy-policy">Privacy Policy</a></span>
+                @endif
+            </span>
             <div class="social d-flex gap-3">
                 <a href="https://www.facebook.com/smilecenterturkey/" class="w-40px h-40px d-flex align-items-center justify-content-center rounded-circle bg-primary text-white">
                     <i class="fab fa-facebook-f"></i>
