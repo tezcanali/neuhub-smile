@@ -119,7 +119,9 @@
                         </div>
                     </div>
                 </div>
+                @endif
             </div>
+            @if(get_country_code() !== true)
             <div class="menu-box pb-3">
                 <div class="menu-box-item border-bottom border-white border-opacity-10 active">
                     <div class="heading d-flex align-items-center justify-content-between fw-normal fs-4">
