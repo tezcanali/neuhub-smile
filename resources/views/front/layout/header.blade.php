@@ -214,12 +214,10 @@
                                            class="d-block mb-3 hover-text-secondary">All On 4 Dental Implants Turkey</a>
                                         <a href="/all-on-6-dental-implants-turkey"
                                            class="d-block mb-3 hover-text-secondary">All On 6 Dental Implants Turkey</a>
-                                        @if(get_country_code() !== true)
                                             <a href="/hollywood-smile-design-turkey"
                                                class="d-block mb-3 hover-text-secondary">Hollywood Smile Turkey</a>
                                             <a href="dental-implants-turkey" class="d-block mb-3 hover-text-secondary">Dental
                                                 Implants Turkey</a>
-                                        @endif
                                         <a href="/zirconia-crowns-turkey" class="d-block mb-3 hover-text-secondary">Zirconia
                                             Crowns Turkey</a>
                                         <a href="/teeth-whitening-turkey" class="d-block mb-3 hover-text-secondary">Teeth
@@ -231,6 +229,8 @@
                             </div>
                         </div>
                     </li>
+                    @if(get_country_code() !== true)
+
                     <div class="icon">
                         <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -313,6 +313,8 @@
                             </div>
                         </div>
                     </li>
+                    @endif
+
                     <div class="icon">
                         <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
