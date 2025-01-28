@@ -1,4 +1,5 @@
 @aware(['page'])
+@if(get_country_code() !== true)
 <section class="py-lg-5 py-4">
     <div class="container-xxl">
         <div class="fs-2 fw-semibold pb-4 text-md-start text-center">Excellent</div>
@@ -14,3 +15,4 @@
                 </div>
             </div>
 </section>
+@endif
