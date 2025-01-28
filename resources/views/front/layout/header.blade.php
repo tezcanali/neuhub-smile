@@ -62,6 +62,7 @@
                     </div>
                 </div>
 
+                @if(get_country_code() !== true)
                 <div class="menu-box pb-3">
                     <div class="menu-box-item border-bottom border-white border-opacity-10">
                         <div class="heading d-flex align-items-center justify-content-between fw-normal fs-4">
@@ -148,6 +149,8 @@
                     </div>
                 </div>
             </div>
+            @endif
+
             <div class="menu-box pb-3">
                 <a href="/before-after" class="d-block fs-4 fw-normal">Before&amp;After</a>
             </div>

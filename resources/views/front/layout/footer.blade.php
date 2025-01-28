@@ -128,6 +128,7 @@
                             <a href="/emax-veneers-turkey" class="d-block">Emax Veneers Turkey</a>
                         </div>
                     </div>
+                    @if(get_country_code() !== true)
                     <div class="col-lg-3 d-lg-block d-none">
                         <div class="position-relative title text-secondary mb-4">
                             <div class="icon position-absolute end-100 top-0 me-2 pe-1">
@@ -173,6 +174,7 @@
                             <a href="/eyelid-surgery-turkey" class="d-block">Eyelid Surgery Turkey</a>
                         </div>
                     </div>
+                    @endif
                 </div>
             </div>
             <div class="border-top border-white border-opacity-10 border-bottom pt-4 pb-2 d-lg-none d-block mt-lg-5 mt-4">
@@ -215,6 +217,7 @@
                             </div>
                         </div>
                     </div>
+                    @if(get_country_code() !== true)
                     <div class="menu-box pb-3">
                         <div class="menu-box-item border-bottom border-white border-opacity-10">
                             <div class="heading d-flex align-items-center justify-content-between px-3 pb-3 fw-semibold fs-5">
@@ -282,6 +285,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 </div>
             </div>
             <div class="pt-5 mt-5 position-relative text-center d-lg-none d-block">
