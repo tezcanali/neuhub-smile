@@ -16,6 +16,7 @@
         "shuvroroy/filament-spatie-laravel-health": "*",
         "spatie/laravel-sitemap": "^7.2",
         "spatie/laravel-sluggable": "^3.6",
+        "stevebauman/location": "^7.4",
         "z3d0x/filament-fabricator": "^2.2"
     },
     "require-dev": {
@@ -32,7 +33,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/Helpers/geoip_helper.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
