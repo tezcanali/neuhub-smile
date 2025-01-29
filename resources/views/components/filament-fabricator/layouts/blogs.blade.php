@@ -141,7 +141,7 @@
                         <div class="px-2">Categories</div>
                     </div>
                     @php
-                        $blogCategories = \App\Models\BlogCategory::all();
+                        $blogCategories = \App\Models\BlogCategory::where('id', 1)->get();
                     @endphp
                     <div class="bg-white p-4">
                         <div class="d-flex flex-column gap-3 p-2">
