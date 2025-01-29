@@ -66,7 +66,7 @@
         <div class="row">
             <div class="col-lg-8">
                 @php
-                    $blogs = \App\Models\Blog::all();
+                    $blogs = \App\Models\Blog::where('category_id', 1)->get();
                  @endphp
 
                 @foreach($blogs->reverse() as $blog)

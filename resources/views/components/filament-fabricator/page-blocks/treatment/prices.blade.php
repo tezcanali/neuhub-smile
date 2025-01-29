@@ -1,4 +1,5 @@
 @aware(['page'])
+@if(get_country_code() !== true)
 <section class="position-relative overflow-hidden">
     <div class="container-xxl">
         @if($title)
@@ -45,3 +46,4 @@
         </div>
     </div>
 </section>
+@endif
