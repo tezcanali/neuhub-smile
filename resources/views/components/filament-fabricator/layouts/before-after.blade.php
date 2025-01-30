@@ -66,7 +66,7 @@
 
 @php
     $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->get();
-    $categories = \App\Models\GalleryCategory::all();
+    $categories = \App\Models\GalleryCategory::where('type',2)->get();
 @endphp
 
 <!-- page -->
