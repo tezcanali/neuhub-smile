@@ -65,7 +65,7 @@
 </div>
 
 @php
-    $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->get();
+    $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->where('category_id', 1)->get();
     $categories = \App\Models\GalleryCategory::where('title','Dental Treatment')->get();
 @endphp
 
