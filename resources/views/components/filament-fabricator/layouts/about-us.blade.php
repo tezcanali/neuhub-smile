@@ -218,8 +218,18 @@
                                     </div>
                                 </div>
                                 <div class="menu-box-item-content pt-4 text-white">
-                                    <p>Our health tourism services are offered in the fields of hair transplantation, dental treatment and plastic surgery. We provide safe and quality health services with our expert doctors.
+                                    <p>
+                                        Our health tourism services are offered in the fields of
+                                        <?php if (get_country_code() === true): ?>
+                                        hair transplantation,
+                                        <?php endif; ?>
+                                        dental treatment
+                                        <?php if (get_country_code() === true): ?>
+                                        and plastic surgery
+                                        <?php endif; ?>.
+                                        We provide safe and quality health services with our expert doctors.
                                     </p>
+
                                 </div>
                             </div>
                         </div>

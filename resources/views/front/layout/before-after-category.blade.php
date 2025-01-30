@@ -46,22 +46,7 @@
 <!-- page -->
 <div class="page py-lg-5 py-4">
     <div class="container-xxl">
-        <div class="bg-white rounded-3 p-2 d-flex flex-wrap align-items-center gap-2 mb-4">
-            <a href="/before-after" class="fw-normal bg-gray-100 rounded-1 py-2 px-4">All</a>
-            @foreach($categories as $item)
-                <a href="/before-after/category/{{$item->slug}}" class="fw-normal {{ $category->slug == $item->slug ? 'bg-secondary text-white' : 'bg-gray-100' }} rounded-1 py-2 px-4">{{ $item->title }}</a>
-            @endforeach
-        </div>
-        <div class="row g-4">
-            @foreach($category->gallery()->orderBy('created_at', 'desc')->get() as $item)
-                <div class="col-lg-3">
-                    <a href="/before-after/{{$item->slug}}" class="d-block w-100 h-300px rounded-3 overflow-hidden position-relative">
-                        <div class="position-absolute start-0 bottom-0 m-2 bg-white text-primary fs-13 rounded-1 py-2 px-3 fw-semibold z-1">{{ $item->title }}</div>
-                        <img src="{{ \Illuminate\Support\Facades\Storage::url($item['featured_image']) }}" class="w-100 h-100 object-fit-cover" />
-                    </a>
-                </div>
-            @endforeach
-        </div>
+
     </div>
 </div>
 
