@@ -65,8 +65,14 @@
 </div>
 
 @php
-    $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->where('category_id', 1)->get();
-    $categories = \App\Models\GalleryCategory::where('title','Dental Treatment')->get();
+    if (get_country_code() === true)
+        {
+          $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->where('category_id', 1)->get();
+          $categories = \App\Models\GalleryCategory::where('title','Dental Treatment')->get();
+        }else{
+          $galleries = \App\Models\Gallery::orderBy('created_at', 'desc')->get();
+          $categories = \App\Models\GalleryCategory::all();
+        }
 @endphp
 
 <!-- page -->
