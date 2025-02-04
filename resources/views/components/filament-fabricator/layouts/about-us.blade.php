@@ -32,7 +32,22 @@
         @endif
     @endforeach
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,tr',
+                autoDisplay: false
+            }, 'google_translate_element');
+
+
+        }
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     {{ \Filament\Facades\Filament::renderHook('filament-fabricator.head.end') }}
+
 </head>
 <body>
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.start') }}
