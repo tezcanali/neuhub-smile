@@ -35,6 +35,7 @@
         @endif
     @endforeach
 
+    @if (get_country_code() === true)
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
@@ -62,6 +63,7 @@
         };
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    @endif
 
     {{ Filament::renderHook('filament-fabricator.head.end') }}
 </head>
