@@ -19,6 +19,34 @@
     <link rel="stylesheet" href="{{ asset('front/css/swiper-bundle.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('front/css/main.min.css') }}" />
 
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,tr',
+                autoDisplay: false
+            }, 'google_translate_element');
+
+            setTimeout(function () {
+                var langSelect = document.querySelector(".goog-te-combo");
+                if (langSelect) {
+                    langSelect.value = "tr";
+                    langSelect.dispatchEvent(new Event("change"));
+
+                    document.cookie = "googtrans=/en/tr; path=/";
+                }
+            }, 500);
+        }
+
+        window.onload = function () {
+            if (!document.cookie.includes("googtrans=/en/tr")) {
+                document.cookie = "googtrans=/en/tr; path=/";
+                location.reload();
+            }
+        };
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </head>
 <body>
 @include('front.layout.header')
