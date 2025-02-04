@@ -36,14 +36,11 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                includedLanguages: 'en,tr',
+                includedLanguages: 'tr,en',
                 autoDisplay: false
             }, 'google_translate_element');
-
-
         }
     </script>
-
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     {{ \Filament\Facades\Filament::renderHook('filament-fabricator.head.end') }}
