@@ -61,8 +61,6 @@
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     {{ \Filament\Facades\Filament::renderHook('filament-fabricator.head.end') }}
-
-
 </head>
 <body>
 {{ \Filament\Facades\Filament::renderHook('filament-fabricator.body.start') }}
