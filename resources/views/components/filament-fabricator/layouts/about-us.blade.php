@@ -35,7 +35,7 @@
     <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'tr',
+                pageLanguage: 'en',
                 includedLanguages: 'en,tr',
                 autoDisplay: false
             }, 'google_translate_element');
@@ -45,9 +45,18 @@
                 if (langSelect) {
                     langSelect.value = "tr";
                     langSelect.dispatchEvent(new Event("change"));
+
+                    document.cookie = "googtrans=/en/tr; path=/";
                 }
-            }, 10);
+            }, 500);
         }
+
+        window.onload = function () {
+            if (!document.cookie.includes("googtrans=/en/tr")) {
+                document.cookie = "googtrans=/en/tr; path=/";
+                location.reload();
+            }
+        };
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
