@@ -37,7 +37,7 @@
                     <div class="faq-list">
                         @foreach($faqs as $faq)
                             <div class="menu-box pb-3">
-                                <div class="menu-box-item bg-white bg-opacity-10 text-white rounded-1 py-3 px-4">
+                                <div class="menu-box-item bg-white bg-opacity-10 text-white rounded-1 py-3 px-4 active">
                                     <h3 class="heading d-flex align-items-center justify-content-between fw-normal fs-5" style="margin-bottom: 0px !important;">
                                         {{ $faq['title'] }}
                                         <div class="icon">
