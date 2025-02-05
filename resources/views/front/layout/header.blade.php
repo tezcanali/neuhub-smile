@@ -151,11 +151,11 @@
                     </div>
                 </div>
             </div>
-            @endif
 
             <div class="menu-box pb-3">
                 <a href="/before-after" class="d-block fs-4 fw-normal">Before&amp;After</a>
             </div>
+            @endif
             <div class="menu-box pb-3">
                 <a href="/doctors" class="d-block fs-4 fw-normal">Doctors</a>
             </div>
@@ -318,7 +318,7 @@
                             </div>
                         </div>
                     </li>
-                    @endif
+
 
                     <div class="icon">
                         <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,6 +330,7 @@
                     <li class="position-relative">
                         <a href="/before-after" class="d-block text-white fw-normal hover-text-secondary py-4">Before & After</a>
                     </li>
+                    @endif
                     <div class="icon">
                         <svg width="15" height="17" viewBox="0 0 15 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
