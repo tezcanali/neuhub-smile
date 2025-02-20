@@ -22,10 +22,12 @@
                                     {!! $title !!}
                                 </div>
                                 <p class="text-white-50 fs-15 text-balance mb-0">{{ $description }}</p>
+                                @if(get_country_code() !== true)
                                 <a href="/before-after" class="d-flex align-items-center gap-2 mt-lg-5 mt-3 text-white">
                                     <i class="fa fa-arrow-right"></i>
                                     {{ $galleryText }}
                                 </a>
+                                @endif
                             </div>
                         </div>
                         <div class="col-lg-4 align-self-end position-relative h-100">
