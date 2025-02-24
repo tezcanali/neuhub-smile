@@ -207,6 +207,7 @@
     </div>
 </section>
 <!-- end #section -->
+@if(get_country_code() !== true)
 
 <section class="py-lg-5 py-4">
     <div class="container-xxl">
@@ -304,7 +305,7 @@
         </div>
     </div>
 </section>
-
+@endif
 <!-- map -->
 <div id="map" class="h-500px"></div>
 <!-- end #map -->
